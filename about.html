@@ -5,106 +5,286 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Babai Bandi - About Us</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: white;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .top-bar {
+      background-color: #310004;
+      height: 53px;
+      color: white;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 100px;
+      gap: 10px;
+    }
+
+    .header {
+      background-color: #8f000c;
+      height: 230px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 125px;
+      width: 198px;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .nav {
+      position: absolute;
+      top: 118px;
+      right: 125px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav a {
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .nav .active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 1194px;
+      margin: 110px auto;
+      position: relative;
+      padding: 0 20px;
+    }
+
+    .content h1 {
+      font-size: 70px;
+      color: #9c9c9c;
+      font-weight: bold;
+    }
+
+    .content h2 {
+      font-size: 23px;
+      color: #8f000c;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .content p {
+      font-size: 17px;
+      line-height: 30px;
+      text-align: justify;
+      margin-top: 20px;
+    }
+
+    .content-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 595px;
+      height: 729px;
+      object-fit: cover;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 52px;
+      margin-top: 100px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 566px;
+      height: 428px;
+      object-fit: cover;
+    }
+
+    .gallery-desc {
+      max-width: 1190px;
+      margin: 30px auto;
+      font-size: 17px;
+      line-height: 30px;
+      text-align: justify;
+      padding: 0 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 70px;
+      flex-wrap: wrap;
+    }
+
+    .features div {
+      width: 364px;
+      height: 219px;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .team {
+      background-color: #ff4000;
+      padding: 95px 20px;
+      margin-top: 80px;
+      text-align: center;
+      color: white;
+    }
+
+    .team h2 {
+      font-size: 40px;
+      margin-bottom: 54px;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: center;
+      gap: 54px;
+      flex-wrap: wrap;
+    }
+
+    .team-members img {
+      width: 254px;
+      height: 254px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .footer {
+      background-color: #8f000c;
+      padding: 80px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .footer button {
+      padding: 20px 40px;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .footer nav {
+      margin-top: 40px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
-<body class="bg-white flex flex-col items-center">
-
+<body>
   <!-- Top Bar -->
-  <header class="w-full h-[230px] bg-[#8f000c] relative">
-    <div class="w-full h-[53px] bg-[#310004] flex justify-end items-center text-white px-20 text-xs">
-      +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
+  <div class="top-bar">
+    +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <img class="logo" src="./asset/logo.png" alt="Babai Bandi" />
+    <div class="nav">
+      <a href="home.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="menu.html">Catering</a>
     </div>
-    <img class="absolute top-0 left-[125px] w-[198px] h-[230px] object-cover"
-      src="https://c.animaapp.com/yMVoIfDr/img/logo@2x.png" alt="Logo" />
-    <nav class="absolute top-[118px] right-[125px] flex gap-6 text-white text-lg">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="about.html" class="hover:underline">About Us</a>
-      <a href="location.html" class="hover:underline">Location</a>
-    </nav>
-  </header>
+  </div>
 
   <!-- About Section -->
-  <section class="w-[1194px] mt-[110px] relative">
-    <div class="absolute w-[81px] h-[84px] top-0 right-0 bg-[#ed0b14]"></div>
-    <div class="absolute w-[82px] h-[79px] bottom-0 left-1/2 -translate-x-1/2 bg-[#ed0b14]"></div>
-    <div class="flex flex-col w-[605px] gap-8">
-      <h1 class="text-[70px] font-bold text-transparent stroke-1 stroke-[#9c9c9c]">About Us</h1>
-      <h2 class="text-[23px] text-[#8f000c] tracking-[2.07px] font-bold">How it started!</h2>
-      <p class="text-[17px] text-justify leading-[30px]">
-        Fusce felis semper sed tristique etm velit nes vitae tempor. Vivamus tristique et malesuada velit. <br><br>
-        Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-      </p>
-    </div>
-    <img class="absolute top-1 right-0 w-[595px] h-[729px] object-cover"
-      src="https://c.animaapp.com/yMVoIfDr/img/abt-image-1.png" alt="About" />
-  </section>
+  <div class="content">
+    <h1>About Us</h1>
+    <h2>How it started!</h2>
+    <p>
+      Fusce felis semper sed tristique etm velit nes vitae tempor. Vivamus tristique et malesuada velit.
+      <br><br>
+      Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+    </p>
+    <img class="content-img" src="./asset/abt image 1.png" alt="About">
+  </div>
 
-  <!-- Image Gallery -->
-  <section class="mt-[100px] flex flex-col gap-12 items-center">
-    <div class="flex gap-[52px]">
-      <img class="w-[566px] h-[428px] object-cover" src="https://c.animaapp.com/yMVoIfDr/img/abt-image-2.png"
-        alt="Gallery1" />
-      <img class="w-[566px] h-[428px] object-cover" src="https://c.animaapp.com/yMVoIfDr/img/abt-image-3.png"
-        alt="Gallery2" />
-    </div>
-    <div class="w-[1190px] text-[17px] text-justify leading-[30px]">
-      Semper sed tristique etm velit nes vitae tempor. Fusce felis semper. <br><br>
-      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. <br><br>
-      Aliquam suscipit malesuada viverra etiam fermentum est at fringilla.
-    </div>
-  </section>
+  <!-- Gallery Section -->
+  <div class="gallery">
+    <img src="./asset/abt image 2.png" alt="Gallery1" />
+    <img src="./asset/abt image 3.png" alt="Gallery2" />
+  </div>
+
+  <div class="gallery-desc">
+    Semper sed tristique etm velit nes vitae tempor. Fusce felis semper.
+    <br><br>
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+    <br><br>
+    Aliquam suscipit malesuada viverra etiam fermentum est at fringilla.
+  </div>
 
   <!-- Features -->
-  <section class="mt-[70px] flex justify-center gap-[50px]">
-    <div
-      class="w-[364px] h-[219px] bg-cover bg-center flex items-center justify-center text-white text-[32px] font-bold text-center"
-      style="background-image: url('https://c.animaapp.com/yMVoIfDr/img/fresh@2x.png')">
-      FRESH<br>INGREDIENTS
-    </div>
-    <div
-      class="w-[364px] h-[219px] bg-cover bg-center flex items-center justify-center text-white text-[32px] font-bold text-center"
-      style="background-image: url('https://c.animaapp.com/yMVoIfDr/img/best@2x.png')">
-      BEST<br>SERVICES
-    </div>
-    <div
-      class="w-[364px] h-[219px] bg-cover bg-center flex items-center justify-center text-white text-[32px] font-bold text-center"
-      style="background-image: url('https://c.animaapp.com/yMVoIfDr/img/affordable@2x.png')">
-      AFFORDABLE<br>PRICES
-    </div>
-  </section>
+  <div class="features">
+    <div style="background-image: url('./asset/fresh.png')"></div>
+    <div style="background-image: url('./asset/best.png')"></div>
+    <div style="background-image: url('./asset/affordable.png')"></div>
+  </div>
 
   <!-- Team Section -->
-  <section class="w-full h-[591px] bg-[#ff4000] mt-[80px] py-[95px] px-[157px] flex flex-col items-center gap-[54px]">
-    <h2 class="text-[40px] text-white font-bold">Our Professional Team</h2>
-    <div class="flex gap-[54px]">
-      <img class="w-[254px] h-[254px] rounded-full object-cover" src="https://c.animaapp.com/yMVoIfDr/img/image@2x.png"
-        alt="Team" />
-      <img class="w-[254px] h-[254px] rounded-full object-cover"
-        src="https://c.animaapp.com/yMVoIfDr/img/mask-group@2x.png" alt="Team" />
-      <img class="w-[254px] h-[254px] rounded-full object-cover"
-        src="https://c.animaapp.com/yMVoIfDr/img/mask-group-1@2x.png" alt="Team" />
-      <img class="w-[254px] h-[254px] rounded-full object-cover"
-        src="https://c.animaapp.com/yMVoIfDr/img/mask-group-2@2x.png" alt="Team" />
+  <div class="team">
+    <h2>Our Professional Team</h2>
+    <div class="team-members">
+      <img src="./asset/team1.png" alt="Team" />
+      <img src="./asset/team2.png" alt="Team" />
+      <img src="./asset/team3.png" alt="Team" />
+      <img src="./asset/team4.png" alt="Team" />
     </div>
-  </section>
+  </div>
 
   <!-- Footer -->
-  <footer class="w-full h-[389px] bg-[#8f000c] mt-[80px] flex flex-col items-center justify-center">
-    <div class="w-[566px] h-[167px] relative">
-      <button
-        class="w-[449px] h-[90px] border-2 border-white text-white absolute top-0 left-[58px] hover:bg-transparent">
-        <span class="text-lg font-bold">REQUEST A QUOTE</span>
-      </button>
-      <nav class="absolute top-[145px] left-0 text-white text-lg flex gap-6 flex-wrap">
-        <a href="home.html" class="hover:underline">Home</a>
-        <a href="about.html" class="hover:underline">About Us</a>
-        <a href="location.html" class="hover:underline">Location</a>
-        <a href="catering.html" class="hover:underline">Catering</a>
-        <a href="contact.html" class="hover:underline">Contact Us</a>
-      </nav>
-    </div>
-  </footer>
+  <div class="footer">
+    <button>REQUEST A QUOTE</button>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="menu.html">Catering</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
 
 </body>
+
 </html>

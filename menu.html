@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babai Bandi - Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background-color: #310004;
+      height: 53px;
+      color: white;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 100px;
+      gap: 10px;
+    }
+
+    /* Header */
+    .header {
+      background-color: #8f000c;
+      height: 230px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 125px;
+      width: 198px;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .nav {
+      position: absolute;
+      top: 118px;
+      right: 125px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav a {
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .nav .active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://c.animaapp.com/hykmc6c1/img/hero-bg.png') center/cover no-repeat;
+      text-align: center;
+      color: white;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .hero .discover {
+      background-color: red;
+      padding: 6px 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Menu Tabs */
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 0 10px;
+      font-weight: bold;
+    }
+
+    .menu-tabs span {
+      cursor: pointer;
+    }
+
+    .menu-tabs .active {
+      color: white;
+      background-color: red;
+      padding: 6px 16px;
+      border-radius: 4px;
+    }
+
+    /* Menu Items */
+    .menu-items {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 40px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .menu-item h4 {
+      font-weight: 500;
+    }
+
+    .menu-item p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Gallery */
+    .gallery {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .gallery h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .gallery p {
+      font-size: 16px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .gallery-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-images img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #8f000c;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer button {
+      padding: 15px 40px;
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      font-weight: bold;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .footer nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <img class="logo" src="./asset/logo.png" alt="Babai Bandi Logo" />
+    <div class="nav">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="menu.html" class="active">Catering</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="discover">DISCOVER</div>
+    <h1>OUR MENU</h1>
+    <p>Curious about how our dishes elevate from good to great? Let's start the tale of our mouthwatering foods.</p>
+  </div>
+
+  <!-- Menu Tabs -->
+  <div class="menu-tabs">
+    <span>Main Dishes</span>
+    <span class="active">Salads</span>
+    <span>Drinks</span>
+    <span>Desserts</span>
+  </div>
+
+  <!-- Menu Items -->
+  <div class="menu-items">
+    <div class="menu-item">
+      <div>
+        <h4>Garden Salad</h4>
+        <p>Baby beets, goat cheese, carrots, radishes</p>
+      </div>
+      <div class="price">$12.99</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <h4>Heirloom Tomato Salad</h4>
+        <p>with fresh basil and balsamic vinaigrette</p>
+      </div>
+      <div class="price">$12.99</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <h4>Papaya Salad</h4>
+        <p>with lots of chilies and lime</p>
+      </div>
+      <div class="price">$12.99</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <h4>Prosciutto & Shaved Pear Salad</h4>
+        <p>with pecorino, baby spinach, herbs & toasted pine nuts</p>
+      </div>
+      <div class="price">$12.99</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <h4>Vegetable Salad</h4>
+        <p>Pine nuts, roquefort, dates, asian pear, heirloom apples</p>
+      </div>
+      <div class="price">$12.99</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <h4>Wild Arugula Salad</h4>
+        <p>with parmesan cheese, garlic and lemon vinaigrette</p>
+      </div>
+      <div class="price">$12.99</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <h4>Kale and Quinoa</h4>
+        <p>Sunflower seeds, red peppers, parmesan</p>
+      </div>
+      <div class="price">$12.99</div>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="gallery">
+    <h2>GALLERY</h2>
+    <p>Photos of our food and our events</p>
+    <div class="gallery-images">
+      <img src="./asset/gallery1.png" alt="Gallery1" />
+      <img src="./asset/gallery2.png" alt="Gallery2" />
+      <img src="./asset/gallery3.png" alt="Gallery3" />
+      <img src="./asset/gallery4.png" alt="Gallery4" />
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <button>REQUEST A QUOTE</button>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="menu.html">Catering</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </div>
+
+</body>
+
+</html>

@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Babai Bandi - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Gotham&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Gotham', sans-serif;
     }
 
+    /* Top Bar */
     .top-bar {
       background-color: #310004;
       color: white;
       height: 53px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 0 100px;
       font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 100px;
+      gap: 10px;
+    }
+
+    /* Header (same as About Us) */
+    .header {
+      background-color: #8f000c;
+      height: 230px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 125px;
+      width: 198px;
+      height: 230px;
+      object-fit: cover;
     }
 
     .nav {
-      background: #8f000c;
-      height: 60px;
+      position: absolute;
+      top: 118px;
+      right: 125px;
       display: flex;
-      justify-content: center;
+      gap: 30px;
       align-items: center;
-      gap: 40px;
     }
 
     .nav a {
       color: white;
       font-size: 16px;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
     }
 
     .nav a:hover {
       text-decoration: underline;
     }
 
+    /* Hero Section */
     .hero {
       position: relative;
       height: 835px;
-      background: linear-gradient(rgba(143, 0, 12, 0.57), rgba(143, 0, 12, 0.57)), url('https://c.animaapp.com/hykmc6c1/img/hero-bg.png') no-repeat center/cover;
+      background: linear-gradient(rgba(143, 0, 12, 0.57), rgba(143, 0, 12, 0.57)),
+        url('./asset/hero\ bg.png') no-repeat center/cover;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -173,6 +199,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Top Contact Bar -->
@@ -180,12 +207,16 @@
     +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
   </div>
 
-  <!-- Navigation Menu -->
-  <nav class="nav">
-    <a href="home.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="location.html">Location</a>
-  </nav>
+  <!-- Header (like About Us) -->
+  <div class="header">
+    <img class="logo" src="./asset/logo.png" alt="Babai Bandi Logo" />
+    <div class="nav">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="menu.html">Catering</a>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -196,17 +227,18 @@
 
   <!-- Features Section -->
   <section class="features">
-    <div class="feature-box" style="background-image: url('https://c.animaapp.com/hykmc6c1/img/catering@2x.png')">CATERING</div>
-    <div class="feature-box" style="background-image: url('https://c.animaapp.com/hykmc6c1/img/menu@2x.png')">MENU</div>
-    <div class="feature-box" style="background-image: url('https://c.animaapp.com/hykmc6c1/img/about-us@2x.png')">ABOUT US</div>
+    <div class="feature-box" style="background-image: url('./asset/catering_img.png')">CATERING</div>
+    <div class="feature-box" style="background-image: url('./asset/menu_img.png')">MENU</div>
+    <div class="feature-box" style="background-image: url('./asset/about\ us_img.png')">ABOUT US</div>
   </section>
 
   <!-- Trusted Section -->
   <section class="trusted-section">
-    <img src="https://c.animaapp.com/hykmc6c1/img/image.png" alt="trusted-image">
+    <img src="./asset/content _img.png" alt="trusted-image">
     <div>
       <h2>TRUSTED AND EXPERIENCED</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><br>Sed ut perspiciatis unde omnis iste natus error...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><br>Sed ut perspiciatis unde omnis iste natus
+        error...</p>
     </div>
   </section>
 
@@ -215,7 +247,7 @@
     <div class="quote">
       "Don't just take our word for it; hear it from them instead."
     </div>
-    <img src="https://c.animaapp.com/hykmc6c1/img/image-1@2x.png" alt="testimonial-image">
+    <img src="./asset/testimonial_img.png" alt="testimonial-image">
     <p>The flavors from this Indian food truck "Babai Bandi" in Dallas is a delightful journey...</p>
   </section>
 
@@ -243,9 +275,11 @@
       <a href="home.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="location.html">Location</a>
-      <a href="catering.html">Catering</a>
+      <a href="menu.html">Catering</a>
       <a href="contact.html">Contact Us</a>
     </div>
   </footer>
+
 </body>
+
 </html>
