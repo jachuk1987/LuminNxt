@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babai Bandi - Location</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      body {
+        background-color: white;
+        width: 100%;
+        overflow-x: hidden;
+      }
+      .top-bar {
+        background-color: #310004;
+        height: 53px;
+        position: relative;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 100px;
+        gap: 10px;
+      }
+      .header {
+        background-color: #8f000c;
+        height: 230px;
+        position: relative;
+      }
+      .logo {
+        position: absolute;
+        top: 0;
+        left: 125px;
+        width: 198px;
+        height: 230px;
+        object-fit: cover;
+      }
+      .nav {
+        position: absolute;
+        top: 118px;
+        right: 125px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+      .nav span {
+        color: white;
+        font-size: 16px;
+      }
+      .nav .active {
+        font-weight: bold;
+      }
+      .catering-btn {
+        background-color: #ed0b14;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .map {
+        width: 1190px;
+        height: 510px;
+        object-fit: cover;
+        margin: 80px auto 0 auto;
+        display: block;
+      }
+      .info-card {
+        background-color: #f5f5f5;
+        width: 1190px;
+        margin: 40px auto;
+        padding: 40px;
+        display: flex;
+        gap: 40px;
+        position: relative;
+      }
+      .info-card img {
+        width: 482px;
+        height: 576px;
+        object-fit: cover;
+      }
+      .info-details {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+      }
+      .info-item {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+      .info-item h3 {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .info-item p {
+        white-space: pre-line;
+        font-size: 15px;
+      }
+      .catering-section {
+        background-color: #ff4000;
+        padding: 100px 125px;
+        position: relative;
+        color: white;
+        text-align: center;
+      }
+      .catering-section h1 {
+        font-size: 48px;
+        max-width: 700px;
+        margin: auto;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+      .catering-section img.icon {
+        width: 120px;
+        height: auto;
+        margin: 40px auto;
+      }
+      .food-gallery {
+        opacity: 0.5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .food-gallery img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        mix-blend-mode: darken;
+        margin: 5px;
+      }
+      .footer {
+        background-color: #8f000c;
+        padding: 80px 0;
+        color: white;
+        text-align: center;
+      }
+      .footer-links {
+        margin-top: 40px;
+        font-size: 16px;
+      }
+      .footer-links span {
+        margin: 0 15px;
+      }
+      .footer .quote-btn {
+        padding: 20px 40px;
+        border: 2px solid white;
+        background: transparent;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <span>+1 940-629-5571</span>
+      <img src="https://c.animaapp.com/jqf5894E/img/ri-facebook-fill.svg" alt="Facebook" width="13" />
+      <img src="https://c.animaapp.com/jqf5894E/img/mdi-instagram.svg" alt="Instagram" width="13" />
+    </div>
+
+    <div class="header">
+      <img class="logo" src="https://c.animaapp.com/jqf5894E/img/babai-bandi-1@2x.png" alt="Babai Bandi" />
+      <div class="nav">
+        <span>About Us</span>
+        <span class="active">Location</span>
+        <span>Contact Us</span>
+        <button class="catering-btn">Catering</button>
+      </div>
+    </div>
+
+    <img class="map" src="https://c.animaapp.com/jqf5894E/img/image.png" alt="Map" />
+
+    <div class="info-card">
+      <img src="https://c.animaapp.com/jqf5894E/img/image-1.png" alt="Food Truck" />
+      <div class="info-details">
+        <div class="info-item">
+          <div>📍</div>
+          <div>
+            <h3>Address</h3>
+            <p>1028 S Welch St, Denton,
+TX 76201, United States</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div>📞</div>
+          <div>
+            <h3>Call</h3>
+            <p>+1 940-629-5571</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div>✉️</div>
+          <div>
+            <h3>Mail</h3>
+            <p>babaibandi@gmail.com</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div>⏰</div>
+          <div>
+            <h3>Store Timings</h3>
+            <p>Monday – Friday: 10.00 AM – 06.00 PM
+Saturday – Sunday: 09.00 AM – 04.00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catering-section">
+      <h1>From Truck to Your Home, We Provide Catering with Our Unique Style.</h1>
+      <img
+        class="icon"
+        src="https://c.animaapp.com/jqf5894E/img/game-icons-food-truck.svg"
+        alt="Food Truck Icon"
+      />
+      <div class="food-gallery">
+        <img src="https://c.animaapp.com/jqf5894E/img/image-5-1.png" alt="Food" />
+        <img src="https://c.animaapp.com/jqf5894E/img/image-6-1.png" alt="Food" />
+        <img src="https://c.animaapp.com/jqf5894E/img/image-7-1.png" alt="Food" />
+        <img src="https://c.animaapp.com/jqf5894E/img/image-5-1.png" alt="Food" />
+        <img src="https://c.animaapp.com/jqf5894E/img/image-6-1.png" alt="Food" />
+        <img src="https://c.animaapp.com/jqf5894E/img/image-7-1.png" alt="Food" />
+      </div>
+    </div>
+
+    <div class="footer">
+      <button class="quote-btn">REQUEST A QUOTE</button>
+      <div class="footer-links">
+        <span>Home</span>
+        <span>About Us</span>
+        <span>Location</span>
+        <span>Catering</span>
+        <span>Contact Us</span>
+      </div>
+    </div>
+  </body>
+</html>

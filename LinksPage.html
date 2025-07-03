@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babai Bandi</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        background: #8f000c;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      section {
+        padding: 60px;
+        text-align: center;
+      }
+      .footer {
+        background: #8f000c;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
+      .hidden {
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('about')">About Us</a>
+      <a href="#" onclick="showPage('location')">Location</a>
+    </nav>
+
+    <main>
+      <section id="home" class="active">
+        <h1>Welcome to Babai Bandi</h1>
+        <p>Locally Procured, Environmentally Responsible and Tasty</p>
+      </section>
+
+      <section id="about" class="hidden">
+        <h1>About Us</h1>
+        <p>
+          Fusce felis semper sed tristique etm velit nes vitae tempor...<br />
+          Perspiciatis unde omnis iste natus error sit voluptatem...
+        </p>
+      </section>
+
+      <section id="location" class="hidden">
+        <h1>Our Location</h1>
+        <p>1028 S Welch St, Denton, TX 76201, United States</p>
+        <p>+1 940-629-5571</p>
+        <p>babaibandi@gmail.com</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Home | About Us | Location | Catering | Contact Us</p>
+    </footer>
+
+    <script>
+      function showPage(pageId) {
+        const sections = document.querySelectorAll("main section");
+        sections.forEach(section => {
+          section.classList.add("hidden");
+          section.classList.remove("active");
+        });
+        document.getElementById(pageId).classList.remove("hidden");
+        document.getElementById(pageId).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
