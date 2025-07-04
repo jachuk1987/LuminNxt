@@ -1,18 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Components/Home";
-import AboutUs from "./Components/AboutUs";
-import Location from "./Components/Location";
-import Menu from "./Components/Menu";
+import Layout from "./Components/Layout";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Location from "./pages/Location";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/location" element={<Location />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="location" element={<Location />} />
+          <Route path="menu" element={<Menu />} />
+          {/* <Route path="contact" element={<Contact />} /> */}
+        </Route>
       </Routes>
     </Router>
   );

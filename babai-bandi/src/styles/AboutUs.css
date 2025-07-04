@@ -1,0 +1,107 @@
+.content {
+  max-width: 1194px;
+  margin: 110px auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+.content h1 {
+  font-size: 70px;
+  color: #9c9c9c;
+  font-weight: bold;
+}
+
+.content h2 {
+  font-size: 23px;
+  color: #8f000c;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.content p {
+  font-size: 17px;
+  line-height: 30px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.content-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 595px;
+  height: 729px;
+  object-fit: cover;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 566px;
+  height: 428px;
+  object-fit: cover;
+}
+
+.gallery-desc {
+  max-width: 1190px;
+  margin: 30px auto;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
+.features div {
+  width: 364px;
+  height: 219px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team {
+  background-color: #ff4000;
+  padding: 95px 20px;
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+}
+
+.team h2 {
+  font-size: 40px;
+  margin-bottom: 54px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 54px;
+  flex-wrap: wrap;
+}
+
+.team-members img {
+  width: 254px;
+  height: 254px;
+  object-fit: cover;
+  border-radius: 50%;
+}
