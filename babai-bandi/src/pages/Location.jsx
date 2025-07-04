@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Location.css';
+import FoodTruck from "../asset/FoodTruckIcon.png"
 
 function Location() {
   return (

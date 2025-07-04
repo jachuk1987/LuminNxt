@@ -73,9 +73,9 @@
 }
 
 .catering-section img.icon {
-  width: 120px;
+  width: 240px;
   height: auto;
-  margin: 40px auto;
+  /* margin: 40px auto; */
 }
 
 /* Food Gallery */
