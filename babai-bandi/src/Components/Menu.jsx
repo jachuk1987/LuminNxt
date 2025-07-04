@@ -1,221 +1,284 @@
 import React from "react";
-import { ClockIcon, MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
-import { Button } from "../../components/ui/button";
-import { Card, CardContent } from "../../components/ui/card";
 
-const Location = () => {
-  const navLinks = [
-    { text: "About Us", href: "#" },
-    { text: "Location", href: "#", active: true },
-    { text: "Contact Us", href: "#" },
-    { text: "Catering", href: "#", highlight: true },
-  ];
-
-  const contactInfo = [
-    {
-      icon: <MapPinIcon className="w-8 h-8" />,
-      title: "Address",
-      content: "1028 S Welch St, Denton,\nTX 76201, United States",
-    },
-    {
-      icon: <PhoneIcon className="w-8 h-8" />,
-      title: "Call",
-      content: "+1 940-629-5571",
-    },
-    {
-      icon: <MailIcon className="w-9 h-9" />,
-      title: "Mail",
-      content: "babaibandi@gmail.com",
-    },
-    {
-      icon: <ClockIcon className="w-[39px] h-[39px]" />,
-      title: "Store Timings",
-      content:
-        "Monday – Friday: 10.00 AM – 06.00 PM\nSaturday – Sunday: 09.00 AM – 04.00 PM",
-    },
-  ];
-
-  const footerLinks = [
-    { text: "Home", href: "#" },
-    { text: "About Us", href: "#" },
-    { text: "Location", href: "#" },
-    { text: "Catering", href: "#" },
-    { text: "Contact Us", href: "#" },
-  ];
-
+const Menu = () => {
   return (
-    <div className="bg-white flex flex-row justify-center w-full">
-      <div className="bg-white overflow-hidden w-[1440px] h-[2613px] relative">
+    <>
+      <style>{`
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
+        }
 
-        {/* Header */}
-        <div className="absolute w-[1440px] h-[230px] top-0 left-0 bg-[#8f000c]">
-          <div className="absolute w-[540px] h-12 top-[118px] left-[779px]">
-            <div className="absolute top-[13px] left-0 font-normal text-white text-lg leading-normal">
-              {navLinks.slice(0, 3).map((link, index) => (
-                <span key={index} className={link.active ? "font-medium" : ""}>
-                  {link.text}
-                  {index < 2 && <span className="px-8"></span>}
-                </span>
-              ))}
-            </div>
+        body {
+          background-color: #fff;
+          color: #000;
+        }
 
-            <Button
-              variant="destructive"
-              className="absolute w-36 h-12 top-0 left-[392px] bg-[#ed0b14] rounded-none hover:bg-[#ed0b14]/90"
-            >
-              Catering
-            </Button>
-          </div>
+        .top-bar {
+          background-color: #310004;
+          height: 53px;
+          color: white;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 0 100px;
+          gap: 10px;
+        }
 
-          <div className="absolute w-[1440px] h-[230px] top-0 left-0">
-            <div className="absolute w-[1440px] h-[53px] top-0 left-0 bg-[#310004]" />
-            <div className="absolute w-4 h-3 top-3.5 left-[1131px] bg-[#ed0b14] rounded-sm" />
+        .header {
+          background-color: #8f000c;
+          height: 230px;
+          position: relative;
+        }
 
-            <img
-              className="absolute w-3 h-3 top-[21px] left-[1133px]"
-              alt="Phone icon"
-              src="https://c.animaapp.com/jqf5894E/img/ic-baseline-phone.svg"
-            />
-            <img
-              className="absolute w-[13px] h-[13px] top-[21px] left-[1266px]"
-              alt="Facebook"
-              src="https://c.animaapp.com/jqf5894E/img/ri-facebook-fill.svg"
-            />
-            <img
-              className="absolute w-3 h-3 top-[21px] left-[1286px]"
-              alt="Instagram"
-              src="https://c.animaapp.com/jqf5894E/img/mdi-instagram.svg"
-            />
-            <div className="absolute w-2.5 h-2.5 top-[22px] left-[1305px] bg-[url(https://c.animaapp.com/jqf5894E/img/clip-path-group@2x.png)] bg-cover" />
+        .logo {
+          position: absolute;
+          top: 0;
+          left: 125px;
+          width: 198px;
+          height: 230px;
+          object-fit: cover;
+        }
 
-            <a
-              className="top-[19px] left-[1154px] text-white text-xs absolute"
-              href="https://www.google.com/search?q=babai+bandi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              +1 940-629-5571
-            </a>
+        .nav {
+          position: absolute;
+          top: 118px;
+          right: 125px;
+          display: flex;
+          gap: 30px;
+          align-items: center;
+        }
 
-            <img
-              className="absolute w-[198px] h-[230px] top-0 left-[125px] object-cover"
-              alt="Logo"
-              src="https://c.animaapp.com/jqf5894E/img/babai-bandi-1@2x.png"
-            />
-          </div>
-        </div>
+        .nav a {
+          color: white;
+          font-size: 16px;
+          font-weight: 500;
+          text-decoration: none;
+        }
 
-        {/* Map */}
-        <img
-          className="w-[1190px] h-[510px] top-[316px] left-[125px] absolute object-cover"
-          alt="Map"
-          src="https://c.animaapp.com/jqf5894E/img/image.png"
-        />
+        .nav .active {
+          font-weight: bold;
+          text-decoration: underline;
+        }
 
-        {/* Contact Info */}
-        <Card className="absolute w-[1190px] h-[736px] top-[879px] left-[125px] bg-neutral-100 rounded-none shadow-none">
-          <CardContent className="p-0 h-full">
-            <img
-              className="w-[482px] h-[576px] top-[54px] left-[57px] absolute object-cover"
-              alt="Truck"
-              src="https://c.animaapp.com/jqf5894E/img/image-1.png"
-            />
+        .hero {
+          background: url('https://c.animaapp.com/hykmc6c1/img/hero-bg.png') center/cover no-repeat;
+          text-align: center;
+          color: white;
+          padding: 100px 20px;
+          position: relative;
+        }
 
-            {contactInfo.map((item, index) => (
-              <div
-                key={index}
-                className={`absolute ${index === 0
-                    ? "top-[88px]"
-                    : index === 1
-                      ? "top-[186px]"
-                      : index === 2
-                        ? "top-[263px]"
-                        : "top-[340px]"
-                  } left-[615px] flex items-start gap-6`}
-              >
-                <div className="mt-1">{item.icon}</div>
-                <div>
-                  <h3 className="font-medium text-black text-[15px] leading-[30px]">
-                    {item.title}
-                  </h3>
-                  <p className="font-normal text-black text-base leading-[21px] whitespace-pre-line mt-1">
-                    {item.content}
-                  </p>
-                </div>
-              </div>
-            ))}
+        .hero .discover {
+          background-color: red;
+          padding: 6px 20px;
+          display: inline-block;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
 
-            <img
-              className="absolute w-4 h-4 top-[241px] left-[824px]"
-              alt="Time icon"
-              src="https://c.animaapp.com/jqf5894E/img/carbon-time.svg"
-            />
-          </CardContent>
-        </Card>
+        .hero h1 {
+          font-size: 48px;
+        }
 
-        {/* Catering */}
-        <div className="absolute w-[1814px] h-[997px] top-[1616px] left-[-220px]">
-          <div className="absolute w-[1440px] h-[389px] top-[608px] left-[220px] bg-[#8f000c]" />
+        .hero p {
+          margin-top: 10px;
+          font-size: 18px;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
 
-          <div className="absolute w-[566px] h-[167px] top-[719px] left-[658px]">
-            <div className="absolute top-[145px] left-0 text-white text-lg">
-              {footerLinks.map((link, index) => (
-                <span key={index}>
-                  {link.text}
-                  {index < footerLinks.length - 1 && <span className="px-8"></span>}
-                </span>
-              ))}
-            </div>
+        .menu-tabs {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          margin: 40px 0 10px;
+          font-weight: bold;
+        }
 
-            <Button
-              variant="outline"
-              className="absolute w-[451px] h-[90px] top-0 left-[58px] border-2 border-white text-white rounded-none hover:bg-white/10 font-bold text-lg"
-            >
-              REQUEST A QUOTE
-            </Button>
-          </div>
+        .menu-tabs span {
+          cursor: pointer;
+        }
 
-          <div className="absolute w-[1441px] h-[521px] top-[100px] left-[220px] bg-[#ff4000]" />
+        .menu-tabs .active {
+          color: white;
+          background-color: red;
+          padding: 6px 16px;
+          border-radius: 4px;
+        }
 
-          <div className="absolute w-[1814px] h-[670px] top-0 left-0 opacity-50">
-            <div className="h-[670px] relative w-[1814px]">
-              {[0, 1].map((row) => (
-                <div key={row} className={`absolute w-[1814px] h-[376px] top-[${row * 294}px] left-0`}>
-                  <div className="relative w-[1440px] h-[376px] left-[220px]">
-                    {[5, 6, 7].map((img, i) => (
-                      <img
-                        key={i}
-                        className={`absolute h-[376px] mix-blend-darken object-cover ${i === 0
-                            ? "w-[406px] left-0"
-                            : i === 1
-                              ? "w-[626px] left-[374px]"
-                              : "w-[472px] left-[968px]"
-                          }`}
-                        alt={`Food image ${img}`}
-                        src={`https://c.animaapp.com/jqf5894E/img/image-${img}-1.png`}
-                      />
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        .menu-items {
+          max-width: 900px;
+          margin: auto;
+          padding: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px 40px;
+        }
 
-          <div className="absolute w-[1441px] h-[100px] top-0 left-[220px] bg-white" />
+        .menu-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 10px;
+        }
 
-          <img
-            className="absolute w-[394px] h-[394px] top-[164px] left-[1074px]"
-            alt="Food truck icon"
-            src="https://c.animaapp.com/jqf5894E/img/game-icons-food-truck.svg"
-          />
+        .menu-item h4 {
+          font-weight: 500;
+        }
 
-          <h1 className="absolute w-[574px] top-[196px] left-[351px] font-bold text-white text-[64px] leading-[65px]">
-            From Truck to Your Home, We Provide Catering with Our Unique Style.
-          </h1>
+        .menu-item p {
+          font-size: 13px;
+          color: #555;
+        }
+
+        .menu-item .price {
+          font-weight: bold;
+          white-space: nowrap;
+        }
+
+        .gallery {
+          text-align: center;
+          padding: 60px 20px;
+        }
+
+        .gallery h2 {
+          font-size: 32px;
+          margin-bottom: 10px;
+        }
+
+        .gallery p {
+          font-size: 16px;
+          margin-bottom: 40px;
+          color: #555;
+        }
+
+        .gallery-images {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+
+        .gallery-images img {
+          width: 180px;
+          height: 180px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        .footer {
+          background-color: #8f000c;
+          color: white;
+          padding: 60px 20px;
+          text-align: center;
+        }
+
+        .footer button {
+          padding: 15px 40px;
+          background: transparent;
+          color: white;
+          border: 2px solid white;
+          font-weight: bold;
+          margin-bottom: 20px;
+          cursor: pointer;
+        }
+
+        .footer nav a {
+          color: white;
+          margin: 0 10px;
+          text-decoration: none;
+        }
+
+        .footer nav a:hover {
+          text-decoration: underline;
+        }
+      `}</style>
+
+      {/* Top Bar */}
+      <div className="top-bar">
+        +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
+      </div>
+
+      {/* Header */}
+      <div className="header">
+        <img className="logo" src="./asset/logo.png" alt="Babai Bandi Logo" />
+        <div className="nav">
+          <a href="home.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="location.html">Location</a>
+          <a href="menu.html" className="active">Catering</a>
         </div>
       </div>
-    </div>
+
+      {/* Hero Section */}
+      <div className="hero">
+        <div className="discover">DISCOVER</div>
+        <h1>OUR MENU</h1>
+        <p>
+          Curious about how our dishes elevate from good to great? Let's start
+          the tale of our mouthwatering foods.
+        </p>
+      </div>
+
+      {/* Menu Tabs */}
+      <div className="menu-tabs">
+        <span>Main Dishes</span>
+        <span className="active">Salads</span>
+        <span>Drinks</span>
+        <span>Desserts</span>
+      </div>
+
+      {/* Menu Items */}
+      <div className="menu-items">
+        {[
+          { title: "Garden Salad", desc: "Baby beets, goat cheese, carrots, radishes" },
+          { title: "Heirloom Tomato Salad", desc: "with fresh basil and balsamic vinaigrette" },
+          { title: "Papaya Salad", desc: "with lots of chilies and lime" },
+          { title: "Prosciutto & Shaved Pear Salad", desc: "with pecorino, baby spinach, herbs & toasted pine nuts" },
+          { title: "Vegetable Salad", desc: "Pine nuts, roquefort, dates, asian pear, heirloom apples" },
+          { title: "Wild Arugula Salad", desc: "with parmesan cheese, garlic and lemon vinaigrette" },
+          { title: "Kale and Quinoa", desc: "Sunflower seeds, red peppers, parmesan" },
+        ].map((item, index) => (
+          <div className="menu-item" key={index}>
+            <div>
+              <h4>{item.title}</h4>
+              <p>{item.desc}</p>
+            </div>
+            <div className="price">$12.99</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Gallery */}
+      <div className="gallery">
+        <h2>GALLERY</h2>
+        <p>Photos of our food and our events</p>
+        <div className="gallery-images">
+          {[1, 2, 3, 4].map((i) => (
+            <img key={i} src={`./asset/gallery${i}.png`} alt={`Gallery${i}`} />
+          ))}
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="footer">
+        <button>REQUEST A QUOTE</button>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="location.html">Location</a>
+          <a href="menu.html">Catering</a>
+          <a href="#">Contact Us</a>
+        </nav>
+      </div>
+    </>
   );
 };
 
-export default Location;
+export default Menu;
