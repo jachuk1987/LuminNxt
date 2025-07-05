@@ -1,107 +1,156 @@
-.content {
-  max-width: 1194px;
-  margin: 110px auto;
-  position: relative;
-  padding: 0 20px;
+.about-us-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 
-.content h1 {
-  font-size: 70px;
-  color: #9c9c9c;
-  font-weight: bold;
-}
-
-.content h2 {
-  font-size: 23px;
-  color: #8f000c;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.content p {
-  font-size: 17px;
-  line-height: 30px;
-  text-align: justify;
-  margin-top: 20px;
-}
-
-.content-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 595px;
-  height: 729px;
-  object-fit: cover;
-}
-
-.gallery {
+/* Section 1: About + Image */
+.intro-section {
   display: flex;
-  justify-content: center;
-  gap: 52px;
-  margin-top: 100px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 10%;
+  align-items: center;
+  gap: 40px;
 }
 
-.gallery img {
-  width: 566px;
-  height: 428px;
-  object-fit: cover;
+.intro-text {
+  flex: 1 1 500px;
 }
 
-.gallery-desc {
-  max-width: 1190px;
-  margin: 30px auto;
-  font-size: 17px;
-  line-height: 30px;
-  text-align: justify;
-  padding: 0 20px;
+.intro-text .main-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #eee;
+  -webkit-text-stroke: 1px #000;
+  margin-bottom: 20px;
 }
 
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 70px;
-  flex-wrap: wrap;
-}
-
-.features div {
-  width: 364px;
-  height: 219px;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  font-size: 32px;
+.intro-text .sub-heading {
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #b30000;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.intro-image {
+  flex: 1 1 400px;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Section 2: Gallery */
+.image-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 10%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Section 3: Gallery Description */
+.gallery-description {
+  padding: 40px 10%;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Section 4: Features */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  flex: 1 1 280px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.feature-label {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Section 5: Team */
+.team-section {
+  background: #ff4500;
+  color: #fff;
+  padding: 60px 10%;
   text-align: center;
 }
 
-.team {
-  background-color: #ff4000;
-  padding: 95px 20px;
-  margin-top: 80px;
-  text-align: center;
-  color: white;
-}
-
-.team h2 {
-  font-size: 40px;
-  margin-bottom: 54px;
+.team-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
 }
 
 .team-members {
   display: flex;
   justify-content: center;
-  gap: 54px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .team-members img {
-  width: 254px;
-  height: 254px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .image-gallery {
+    padding: 20px 5%;
+  }
+
+  .features-section {
+    padding: 30px 5%;
+  }
+
+  .team-section {
+    padding: 40px 5%;
+  }
 }

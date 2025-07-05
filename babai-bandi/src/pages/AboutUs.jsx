@@ -13,51 +13,85 @@ import team4 from "../asset/team4.png";
 
 const AboutUs = () => {
   return (
-    <>
+    <div className="about-us-container">
+      {/* Section 1: Intro */}
+      <section className="intro-section">
+        <div className="intro-text">
+          <h1 className="main-heading">About Us</h1>
+          <h2 className="sub-heading">How it started!</h2>
+          <p>
+            Fusce felis semper sed tristique etm velit nes vitae tempor.
+            Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis.
+            Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.
+            <br /><br />
+            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci velit.
+          </p>
+        </div>
+        <div className="intro-image">
+          <img src={abtImg1} alt="Chefs Cooking" />
+        </div>
+      </section>
 
-      <div className="content">
-        <h1>About Us</h1>
-        <h2>How it started!</h2>
+      {/* Section 2: Gallery */}
+      <section className="image-gallery">
+        <img src={abtImg2} alt="Customer ordering food" />
+        <img src={abtImg3} alt="Customer at menu board" />
+      </section>
+
+      {/* Section 3: Description Below Gallery */}
+      <section className="gallery-description">
         <p>
-          Fusce felis semper sed tristique etm velit nes vitae tempor. Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis. Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.<br /><br />
-
-          Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+          Semper sed tristique etm velit nes vitae tempor.
+          Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis.
+          Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.
+          Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, eaque ipsa quae ab illo inventore veritatis
+          et quasi architecto beatae vitae dicta sunt explicabo.
           <br /><br />
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+          sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit.
+          <br /><br />
+          Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis.
+          Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.
+          Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam sit aspernatur aut odit aut fugit,
+          sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
         </p>
-        <img className="content-img" src={abtImg1} alt="About" />
-      </div>
+      </section>
 
-      <div className="gallery">
-        <img src={abtImg2} alt="Gallery1" />
-        <img src={abtImg3} alt="Gallery2" />
-      </div>
+      {/* Section 4: Features */}
+      <section className="features-section">
+        <div className="feature-box" style={{ backgroundImage: `url(${fresh})` }}>
+          <div className="feature-label">FRESH INGREDIENTS</div>
+        </div>
+        <div className="feature-box" style={{ backgroundImage: `url(${best})` }}>
+          <div className="feature-label">BEST SERVICES</div>
+        </div>
+        <div className="feature-box" style={{ backgroundImage: `url(${affordable})` }}>
+          <div className="feature-label">AFFORDABLE PRICES</div>
+        </div>
+      </section>
 
-      <div className="gallery-desc">
-        Semper sed tristique etm velit nes vitae tempor.
-        Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis. Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-        <br /><br />
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-        <br /><br />
-        Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis. Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
-      </div>
-
-      <div className="features">
-        <div style={{ backgroundImage: `url(${fresh})` }}></div>
-        <div style={{ backgroundImage: `url(${best})` }}></div>
-        <div style={{ backgroundImage: `url(${affordable})` }}></div>
-      </div>
-
-      <div className="team">
+      {/* Section 5: Team */}
+      <section className="team-section">
         <h2>Our Professional Team</h2>
         <div className="team-members">
-          <img src={team1} alt="Team" />
-          <img src={team2} alt="Team" />
-          <img src={team3} alt="Team" />
-          <img src={team4} alt="Team" />
+          <img src={team1} alt="Team Member 1" />
+          <img src={team2} alt="Team Member 2" />
+          <img src={team3} alt="Team Member 3" />
+          <img src={team4} alt="Team Member 4" />
         </div>
-      </div>
-
-    </>
+      </section>
+    </div>
   );
 };
 
