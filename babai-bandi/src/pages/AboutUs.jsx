@@ -19,9 +19,10 @@ const AboutUs = () => {
         <h1>About Us</h1>
         <h2>How it started!</h2>
         <p>
-          Fusce felis semper sed tristique etm velit nes vitae tempor. Vivamus tristique et malesuada velit.
+          Fusce felis semper sed tristique etm velit nes vitae tempor. Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis. Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.<br /><br />
+
+          Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
           <br /><br />
-          Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
         </p>
         <img className="content-img" src={abtImg1} alt="About" />
       </div>
@@ -32,11 +33,12 @@ const AboutUs = () => {
       </div>
 
       <div className="gallery-desc">
-        Semper sed tristique etm velit nes vitae tempor. Fusce felis semper.
+        Semper sed tristique etm velit nes vitae tempor.
+        Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis. Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
         <br /><br />
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
         <br /><br />
-        Aliquam suscipit malesuada viverra etiam fermentum est at fringilla.
+        Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis. Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
       </div>
 
       <div className="features">
