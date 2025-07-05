@@ -71,13 +71,13 @@ const AboutUs = () => {
       {/* Section 4: Features */}
       <section className="features-section">
         <div className="feature-box" style={{ backgroundImage: `url(${fresh})` }}>
-          <div className="feature-label">FRESH INGREDIENTS</div>
+          <div className="feature-label"></div>
         </div>
         <div className="feature-box" style={{ backgroundImage: `url(${best})` }}>
-          <div className="feature-label">BEST SERVICES</div>
+          <div className="feature-label"></div>
         </div>
         <div className="feature-box" style={{ backgroundImage: `url(${affordable})` }}>
-          <div className="feature-label">AFFORDABLE PRICES</div>
+          <div className="feature-label"></div>
         </div>
       </section>
 
