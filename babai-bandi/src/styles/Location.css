@@ -58,22 +58,22 @@
 /* Catering Section */
 .catering-section {
   background-color: #ff4000;
-  padding: 100px 125px;
+  padding: 60px 145px;
   color: white;
   text-align: center;
   display: flex;
 }
 
 .catering-section h1 {
-  font-size: 48px;
+  font-size: 56px;
   max-width: 700px;
   margin: auto;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.6;
 }
 
 .catering-section img.icon {
-  width: 240px;
+  width: 320px;
   height: auto;
   /* margin: 40px auto; */
 }
