@@ -4,7 +4,7 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <div>
-      
+
       {/* Hero Section */}
       <section className="hero">
         <div className="subhead">Visit our Truck Today</div>
@@ -36,28 +36,54 @@ const Home = () => {
 
       {/* Trusted Section */}
       <section className="trusted-section">
-        <img src="./asset/content _img.png" alt="trusted-image" />
-        <div>
+        <div className="trusted-image-wrapper">
+          <img src="./asset/content _img.png" alt="trusted" className="trusted-img" />
+        </div>
+        <div className="trusted-content">
           <h2>TRUSTED AND EXPERIENCED</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-            <br />
-            <br />
-            Sed ut perspiciatis unde omnis iste natus error...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+            <br /><br />
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
           </p>
         </div>
       </section>
 
       {/* Testimonial Section */}
       <section className="testimonial-section">
-        <div className="quote">
-          "Don't just take our word for it; hear it from them instead."
+        <div className="testimonial-container">
+          <div className="testimonial-left">
+            <h2>
+              “Don’t just <br />
+              take our <br />
+              word for it; <br />
+              hear it from <br />
+              them <br />
+              instead.”
+            </h2>
+          </div>
+
+          <div className="testimonial-right">
+            <div className="testimonial-box">
+              <img src="./asset/testimonial_img.png" alt="user" />
+              <p>
+                “The flavors from this Indian food truck ‘Babai Bandi’ in Dallas is a
+                delightful journey through authentic spices and recipes! Every bite is
+                a celebration of taste that keeps me coming back for more!”
+              </p>
+            </div>
+          </div>
         </div>
-        <img src="./asset/testimonial_img.png" alt="testimonial-image" />
-        <p>
-          The flavors from this Indian food truck "Babai Bandi" in Dallas is a
-          delightful journey...
-        </p>
       </section>
 
       {/* Contact Section */}
