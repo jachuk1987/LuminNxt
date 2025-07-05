@@ -16,19 +16,19 @@ const Home = () => {
       <section className="features">
         <div
           className="feature-box"
-          style={{ backgroundImage: "url('./asset/catering_img.png')" }}
+          style={{ backgroundImage: "url('./asset/catering_img.png')", height: 400 }}
         >
           CATERING
         </div>
         <div
           className="feature-box"
-          style={{ backgroundImage: "url('./asset/menu_img.png')" }}
+          style={{ backgroundImage: "url('./asset/menu_img.png')", height: 400 }}
         >
           MENU
         </div>
         <div
           className="feature-box"
-          style={{ backgroundImage: "url('./asset/about us_img.png')" }}
+          style={{ backgroundImage: "url('./asset/about us_img.png')", height: 400 }}
         >
           ABOUT US
         </div>

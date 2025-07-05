@@ -2,8 +2,7 @@
 .hero {
   position: relative;
   height: 835px;
-  background: linear-gradient(rgba(143, 0, 12, 0.57), rgba(143, 0, 12, 0.57)),
-    url('../asset/hero bg.png') no-repeat center/cover;
+  background: url('https://c.animaapp.com/hykmc6c1/img/hero-bg.png') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,11 +33,12 @@
 .features {
   display: flex;
   justify-content: center;
+
 }
 
 .feature-box {
   flex: 1;
-  height: 420px;
+  /* height: 420px; */
   background-size: cover;
   background-position: center;
   color: white;
