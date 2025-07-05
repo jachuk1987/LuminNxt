@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Location.css';
-import FoodTruck from "../asset/FoodTruckIcon.png"
+import FoodTruck from "../asset/game-icons_food-truck.png"
 
 function Location() {
   return (
@@ -52,7 +52,7 @@ function Location() {
         <h1>From Truck to Your Home, We Provide Catering with Our Unique Style.</h1>
         <img
           className="icon"
-          src="https://c.animaapp.com/jqf5894E/img/game-icons-food-truck.svg"
+          src={FoodTruck}
           alt="Food Truck Icon"
         />
         {/* <div className="food-gallery">
