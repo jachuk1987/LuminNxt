@@ -690,3 +690,207 @@
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #310004;
+  height: 53px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 100px;
+  gap: 10px;
+}
+
+/* Header */
+.header {
+  background-color: #8f000c;
+  height: 230px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 125px;
+  width: 198px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.nav {
+  position: absolute;
+  top: 118px;
+  right: 125px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://c.animaapp.com/hykmc6c1/img/hero-bg.png') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero .discover {
+  background-color: red;
+  padding: 6px 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Menu Tabs */
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0 10px;
+  font-weight: bold;
+}
+
+.menu-tabs span {
+  cursor: pointer;
+}
+
+.menu-tabs .active {
+  color: white;
+  background-color: red;
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+
+/* Menu Items */
+.menu-items {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.menu-item h4 {
+  font-weight: 500;
+}
+
+.menu-item p {
+  font-size: 13px;
+  color: #555;
+}
+
+.menu-item .price {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Gallery */
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.gallery p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-images img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #8f000c;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer .quote-btn {
+  padding: 15px 40px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.footer-links {
+  margin-top: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
