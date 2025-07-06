@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/responsive-Location.css';
-import FoodTruck from "../asset/game-icons_food-truck.png"
+import FoodTruck from "../asset/game-icons_food-truck.png";
 
 function Location() {
   return (

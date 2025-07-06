@@ -59,7 +59,7 @@
 .catering-section {
   background-color: #FED51B;
   padding: 60px 145px;
-  color: white;
+  color: #8f000c;
   text-align: center;
   display: flex;
 }
@@ -75,6 +75,7 @@
 .catering-section img.icon {
   width: 320px;
   height: auto;
+  color: #8f000c;
   /* margin: 40px auto; */
 }
 
@@ -94,31 +95,37 @@
   mix-blend-mode: darken;
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1024px) {
   .map,
   .info-card {
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-card {
     flex-direction: column;
     padding: 20px;
   }
-
   .info-card img {
     width: 100%;
     height: auto;
   }
-
   .catering-section {
     flex-direction: column;
     padding: 40px 20px;
   }
-
   .catering-section h1 {
     font-size: 32px;
   }
-
   .catering-section img.icon {
     width: 180px;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catering-section h1 {
+    font-size: 24px;
   }
 }
