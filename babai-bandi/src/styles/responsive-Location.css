@@ -95,23 +95,28 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .map,
   .info-card {
     width: 95%;
     flex-direction: column;
     padding: 20px;
   }
+
   .info-card img {
     width: 100%;
     height: auto;
   }
+
   .catering-section {
     flex-direction: column;
     padding: 40px 20px;
   }
+
   .catering-section h1 {
     font-size: 32px;
   }
+
   .catering-section img.icon {
     width: 180px;
     margin-top: 20px;
