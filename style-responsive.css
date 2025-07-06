@@ -594,3 +594,157 @@
     flex-direction: column;
   }
 }
+
+/* Responsive Enhancements */
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  .top-bar {
+    padding: 0 20px;
+    font-size: 10px;
+    justify-content: center;
+  }
+
+  .header {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .logo {
+    position: static;
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    position: static;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .menu-hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .menu-hero h1 {
+    font-size: 36px;
+  }
+
+  .menu-hero p {
+    font-size: 16px;
+  }
+
+  .trusted-section {
+    padding: 40px 20px;
+  }
+
+  .testimonial-left h2 {
+    font-size: 32px;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card,
+  .map {
+    width: 95%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .info-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .catering-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .catering-section h1 {
+    font-size: 32px;
+  }
+
+  .catering-section img.icon {
+    width: 180px;
+    margin-top: 20px;
+  }
+
+  .footer {
+    padding: 40px 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Small devices (phones, 480px and down) */
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero .subhead {
+    font-size: 16px;
+  }
+
+  .testimonial-left h2 {
+    font-size: 24px;
+  }
+
+  .gallery-images img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team-members img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .menu-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item .price {
+    margin-top: 5px;
+  }
+}
