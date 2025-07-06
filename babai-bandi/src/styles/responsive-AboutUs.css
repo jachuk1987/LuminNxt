@@ -1,0 +1,206 @@
+.about-us-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section 1: About + Image */
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 10%;
+  align-items: center;
+  gap: 40px;
+}
+
+.intro-text {
+  flex: 1 1 500px;
+}
+
+.intro-text .main-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #eee;
+  -webkit-text-stroke: 1px #000;
+  margin-bottom: 20px;
+}
+
+.intro-text .sub-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b30000;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.intro-image {
+  flex: 1 1 400px;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Section 2: Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 120%;
+  max-width: 580px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Section 3: Gallery Description */
+.gallery-description {
+  padding: 40px 10%;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Section 4: Features */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  flex: 1 1 280px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.feature-label {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Section 5: Team */
+.team-section {
+  background: #FED51B;
+  color: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-members img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .image-gallery {
+    padding: 20px 5%;
+  }
+
+  .features-section {
+    padding: 30px 5%;
+  }
+
+  .team-section {
+    padding: 40px 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .image-gallery {
+    padding: 20px 5%;
+  }
+
+  .features-section {
+    padding: 30px 5%;
+  }
+
+  .team-section {
+    padding: 40px 5%;
+  }
+
+  .team-members img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .intro-text .main-heading {
+    font-size: 2.2rem;
+  }
+
+  .intro-text .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .feature-box {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-description {
+    padding: 20px 5%;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+  }
+}

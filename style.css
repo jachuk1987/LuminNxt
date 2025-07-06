@@ -7,9 +7,9 @@
 
 /* Top Bar */
 .top-bar {
-  background-color: #310004;
+  background-color: #FED51B;
   height: 53px;
-  color: white;
+  color: #8f000c;
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
 
 /* Header */
 .header {
-  background-color: #8f000c;
+  background-color: #FED51B;
   height: 230px;
   position: relative;
 }
@@ -44,7 +44,7 @@
 }
 
 .nav a {
-  color: white;
+  color: #8f000c;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
@@ -208,7 +208,7 @@
 
 /* Testimonial Section */
 .testimonial-section {
-  background-color: #ff3c00;
+  background-color: #FED51B;
   padding: 20px 40px;
   display: flex;
   justify-content: center;
@@ -281,7 +281,7 @@
 }
 
 .contact-section h3 {
-  color: #8f000c;
+  color: #FED51B;
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -400,7 +400,7 @@
 }
 
 .team-section {
-  background: #ff4500;
+  background: #FED51B;
   color: #fff;
   padding: 60px 10%;
   text-align: center;
@@ -477,7 +477,7 @@
 }
 
 .catering-section {
-  background-color: #ff4000;
+  background-color: #FED51B;
   padding: 60px 145px;
   color: white;
   text-align: center;
@@ -554,6 +554,7 @@
 
 /* Gallery */
 .gallery {
+  background-color: #FED51B;
   text-align: center;
   padding: 60px 20px;
 }

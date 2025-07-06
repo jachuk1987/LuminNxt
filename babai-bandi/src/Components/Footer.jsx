@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./HeaderFooter.css";
+import "./responsive-HeaderFooter.css";
 
 const Footer = () => {
   const location = useLocation();

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/AboutUs.css";
+import "../styles/responsive-AboutUs.css";
 import abtImg1 from "../asset/abt image 1.png";
 import abtImg2 from "../asset/abt image 2.png";
 import abtImg3 from "../asset/abt image 3.png";

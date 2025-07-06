@@ -1,6 +1,6 @@
 // src/Components/Menu.jsx
 import React from "react";
-import "../styles/Menu.css";
+import "../styles/responsive-Menu.css";
 import gallery1 from "../asset/gallery1.png";
 import gallery2 from "../asset/gallery2.png";
 import gallery3 from "../asset/gallery3.png";
