@@ -1,218 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Babai Bandi - About Us</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-      background-color: white;
-      width: 100%;
-      overflow-x: hidden;
-    }
-
-    .top-bar {
-      background-color: #310004;
-      height: 53px;
-      color: white;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding: 0 100px;
-      gap: 10px;
-    }
-
-    .header {
-      background-color: #8f000c;
-      height: 230px;
-      position: relative;
-    }
-
-    .logo {
-      position: absolute;
-      top: 0;
-      left: 125px;
-      width: 198px;
-      height: 230px;
-      object-fit: cover;
-    }
-
-    .nav {
-      position: absolute;
-      top: 118px;
-      right: 125px;
-      display: flex;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .nav a {
-      color: white;
-      font-size: 16px;
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .nav .active {
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    .content {
-      max-width: 1194px;
-      margin: 110px auto;
-      position: relative;
-      padding: 0 20px;
-    }
-
-    .content h1 {
-      font-size: 70px;
-      color: #9c9c9c;
-      font-weight: bold;
-    }
-
-    .content h2 {
-      font-size: 23px;
-      color: #8f000c;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-
-    .content p {
-      font-size: 17px;
-      line-height: 30px;
-      text-align: justify;
-      margin-top: 20px;
-    }
-
-    .content-img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 595px;
-      height: 729px;
-      object-fit: cover;
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 52px;
-      margin-top: 100px;
-      flex-wrap: wrap;
-    }
-
-    .gallery img {
-      width: 566px;
-      height: 428px;
-      object-fit: cover;
-    }
-
-    .gallery-desc {
-      max-width: 1190px;
-      margin: 30px auto;
-      font-size: 17px;
-      line-height: 30px;
-      text-align: justify;
-      padding: 0 20px;
-    }
-
-    .features {
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      margin-top: 70px;
-      flex-wrap: wrap;
-    }
-
-    .features div {
-      width: 364px;
-      height: 219px;
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-size: 32px;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .team {
-      background-color: #ff4000;
-      padding: 95px 20px;
-      margin-top: 80px;
-      text-align: center;
-      color: white;
-    }
-
-    .team h2 {
-      font-size: 40px;
-      margin-bottom: 54px;
-    }
-
-    .team-members {
-      display: flex;
-      justify-content: center;
-      gap: 54px;
-      flex-wrap: wrap;
-    }
-
-    .team-members img {
-      width: 254px;
-      height: 254px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    .footer {
-      background-color: #8f000c;
-      padding: 80px 0;
-      color: white;
-      text-align: center;
-    }
-
-    .footer button {
-      padding: 20px 40px;
-      border: 2px solid white;
-      background: transparent;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .footer nav {
-      margin-top: 40px;
-      font-size: 16px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .footer nav a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .footer nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Babai Bandi</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
   <!-- Top Bar -->
   <div class="top-bar">
     +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
@@ -220,71 +15,109 @@
 
   <!-- Header -->
   <div class="header">
-    <img class="logo" src="./asset/logo.png" alt="Babai Bandi" />
+    <img class="logo" src="./asset/logo.png" alt="Babai Bandi Logo" />
     <div class="nav">
-      <a href="home.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html" class="active">About Us</a>
       <a href="location.html">Location</a>
       <a href="menu.html">Catering</a>
     </div>
   </div>
 
-  <!-- About Section -->
-  <div class="content">
-    <h1>About Us</h1>
-    <h2>How it started!</h2>
-    <p>
-      Fusce felis semper sed tristique etm velit nes vitae tempor. Vivamus tristique et malesuada velit.
-      <br><br>
-      Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-    </p>
-    <img class="content-img" src="./asset/abt image 1.png" alt="About">
-  </div>
+  <!-- About Us Content -->
+  <div class="about-us-container">
+    
+    <!-- Intro Section -->
+    <section class="intro-section">
+      <div class="intro-text">
+        <h1 class="main-heading">About Us</h1>
+        <h2 class="sub-heading">How it started!</h2>
+        <p>
+          Fusce felis semper sed tristique etm velit nes vitae tempor.
+          Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis.
+          Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.
+          <br><br>
+          Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+          sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+          adipisci velit.
+        </p>
+      </div>
+      <div class="intro-image">
+        <img src="./asset/abt image 1.png" alt="Chefs Cooking" />
+      </div>
+    </section>
 
-  <!-- Gallery Section -->
-  <div class="gallery">
-    <img src="./asset/abt image 2.png" alt="Gallery1" />
-    <img src="./asset/abt image 3.png" alt="Gallery2" />
-  </div>
+    <!-- Gallery Section -->
+    <section class="image-gallery">
+      <img src="./asset/abt image 2.png" alt="Customer ordering food" />
+      <img src="./asset/abt image 3.png" alt="Customer at menu board" />
+    </section>
 
-  <div class="gallery-desc">
-    Semper sed tristique etm velit nes vitae tempor. Fusce felis semper.
-    <br><br>
-    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-    <br><br>
-    Aliquam suscipit malesuada viverra etiam fermentum est at fringilla.
-  </div>
+    <!-- Gallery Description -->
+    <section class="gallery-description">
+      <p>
+        Semper sed tristique etm velit nes vitae tempor.
+        Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis.
+        Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.
+        Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, eaque ipsa quae ab illo inventore veritatis
+        et quasi architecto beatae vitae dicta sunt explicabo.
+        <br><br>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit.
+        <br><br>
+        Aliquam suscipit male kusada viverra etiam facilisyses vitae magnis.
+        Pellentesque or dolor dui ac cursus porta. Egetu ut bibendum at duis egestas.
+        Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam sit aspernatur aut odit aut fugit,
+        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+      </p>
+    </section>
 
-  <!-- Features -->
-  <div class="features">
-    <div style="background-image: url('./asset/fresh.png')"></div>
-    <div style="background-image: url('./asset/best.png')"></div>
-    <div style="background-image: url('./asset/affordable.png')"></div>
-  </div>
+    <!-- Features -->
+    <section class="features-section">
+      <div class="feature-box" style="background-image: url('./asset/fresh.png');">
+        <div class="feature-label"></div>
+      </div>
+      <div class="feature-box" style="background-image: url('./asset/best.png');">
+        <div class="feature-label"></div>
+      </div>
+      <div class="feature-box" style="background-image: url('./asset/affordable.png');">
+        <div class="feature-label"></div>
+      </div>
+    </section>
 
-  <!-- Team Section -->
-  <div class="team">
-    <h2>Our Professional Team</h2>
-    <div class="team-members">
-      <img src="./asset/team1.png" alt="Team" />
-      <img src="./asset/team2.png" alt="Team" />
-      <img src="./asset/team3.png" alt="Team" />
-      <img src="./asset/team4.png" alt="Team" />
-    </div>
+    <!-- Team -->
+    <section class="team-section">
+      <h2>Our Professional Team</h2>
+      <div class="team-members">
+        <img src="./asset/team1.png" alt="Team Member 1" />
+        <img src="./asset/team2.png" alt="Team Member 2" />
+        <img src="./asset/team3.png" alt="Team Member 3" />
+        <img src="./asset/team4.png" alt="Team Member 4" />
+      </div>
+    </section>
+
   </div>
 
   <!-- Footer -->
   <div class="footer">
-    <button>REQUEST A QUOTE</button>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Us</a>
+    <button class="quote-btn">REQUEST A QUOTE</button>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
       <a href="location.html">Location</a>
       <a href="menu.html">Catering</a>
       <a href="contact.html">Contact Us</a>
-    </nav>
+    </div>
   </div>
 
 </body>
-
 </html>
