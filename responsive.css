@@ -10,7 +10,7 @@
     background-color: #FED51B;
     height: 53px;
     color: #8f000c;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -723,43 +723,43 @@
     }
 
     .testimonial-left h2 {
-        font-size: 24px;
-        line-height: 1.3;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .testimonial-box {
+    padding: 15px;
+  }
+
+  .testimonial-box p {
+    font-size: 16px;
+  }
+
+  .contact-section h3 {
+    font-size: 22px;
+  }
+}
+
+    .gallery-images img {
+        width: 150px;
+        height: 150px;
     }
 
-    .testimonial-box {
-        padding: 15px;
+    .team-members img {
+        width: 140px;
+        height: 140px;
     }
 
-    .testimonial-box p {
-        font-size: 16px;
+    .menu-tabs {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .contact-section h3 {
-        font-size: 22px;
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
     }
-}
 
-.gallery-images img {
-    width: 150px;
-    height: 150px;
-}
-
-.team-members img {
-    width: 140px;
-    height: 140px;
-}
-
-.menu-tabs {
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu-item {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.menu-item .price {
-    margin-top: 5px;
-}
+    .menu-item .price {
+        margin-top: 5px;
+    }
