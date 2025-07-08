@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../asset/logo.png";
-import "./responsive-HeaderFooter.css";
+import "../styles/styles.css";
 
 const Header = () => {
   const location = useLocation();
