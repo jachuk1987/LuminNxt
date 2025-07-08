@@ -11,7 +11,7 @@ function Menu() {
     <>
 
       {/* Hero Section */}
-      <div className="hero">
+      <div className="menu-hero">
         <div className="discover">DISCOVER</div>
         <h1>OUR MENU</h1>
         <p>Curious about how our dishes elevate from good to great? Let's start the tale of our mouthwatering foods.</p>

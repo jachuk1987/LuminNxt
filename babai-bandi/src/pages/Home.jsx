@@ -64,15 +64,9 @@ const Home = () => {
         <div className="testimonial-container">
           <div className="testimonial-left">
             <h2>
-              “Don’t just <br />
-              take our <br />
-              word for it; <br />
-              hear it from <br />
-              them <br />
-              instead.”
+              “Don’t just take our word for it; hear it from them instead.”
             </h2>
           </div>
-
           <div className="testimonial-right">
             <div className="testimonial-box">
               <img src="./asset/testimonial_img.png" alt="user" />
