@@ -1,17 +1,19 @@
 import React from 'react';
 import '../styles/styles.css';
 import FoodTruck from "../asset/game-icons_food-truck.png";
+import MapLoc from "../asset/location.png";
+import Truck from "../asset/location1.png";
 
 function Location() {
   return (
     <div>
 
       {/* Map */}
-      <img className="map" src="https://c.animaapp.com/jqf5894E/img/image.png" alt="Map" />
+      <img className="map" src={ MapLoc } alt="Map" />
 
       {/* Location Info */}
       <div className="info-card">
-        <img src="https://c.animaapp.com/jqf5894E/img/image-1.png" alt="Food Truck" />
+        <img src= { Truck } alt="Food Truck" />
         <div className="info-details">
           <div className="info-item">
             <div>📍</div>

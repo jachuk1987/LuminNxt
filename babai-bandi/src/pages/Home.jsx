@@ -1,10 +1,14 @@
 import React from "react";
 import "../styles/styles.css";
+import Catering from "../asset/catering_img.png";
+import MenuImage from "../asset/menu_img.png";
+import AboutUsImage from "../asset/aboutus_img.png";
+import TrustedImage from "../asset/content _img.png";
+import TestimonialImg from "../asset/testimonial_img.png";
 
 const Home = () => {
   return (
     <div>
-
       {/* Hero Section */}
       <section className="hero">
         <div className="subhead">Visit our Truck Today</div>
@@ -16,19 +20,28 @@ const Home = () => {
       <section className="features">
         <div
           className="feature-box"
-          style={{ backgroundImage: "url('./asset/catering_img.png')", height: 400 }}
+          style={{
+            backgroundImage: `url(${Catering})`,
+            height: 400,
+          }}
         >
           CATERING
         </div>
         <div
           className="feature-box"
-          style={{ backgroundImage: "url('./asset/menu_img.png')", height: 400 }}
+          style={{
+            backgroundImage: `url(${MenuImage})`,
+            height: 400,
+          }}
         >
           MENU
         </div>
         <div
           className="feature-box"
-          style={{ backgroundImage: "url('./asset/about us_img.png')", height: 400 }}
+          style={{
+            backgroundImage: `url(${AboutUsImage})`,
+            height: 400,
+          }}
         >
           ABOUT US
         </div>
@@ -37,7 +50,7 @@ const Home = () => {
       {/* Trusted Section */}
       <section className="trusted-section">
         <div className="trusted-image-wrapper">
-          <img src="./asset/content _img.png" alt="trusted" className="trusted-img" />
+          <img src={TrustedImage} alt="trusted" className="trusted-img" />
         </div>
         <div className="trusted-content">
           <h2>TRUSTED AND EXPERIENCED</h2>
@@ -69,7 +82,7 @@ const Home = () => {
           </div>
           <div className="testimonial-right">
             <div className="testimonial-box">
-              <img src="./asset/testimonial_img.png" alt="user" />
+              <img src={TestimonialImg} alt="user" />
               <p>
                 “The flavors from this Indian food truck ‘Babai Bandi’ in Dallas is a
                 delightful journey through authentic spices and recipes! Every bite is
@@ -102,7 +115,6 @@ const Home = () => {
           </p>
         </div>
       </section>
-
     </div>
   );
 };
