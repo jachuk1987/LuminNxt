@@ -88,15 +88,16 @@
 
 /* Menu Hero */
 .menu-hero {
+    position: relative;
+    height: 835px;
     background: url('https://c.animaapp.com/hykmc6c1/img/hero-bg.png') top/cover no-repeat;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 835px;
     text-align: center;
     flex-direction: column;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
 }
 
 .menu-hero .discover {
