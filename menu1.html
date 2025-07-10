@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babai Bandi - Menu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <img class="logo" src="asset/logo.png" alt="Babai Bandi Logo" />
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="location.html">Location</a>
+            <a href="menu.html" class="active">Catering</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="menu-hero">
+        <div class="discover">DISCOVER</div>
+        <h1>OUR MENU</h1>
+        <p>
+            Curious about how our dishes elevate from good to great? Let's start the tale of our mouthwatering foods.
+        </p>
+    </div>
+
+    <!-- Menu Tabs -->
+    <div class="menu-tabs">
+        <span class="tab active" data-tab="main">Main Dishes</span>
+        <span class="tab" data-tab="salads">Salads</span>
+        <span class="tab" data-tab="drinks">Drinks</span>
+        <span class="tab" data-tab="desserts">Desserts</span>
+    </div>
+
+    <!-- Menu Content Areas -->
+    <!-- Menu Content Areas -->
+    <div class="menu-content" id="main">
+        <div class="menu-item">
+            <div>
+                <h4>Paneer Butter Masala</h4>
+                <p>Rich tomato-based curry with Indian spices</p>
+            </div>
+            <div class="price">$13.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Chicken Biryani</h4>
+                <p>Fragrant basmati rice with marinated chicken</p>
+            </div>
+            <div class="price">$14.99</div>
+        </div>
+    </div>
+
+    <div class="menu-content active" id="salads">
+        <div class="menu-item">
+            <div>
+                <h4>Garden Salad</h4>
+                <p>Baby beets, goat cheese, carrots, radishes</p>
+            </div>
+            <div class="price">$12.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Heirloom Tomato Salad</h4>
+                <p>with fresh basil and balsamic vinaigrette</p>
+            </div>
+            <div class="price">$12.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Papaya Salad</h4>
+                <p>with lots of chilies and lime</p>
+            </div>
+            <div class="price">$12.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Prosciutto & Shaved Pear Salad</h4>
+                <p>with pecorino, baby spinach, herbs & toasted pine nuts</p>
+            </div>
+            <div class="price">$12.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Vegetable Salad</h4>
+                <p>Pine nuts, roquefort, dates, asian pear, heirloom apples</p>
+            </div>
+            <div class="price">$12.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Wild Arugula Salad</h4>
+                <p>with parmesan cheese, garlic and lemon vinaigrette</p>
+            </div>
+            <div class="price">$12.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Kale and Quinoa</h4>
+                <p>Sunflower seeds, red peppers, parmesan</p>
+            </div>
+            <div class="price">$12.99</div>
+        </div>
+    </div>
+
+    <div class="menu-content" id="drinks">
+        <div class="menu-item">
+            <div>
+                <h4>Mango Lassi</h4>
+                <p>Sweet mango yogurt smoothie</p>
+            </div>
+            <div class="price">$4.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Masala Chai</h4>
+                <p>Indian spiced milk tea</p>
+            </div>
+            <div class="price">$2.99</div>
+        </div>
+    </div>
+
+    <div class="menu-content" id="desserts">
+        <div class="menu-item">
+            <div>
+                <h4>Gulab Jamun</h4>
+                <p>Fried milk balls soaked in rose syrup</p>
+            </div>
+            <div class="price">$5.99</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h4>Kulfi</h4>
+                <p>Traditional Indian frozen dessert</p>
+            </div>
+            <div class="price">$5.99</div>
+        </div>
+    </div>
+
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <h2>GALLERY</h2>
+        <p>Photos of our food and our events</p>
+        <div class="gallery-images">
+            <img src="asset/gallery1.png" alt="Gallery 1" />
+            <img src="asset/gallery2.png" alt="Gallery 2" />
+            <img src="asset/gallery3.png" alt="Gallery 3" />
+            <img src="asset/gallery4.png" alt="Gallery 4" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button class="quote-btn">REQUEST A QUOTE</button>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="location.html">Location</a>
+            <a href="menu.html">Catering</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Tab Switch Script -->
+    <script>
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll(".menu-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                tabs.forEach(t => t.classList.remove("active"));
+                contents.forEach(c => c.classList.remove("active"));
+
+                tab.classList.add("active");
+                const target = tab.getAttribute("data-tab");
+                document.getElementById(target).classList.add("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
