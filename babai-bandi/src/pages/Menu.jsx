@@ -1,4 +1,3 @@
-// src/Components/Menu.jsx
 import React, { useState } from "react";
 import "../styles/styles.css";
 import gallery1 from "../asset/gallery1.png";
