@@ -1,193 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Babai Bandi - Menu</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babai Bandi - Menu</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
+  <!-- Top Bar -->
+  <div class="top-bar">
+    +1 940-629-5571 &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Instagram
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <img class="logo" src="asset/logo.png" alt="Babai Bandi Logo" />
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="menu.html" class="active">Catering</a>
     </div>
+  </div>
 
-    <!-- Header -->
-    <div class="header">
-        <img class="logo" src="asset/logo.png" alt="Babai Bandi Logo" />
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="location.html">Location</a>
-            <a href="menu.html" class="active">Catering</a>
-        </div>
+  <!-- Hero Section -->
+  <div class="menu-hero">
+    <div class="discover">DISCOVER</div>
+    <h1>OUR MENU</h1>
+    <p>Curious about how our dishes elevate from good to great? Let's start the tale of our mouthwatering foods.</p>
+  </div>
+
+  <!-- Menu Tabs -->
+  <div class="menu-tabs">
+    <span>Main Dishes</span>
+    <span class="active">Salads</span>
+    <span>Drinks</span>
+    <span>Desserts</span>
+  </div>
+
+  <!-- Menu Items -->
+  <div class="menu-items"></div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <h2>GALLERY</h2>
+    <p>Photos of our food and our events</p>
+    <div class="gallery-images">
+      <img src="asset/gallery1.png" alt="Gallery 1" />
+      <img src="asset/gallery2.png" alt="Gallery 2" />
+      <img src="asset/gallery3.png" alt="Gallery 3" />
+      <img src="asset/gallery4.png" alt="Gallery 4" />
     </div>
+  </div>
 
-    <!-- Hero Section -->
-    <div class="menu-hero">
-        <div class="discover">DISCOVER</div>
-        <h1>OUR MENU</h1>
-        <p>
-            Curious about how our dishes elevate from good to great? Let's start the tale of our mouthwatering foods.
-        </p>
+  <!-- Footer -->
+  <div class="footer">
+    <button class="quote-btn">REQUEST A QUOTE</button>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="menu.html">Catering</a>
+      <a href="contact.html">Contact Us</a>
     </div>
+  </div>
 
-    <!-- Menu Tabs -->
-    <div class="menu-tabs">
-        <span>Main Dishes</span>
-        <span class="active">Salads</span>
-        <span>Drinks</span>
-        <span>Desserts</span>
-    </div>
+  <script>
+    const tabData = {
+      "Main Dishes": [
+        { name: "Chicken Biryani", desc: "Spicy rice with tender chicken", price: "$14.99" },
+        { name: "Paneer Butter Masala", desc: "Cottage cheese in creamy tomato gravy", price: "$13.49" },
+        { name: "Butter Chicken", desc: "Tender chicken in creamy tomato sauce", price: "$15.49" },
+        { name: "Veg Pulao", desc: "Flavored rice with mixed vegetables", price: "$11.99" },
+        { name: "Chole Bhature", desc: "Chickpeas curry with fried bread", price: "$12.99" },
+        { name: "Andhra Chicken Curry", desc: "Hot and spicy regional chicken curry", price: "$14.49" },
+        { name: "Mutton Rogan Josh", desc: "Kashmiri lamb curry with rich spices", price: "$16.99" },
+      ],
+      "Salads": [
+        { name: "Garden Salad", desc: "Baby beets, goat cheese, carrots, radishes", price: "$12.99" },
+        { name: "Heirloom Tomato Salad", desc: "with fresh basil and balsamic vinaigrette", price: "$12.99" },
+        { name: "Papaya Salad", desc: "with lots of chilies and lime", price: "$12.99" },
+        { name: "Prosciutto & Shaved Pear Salad", desc: "with pecorino, baby spinach, herbs & toasted pine nuts", price: "$12.99" },
+        { name: "Vegetable Salad", desc: "Pine nuts, roquefort, dates, asian pear, heirloom apples", price: "$12.99" },
+        { name: "Wild Arugula Salad", desc: "with parmesan cheese, garlic and lemon vinaigrette", price: "$12.99" },
+        { name: "Kale and Quinoa", desc: "Sunflower seeds, red peppers, parmesan", price: "$12.99" },
+      ],
+      "Drinks": [
+        { name: "Mango Lassi", desc: "Sweet mango yogurt drink", price: "$4.99" },
+        { name: "Masala Chai", desc: "Traditional Indian spiced tea", price: "$3.49" },
+        { name: "Lemon Soda", desc: "Refreshing lemon and soda with mint", price: "$2.99" },
+        { name: "Filter Coffee", desc: "Authentic South Indian strong coffee", price: "$2.49" },
+        { name: "Rose Milk", desc: "Chilled milk infused with rose syrup", price: "$3.99" },
+        { name: "Buttermilk", desc: "Spiced yogurt-based cooler", price: "$2.49" },
+        { name: "Tender Coconut", desc: "Fresh coconut water straight from the shell", price: "$3.49" },
+      ],
+      "Desserts": [
+        { name: "Gulab Jamun", desc: "Milk-solid dumplings soaked in rose syrup", price: "$5.99" },
+        { name: "Rasmalai", desc: "Cheese patties in sweetened milk", price: "$6.49" },
+        { name: "Kaju Katli", desc: "Cashew fudge with silver leaf", price: "$5.49" },
+        { name: "Mango Kulfi", desc: "Frozen mango milk dessert", price: "$4.99" },
+        { name: "Jalebi", desc: "Deep fried syrup-soaked swirls", price: "$4.49" },
+        { name: "Payasam", desc: "South Indian sweet milk pudding", price: "$4.99" },
+        { name: "Carrot Halwa", desc: "Grated carrots cooked in milk & sugar", price: "$5.49" },
+      ],
+    };
 
-    <!-- Menu Items -->
-    <div class="menu-items">
+    const tabs = document.querySelectorAll(".menu-tabs span");
+    const menuItemsContainer = document.querySelector(".menu-items");
+
+    function renderMenuItems(tabName) {
+      const items = tabData[tabName] || [];
+      menuItemsContainer.innerHTML = items.map(item => `
         <div class="menu-item">
-            <div>
-                <h4>Garden Salad</h4>
-                <p>Baby beets, goat cheese, carrots, radishes</p>
-            </div>
-            <div class="price">$12.99</div>
+          <div>
+            <h4>${item.name}</h4>
+            <p>${item.desc}</p>
+          </div>
+          <div class="price">${item.price}</div>
         </div>
-        <div class="menu-item">
-            <div>
-                <h4>Heirloom Tomato Salad</h4>
-                <p>with fresh basil and balsamic vinaigrette</p>
-            </div>
-            <div class="price">$12.99</div>
-        </div>
-        <div class="menu-item">
-            <div>
-                <h4>Papaya Salad</h4>
-                <p>with lots of chilies and lime</p>
-            </div>
-            <div class="price">$12.99</div>
-        </div>
-        <div class="menu-item">
-            <div>
-                <h4>Prosciutto & Shaved Pear Salad</h4>
-                <p>with pecorino, baby spinach, herbs & toasted pine nuts</p>
-            </div>
-            <div class="price">$12.99</div>
-        </div>
-        <div class="menu-item">
-            <div>
-                <h4>Vegetable Salad</h4>
-                <p>Pine nuts, roquefort, dates, asian pear, heirloom apples</p>
-            </div>
-            <div class="price">$12.99</div>
-        </div>
-        <div class="menu-item">
-            <div>
-                <h4>Wild Arugula Salad</h4>
-                <p>with parmesan cheese, garlic and lemon vinaigrette</p>
-            </div>
-            <div class="price">$12.99</div>
-        </div>
-        <div class="menu-item">
-            <div>
-                <h4>Kale and Quinoa</h4>
-                <p>Sunflower seeds, red peppers, parmesan</p>
-            </div>
-            <div class="price">$12.99</div>
-        </div>
-    </div>
+      `).join("");
+    }
 
-    <!-- Gallery -->
-    <div class="gallery">
-        <h2>GALLERY</h2>
-        <p>Photos of our food and our events</p>
-        <div class="gallery-images">
-            <img src="asset/gallery1.png" alt="Gallery 1" />
-            <img src="asset/gallery2.png" alt="Gallery 2" />
-            <img src="asset/gallery3.png" alt="Gallery 3" />
-            <img src="asset/gallery4.png" alt="Gallery 4" />
-        </div>
-    </div>
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelector(".menu-tabs .active")?.classList.remove("active");
+        tab.classList.add("active");
+        renderMenuItems(tab.textContent.trim());
+      });
+    });
 
-    <!-- Footer -->
-    <div class="footer">
-        <button class="quote-btn">REQUEST A QUOTE</button>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="location.html">Location</a>
-            <a href="menu.html">Catering</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-    </div>
+    // Load "Salads" as default on page load
+    renderMenuItems("Salads");
+  </script>
 
-    <script>
-        const tabData = {
-            "Main Dishes": [
-                { name: "Chicken Biryani", desc: "Spicy rice with tender chicken", price: "$14.99" },
-                { name: "Paneer Butter Masala", desc: "Cottage cheese in creamy tomato gravy", price: "$13.49" },
-                { name: "Butter Chicken", desc: "Tender chicken in creamy tomato sauce", price: "$15.49" },
-                { name: "Veg Pulao", desc: "Flavored rice with mixed vegetables", price: "$11.99" },
-                { name: "Chole Bhature", desc: "Chickpeas curry with fried bread", price: "$12.99" },
-                { name: "Andhra Chicken Curry", desc: "Hot and spicy regional chicken curry", price: "$14.49" },
-                { name: "Mutton Rogan Josh", desc: "Kashmiri lamb curry with rich spices", price: "$16.99" },
-            ],
-            "Salads": [
-                { name: "Garden Salad", desc: "Baby beets, goat cheese, carrots, radishes", price: "$12.99" },
-                { name: "Heirloom Tomato Salad", desc: "with fresh basil and balsamic vinaigrette", price: "$12.99" },
-                { name: "Papaya Salad", desc: "with lots of chilies and lime", price: "$12.99" },
-                { name: "Prosciutto & Shaved Pear Salad", desc: "with pecorino, baby spinach, herbs & toasted pine nuts", price: "$12.99" },
-                { name: "Vegetable Salad", desc: "Pine nuts, roquefort, dates, asian pear, heirloom apples", price: "$12.99" },
-                { name: "Wild Arugula Salad", desc: "with parmesan cheese, garlic and lemon vinaigrette", price: "$12.99" },
-                { name: "Kale and Quinoa", desc: "Sunflower seeds, red peppers, parmesan", price: "$12.99" },
-            ],
-            "Drinks": [
-                { name: "Mango Lassi", desc: "Sweet mango yogurt drink", price: "$4.99" },
-                { name: "Masala Chai", desc: "Traditional Indian spiced tea", price: "$3.49" },
-                { name: "Lemon Soda", desc: "Refreshing lemon and soda with mint", price: "$2.99" },
-                { name: "Filter Coffee", desc: "Authentic South Indian strong coffee", price: "$2.49" },
-                { name: "Rose Milk", desc: "Chilled milk infused with rose syrup", price: "$3.99" },
-                { name: "Buttermilk", desc: "Spiced yogurt-based cooler", price: "$2.49" },
-                { name: "Tender Coconut", desc: "Fresh coconut water straight from the shell", price: "$3.49" },
-            ],
-            "Desserts": [
-                { name: "Gulab Jamun", desc: "Milk-solid dumplings soaked in rose syrup", price: "$5.99" },
-                { name: "Rasmalai", desc: "Cheese patties in sweetened milk", price: "$6.49" },
-                { name: "Kaju Katli", desc: "Cashew fudge with silver leaf", price: "$5.49" },
-                { name: "Mango Kulfi", desc: "Frozen mango milk dessert", price: "$4.99" },
-                { name: "Jalebi", desc: "Deep fried syrup-soaked swirls", price: "$4.49" },
-                { name: "Payasam", desc: "South Indian sweet milk pudding", price: "$4.99" },
-                { name: "Carrot Halwa", desc: "Grated carrots cooked in milk & sugar", price: "$5.49" },
-            ],
-        };
-
-        const tabs = document.querySelectorAll(".menu-tabs span");
-        const menuItemsContainer = document.querySelector(".menu-items");
-
-        function renderMenuItems(tabName) {
-            const items = tabData[tabName] || [];
-            menuItemsContainer.innerHTML = items.map(item => `
-      <div class="menu-item">
-        <div>
-          <h4>${item.name}</h4>
-          <p>${item.desc}</p>
-        </div>
-        <div class="price">${item.price}</div>
-      </div>
-    `).join("");
-        }
-
-        tabs.forEach(tab => {
-            tab.addEventListener("click", () => {
-                document.querySelector(".menu-tabs .active")?.classList.remove("active");
-                tab.classList.add("active");
-                renderMenuItems(tab.textContent.trim());
-            });
-        });
-
-        // Load "Salads" as default on page load
-        renderMenuItems("Salads");
-    </script>
-    
 </body>
-
 </html>
