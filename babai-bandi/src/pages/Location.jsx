@@ -7,7 +7,6 @@ import Truck from "../asset/location1.png";
 function Location() {
   return (
     <div>
-
       {/* Map */}
       <img className="map" src={ MapLoc } alt="Map" />
 
