@@ -1,299 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-html,
-body {
-  line-height: 1.4;
-  font-weight: 300;
-  font-family: "Roboto", sans-serif;
+body{
+    background: rgba(0, 0, 0, 0.7) url('food.jpg') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-button {
-  padding: 10px 15px;
-  border: none;
-  transition: 0.2s ease-in-out;
-}
-
-button:hover {
-  opacity: 0.8;
-  transition: 0.2s ease-in-out;
-}
-
-.navigation container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navigation container h1 {
-  color: orangered;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.navbar ul li {
-  display: inline-block;
-  padding: 18px;
-  text-transform: uppercase;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  /* color: yellowgreen; */
-  padding: 4px;
-  transition: 3.5s;
-}
-
-.navbar ul li a:hover {
-  box-shadow: 0 3px 50px orangered inset, 0 3px 50px orangered inset,
-    0 3px 50px orangered inset, 0 3px 50px orangered inset;
-}
-
-.navbar .reservation {
-  padding: 8px;
-  background-color: orangered;
-}
-
-/* Navigation */
-
-nav {
-  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
-  position: sticky;
-  top: 0;
-  margin-bottom: 32px;
-  background: white;
-  padding: 10px;
-  z-index: 50;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.bar_icon {
-  font-size: 32px;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  gap: 100px;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero_content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.tag {
-  background-color: #149f39;
-  padding: 5px 10px;
-  color: white;
-  align-self: flex-start;
-}
-
-.hero_content h1 {
-  font-size: 72px;
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-.explore_btn {
-  background: #ffc066;
-  align-self: flex-start;
-}
-
-/* Features Section */
-.features {
-  margin-top: 100px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.feature {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  transition: 0.2s ease-in-out;
-}
-
-.feature img {
-  width: 72px;
-}
-
-.feature:hover {
-  transition: 0.2s ease-in-out;
-  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
-}
-
-.divider {
-  border: 1px solid #ccc;
-  margin: 20px 0;
-}
-
-/* Menu Section */
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin: 50px 0;
-  align-items: center;
-}
-
-.menu .tag {
-  align-self: center;
-}
-
-.grid-image {
-  border-radius: 10px;
-  transition: 0.2s ease-in-out;
-  width: 100%;
-  height: 100%;
-}
-
-.grid-image:hover {
-  transform: scale(1.05);
-  transition: 0.2s ease-in-out;
-}
-
-.grid {
-  display: grid;
-  gap: 10px;
-  grid-template-areas:
-    "I1 I1 I2 I3"
-    "I1 I1 I2 I7"
-    "I4 I5 I6 I7";
-}
-
-.item1 {
-  grid-area: I1;
-}
-
-.item2 {
-  grid-area: I2;
-}
-
-.item3 {
-  grid-area: I3;
-}
-
-.item4 {
-  grid-area: I4;
-}
-
-.item5 {
-  grid-area: I5;
-}
-
-.item6 {
-  grid-area: I6;
-}
-
-.item7 {
-  grid-area: I7;
-}
-
-/* Footer Section */
-
-footer {
-  background-color: #fff0db;
-}
-
-.link_lists h3 {
-  margin-bottom: 10px;
-  color: gray;
-}
-
-.link_lists ul {
-  list-style: none;
-}
-
-.link_lists ul li {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.news_letter h3 {
-  margin-bottom: 10px;
-  color: gray;
-}
-
-.news_letter input {
-  padding: 5px 40px;
-  margin-bottom: 10px;
-}
-
-.footer_container {
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.icon_container {
-  display: flex;
-  gap: 15px;
-  font-size: 32px;
-}
-
-@media (max-width: 786px) {
-  .hero {
-    flex-direction: column;
-  }
-
-  .hero_image {
+.container{
     display: flex;
-    justify-content: center;
-  }
+    align-items: center;
+    justify-content: space-between;
+}
 
-  .hero_image img {
-    width: 80%;
-  }
+.container h1{
+    color: orangered;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
-  .hero_content {
-    gap: 10px;
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
 
-    padding: 0 20px;
-  }
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.5s;
+}
 
-  .hero_content h1 {
-    font-size: 32px;
-  }
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
 
-  .features {
-    flex-direction: column;
-  }
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
+}
 
-  .feature {
-    flex-direction: column;
-  }
+.content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 30%;
+}
 
-  .grid {
-    padding: 10px;
-  }
+.content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 30%;
+}
 
-  .grid-image {
-    border-radius: 0px;
-  }
+.content h1{
+    font-size: 50px;
+}
 
-  .footer_container {
-    flex-direction: column;
-  }
+.content p{
+    text-align: center;
+    margin-top: 17px;
+}
+
+.search{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+}
+
+.submit{
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 49%;
+}
+
+.submit a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: orangered;
 }
