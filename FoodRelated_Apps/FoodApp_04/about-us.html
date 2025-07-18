@@ -8,7 +8,29 @@
   </head>
 
   <body>
-    <!-- Header can be reused here if needed -->
+     <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Logo" width="250" height="70" />
+            </div>
+            <div class="nav-links desktop">
+                <a href="#">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-icon mobile" onclick="toggleMobileMenu()">
+                <span class="material-icons">menu</span>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
 
     <section class="about-section">
       <h4>Welcome To My Restaurant</h4>
