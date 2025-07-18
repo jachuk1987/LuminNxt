@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Website</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- Material Icons CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Header -->
     <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="logo.svg" alt="Logo" width="250" height="70" />
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Logo" width="250" height="70" />
+            </div>
+            <div class="nav-links desktop">
+                <a href="#">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-icon mobile" onclick="toggleMobileMenu()">
+                <span class="material-icons">menu</span>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="nav-links desktop">
-          <a href="#">Home</a>
-          <a href="#menu">Menu</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="menu-icon mobile" onclick="toggleMobileMenu()">
-          <span class="material-icons">menu</span>
-        </div>
-      </nav>
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="#">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="home" style="background-image: url('banner.jpeg')">
-      <div class="headerContainer">
-        <h1>Food Website</h1>
-        <p>Best Food In India</p>
-        <a href="#menu">
-          <button>ORDER NOW</button>
-        </a>
-      </div>
+        <div class="headerContainer">
+            <h1>Food Website</h1>
+            <p>Best Food In India</p>
+            <a href="#menu">
+                <button>ORDER NOW</button>
+            </a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-icons">
-        <span class="material-icons">instagram</span>
-        <span class="material-icons">twitter</span>
-        <span class="material-icons">code</span>
-        <span class="material-icons">youtube</span>
-      </div>
-      <p>All Rights Reserved &copy; Techinfo YT</p>
+        <div class="footer-icons">
+            <span class="material-icons">instagram</span>
+            <span class="material-icons">twitter</span>
+            <span class="material-icons">code</span>
+            <span class="material-icons">youtube</span>
+        </div>
+        <p>All Rights Reserved &copy; Techinfo YT</p>
     </footer>
 
     <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-      }
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
-  </body>
+</body>
+
 </html>
