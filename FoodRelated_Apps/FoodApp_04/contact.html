@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact - My Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Header can be reused here -->
+
+    <section class="contact-section">
+      <h4>Contact My Restaurant</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio
+        beatae ducimus magni nobis culpa praesentium velit expedita quae,
+        corrupti, pariatur inventore laboriosam consectetur modi impedit
+        error, repudiandae obcaecati doloribus.
+      </p>
+
+      <div class="contact-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Contact Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="material-icons red">support_agent</span> 1800-00-0000 (tollfree)</td>
+            </tr>
+            <tr>
+              <td><span class="material-icons blue">mail</span> help@myrest.com</td>
+            </tr>
+            <tr>
+              <td><span class="material-icons green">call</span> 1234567890</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer can be reused here -->
+  </body>
+</html>
+
+
+.contact-section {
+  margin: 50px 10%;
+}
+
+.contact-section h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.contact-table {
+  width: 600px;
+}
+
+.contact-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-table th {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.material-icons {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: skyblue;
+}
+
+.green {
+  color: green;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-table {
+    width: 300px;
+  }
+
+  .contact-section h4 {
+    font-size: 1.5rem;
+  }
+}

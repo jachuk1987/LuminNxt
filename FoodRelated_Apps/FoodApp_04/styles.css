@@ -145,3 +145,31 @@ footer {
     margin-bottom: 30px;
   }
 }
+
+.about-section {
+  margin: 80px auto;
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-section h4 {
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.about-section p {
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-section {
+    margin-top: 0;
+  }
+
+  .about-section h4 {
+    font-size: 1.5rem;
+  }
+}
