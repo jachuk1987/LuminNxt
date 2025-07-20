@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu - My Restaurant</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome CDN for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -14,11 +18,11 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="./images/logo.svg" alt="Logo" width="250" height="70" />
+                <img src="./images/logo.svg" alt="My Restaurant Logo" width="250" height="70" />
             </div>
             <div class="nav-links desktop">
                 <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
+                <a href="menu.html" class="active">Menu</a>
                 <a href="about-us.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -28,64 +32,100 @@
         </nav>
         <div class="mobile-menu" id="mobileMenu">
             <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
+            <a href="menu.html" class="active">Menu</a>
             <a href="about-us.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
     </header>
 
+    <!-- Menu Section -->
     <section class="menu-section">
         <div class="menu-container">
-            <!-- Menu Card 1 -->
             <div class="menu-card">
-                <img src="menu1.jpg" alt="Dish Name" />
+                <img src="./images/dosa.jpg" alt="Masala Dosa" />
                 <div class="menu-content">
-                    <h5>Dish Name 1</h5>
+                    <h5>Masala Dosa</h5>
                     <p>
-                        Delicious description of dish 1. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
+                        Crispy rice crepe filled with spicy mashed potatoes served with chutney and sambar.
                     </p>
                 </div>
             </div>
 
-            <!-- Menu Card 2 -->
             <div class="menu-card">
-                <img src="menu2.jpg" alt="Dish Name" />
+                <img src="./images/chhola.jpg" alt="Chole Bhature" />
                 <div class="menu-content">
-                    <h5>Dish Name 2</h5>
+                    <h5>Chole Bhature</h5>
                     <p>
-                        Tasty and delightful description of dish 2. Lorem ipsum dolor sit
-                        amet consectetur.
+                        Fluffy fried bread served with spicy chickpea curry — a North Indian favorite.
                     </p>
                 </div>
             </div>
 
-            <!-- Menu Card 3 -->
             <div class="menu-card">
-                <img src="menu3.jpg" alt="Dish Name" />
+                <img src="./images/idli.jpg" alt="Idli Sambar" />
                 <div class="menu-content">
-                    <h5>Dish Name 3</h5>
+                    <h5>Idli Sambar</h5>
                     <p>
-                        Mouth-watering description of dish 3. Lorem ipsum dolor sit amet
-                        consectetur.
+                        Steamed rice cakes served with hot sambar and coconut chutney, a South Indian classic.
                     </p>
                 </div>
             </div>
 
-            <!-- Add more cards as per your menu items -->
+            <div class="menu-card">
+                <img src="./images/masala.jpg" alt="Masala Dosa" />
+                <div class="menu-content">
+                    <h5>Masala Dosa</h5>
+                    <p>
+                        South India’s signature dish — a crisp, golden dosa filled with spiced potato masala, served
+                        with piping hot sambar and fresh coconut chutney.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <img src="./images/paneer.jpg" alt="Paneer Butter Masala" />
+                <div class="menu-content">
+                    <h5>Paneer Butter Masala</h5>
+                    <p>
+                        Cottage cheese cubes cooked in a rich, creamy tomato gravy with butter and aromatic spices — a
+                        Punjabi classic.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="./images/gujrati.jpeg" alt="Gujarati Thali" />
+                <div class="menu-content">
+                    <h5>Gujarati Thali</h5>
+                    <p>
+                        A traditional platter of sweet and savory Gujarati dishes including dal, kadhi, vegetables,
+                        thepla, farsan, and dessert.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more menu items as you like -->
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-icons">
-            <span class="material-icons">instagram</span>
-            <span class="material-icons">twitter</span>
-            <span class="material-icons">code</span>
-            <span class="material-icons">youtube</span>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
         <p>All Rights Reserved &copy; Techinfo YT</p>
     </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 
 </body>
 
