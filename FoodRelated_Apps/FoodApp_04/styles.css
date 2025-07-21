@@ -25,18 +25,7 @@
       <div class="menu-icon mobile" onclick="toggleMobileMenu()">
         <span class="material-icons">menu</span>
       </div>
-    </nav>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="about-us.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </header>
-
-  <section class="home" style="background-image: url('./images/banner.jpeg')">
-    <div class="headerContainer">
-      <h1>Food We/* styles.css (Cleaned & Organized) */
+    </nav>/* styles.css (Cleaned & Organized) */
 
 body {
   margin: 0;
