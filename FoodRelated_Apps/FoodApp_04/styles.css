@@ -1,9 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo" width="250" height="70">
+      </div>
+      <div class="nav-links desktop">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about-us.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="menu-icon mobile" onclick="toggleMobileMenu()">
+        <span class="material-icons">menu</span>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <section class="home" style="background-image: url('./images/banner.jpeg')">
+    <div class="headerContainer">
+      <h1>Food Website</h1>
+      <p>Best Food In India</p>
+      <a href="#menu">
+        <button>ORDER NOW</button>
+      </a>
+    </div/* styles.css (Cleaned & Organized) */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
 .navbar {
   background: black;
   color: goldenrod;
@@ -38,7 +82,6 @@ body {
   text-decoration: none;
 }
 
-/* Hero Section */
 .home {
   height: 90vh;
   display: flex;
@@ -82,7 +125,6 @@ body {
   background-color: #07090a;
 }
 
-/* Footer */
 footer {
   text-align: center;
   background: #1A1A19;
@@ -112,23 +154,16 @@ footer p {
   footer p {
     font-size: 16px;
   }
-}
-
-/* Responsive */
-@media only screen and (max-width: 600px) {
   .nav-links.desktop {
     display: none;
   }
-
   .menu-icon.mobile {
     display: block;
   }
-
   .home {
     justify-content: center;
     align-items: center;
   }
-
   .headerContainer {
     margin-left: 0;
     border-radius: 10px;
@@ -139,18 +174,13 @@ footer p {
     color: white;
     text-align: center;
   }
-
   .headerContainer h1 {
     font-size: 40px;
     margin: 30px 0;
-    color: white;
   }
-
   .headerContainer p {
     font-size: 30px;
-    color: white;
   }
-
   .headerContainer button {
     background: white;
     color: #121619;
@@ -174,19 +204,6 @@ footer p {
 .about-section p {
   text-align: justify;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  .about-section {
-    margin-top: 0;
-  }
-
-  .about-section h4 {
-    font-size: 1.5rem;
-  }
-}
-
-/* contacts */
 
 .contact-section {
   margin: 50px 10%;
@@ -241,18 +258,14 @@ footer p {
   color: green;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .contact-table {
     width: 300px;
   }
-
   .contact-section h4 {
     font-size: 1.5rem;
   }
 }
-
-/* menu */
 
 .menu-section {
   padding: 40px 20px;
@@ -299,7 +312,6 @@ footer p {
   color: #555;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .menu-card {
     width: 90%;
