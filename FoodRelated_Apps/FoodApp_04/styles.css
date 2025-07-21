@@ -15,17 +15,7 @@
     <nav class="navbar">
       <div class="logo">
         <img src="./images/logo.svg" alt="Logo" width="250" height="70">
-      </div>
-      <div class="nav-links desktop">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about-us.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="menu-icon mobile" onclick="toggleMobileMenu()">
-        <span class="material-icons">menu</span>
-      </div>
-    </nav>/* styles.css (Cleaned & Organized) */
+      </div>/* styles.css (Cleaned & Organized) */
 
 body {
   margin: 0;
