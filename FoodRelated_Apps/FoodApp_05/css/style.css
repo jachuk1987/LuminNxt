@@ -1,85 +1,120 @@
-body {
+/* Reset and base styles */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fff8f0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
   color: #333;
+  line-height: 1.6;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ff6347;
-  padding: 10px 30px;
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
 }
-.logo {
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+/* Header styles */
+.site-header {
+  background-color: #e63946;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 4px solid #ffd166;
+}
+
+.site-header .logo {
   height: 50px;
+  float: left;
 }
-nav a {
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+
+.navbar {
+  float: right;
 }
-nav a:hover {
-  text-decoration: underline;
-}
-.hero {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.hero-img {
-  width: 100%;
-  height: 90vh;
-  object-fit: cover;
-}
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-}
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #ff6347;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.highlights {
-  padding: 50px 20px;
-  text-align: center;
-}
-.cards {
+
+.navbar ul {
+  list-style: none;
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  gap: 1.5rem;
+  align-items: center;
 }
-.card {
-  width: 250px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  overflow: hidden;
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+
+.navbar a:hover {
+  color: #ffd166;
 }
-.card h3 {
-  margin: 15px 0;
+
+/* Clear floats */
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-footer {
+
+/* Main section */
+.site-main {
+  padding: 2rem 0;
+}
+
+.site-main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+.site-main p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer styles */
+.site-footer {
+  background-color: #e63946;
+  color: #ffffff;
   text-align: center;
-  padding: 20px;
-  background: #222;
-  color: white;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-top: 4px solid #ffd166;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .site-header .logo {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .site-main h1 {
+    font-size: 1.5rem;
+  }
 }
