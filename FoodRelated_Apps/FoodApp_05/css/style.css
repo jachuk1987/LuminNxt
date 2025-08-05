@@ -28,7 +28,7 @@ img {
 /* Header styles */
 .site-header {
   background-color: #e63946;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -36,7 +36,7 @@ img {
 }
 
 .site-header .logo {
-  height: 50px;
+  height: 60px;
   float: left;
 }
 
