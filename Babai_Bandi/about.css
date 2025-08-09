@@ -143,3 +143,11 @@ section {
 .footer h3 {
     color: red;
 }
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
