@@ -1,5 +1,4 @@
-/* style.css */
-
+/* ========== RESET ========== */
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +11,17 @@ body {
   background-color: #fff;
 }
 
+/* Global container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-/* Navbar */
+/* ========== NAVBAR ========== */
 .navbar {
   background: #ffcc00;
   padding: 15px 0;
@@ -29,6 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -57,7 +61,22 @@ nav a:hover {
   margin-left: 10px;
 }
 
-/* Hero */
+/* ========== SECTIONS GLOBAL ========== */
+section {
+  padding: 50px 0;
+}
+
+.section-subtitle {
+  color: red;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* ========== HERO (Home) ========== */
 .hero {
   padding: 50px 0;
 }
@@ -102,17 +121,7 @@ nav a:hover {
   width: 100%;
 }
 
-/* Menu */
-.section-subtitle {
-  color: red;
-  font-weight: bold;
-}
-
-.section-title {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
+/* ========== MENU GRID (Home) ========== */
 .menu-grid {
   display: flex;
   gap: 20px;
@@ -145,24 +154,28 @@ nav a:hover {
   color: #333;
 }
 
-/* Our Story */
-.our-story {
-  padding: 50px 0;
-}
-
-.story-content {
+/* ========== OUR STORY (Shared) ========== */
+.our-story .story-content {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.story-img img {
-  max-width: 450px;
+.story-img img,
+.story-image img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-.story-text h4 {
-  color: #b58500;
+.story-text {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.story-text h4,
+.story-text h5 {
+  color: orange;
   margin-bottom: 10px;
 }
 
@@ -171,19 +184,21 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-.btn {
-  background: #ffb300;
-  color: black;
+.btn,
+.btn-watch {
+  background: orange;
+  color: white;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
   margin-top: 15px;
+  font-weight: bold;
+  border-radius: 25px;
 }
 
-/* Features */
+/* ========== FEATURES (Home) ========== */
 .features {
   background: #fff6e9;
-  padding: 50px 0;
 }
 
 .features-grid {
@@ -203,11 +218,7 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* Testimonials */
-.testimonials {
-  padding: 50px 0;
-}
-
+/* ========== TESTIMONIALS (Home) ========== */
 .testimonial-grid {
   display: flex;
   gap: 20px;
@@ -231,15 +242,64 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* FOOTER */
+/* ========== WHY CHOOSE US (About) ========== */
+.why-choose .choose-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.why-choose h5 {
+  color: orange;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose ul li {
+  margin-bottom: 8px;
+}
+
+/* ========== TEAM (About) ========== */
+.team {
+  text-align: center;
+}
+
+.team h5 {
+  color: orange;
+}
+
+.team-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.team-member {
+  text-align: center;
+  flex: 1;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ========== FOOTER (Shared) ========== */
 .footer {
-    background: #ffcc00;
-    color: black;
-    padding: 20px 0;
+  background: #ffcc00;
+  color: black;
+  padding: 20px 0;
 }
+
 .footer .container {
-    justify-content: space-between;
+  justify-content: space-between;
 }
+
 .footer h3 {
-    color: red;
+  color: red;
 }
