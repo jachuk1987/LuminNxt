@@ -5,11 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   color: #222;
   background-color: #fff;
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -18,33 +20,40 @@ body {
 
 /* Navbar */
 .navbar {
-  background: white;
+  background: #ffcc00;
   padding: 15px 0;
   border-bottom: 1px solid #eee;
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   height: 60px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
 }
+
 nav a {
   text-decoration: none;
   font-weight: bold;
   color: #222;
 }
-nav a.active, nav a:hover {
+
+nav a.active,
+nav a:hover {
   color: red;
 }
+
 .social-icons img {
-  width: 20px;
+  width: 45px;
   margin-left: 10px;
 }
 
@@ -52,16 +61,19 @@ nav a.active, nav a:hover {
 .hero {
   padding: 50px 0;
 }
+
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .hero-text {
   flex: 1;
   max-width: 500px;
 }
+
 .tagline {
   background: #ffb300;
   display: inline-block;
@@ -70,17 +82,21 @@ nav a.active, nav a:hover {
   font-size: 14px;
   margin-bottom: 20px;
 }
+
 .hero-text h1 {
   font-size: 42px;
   margin-bottom: 15px;
 }
+
 .hero-text .accent {
   color: red;
 }
+
 .hero-text p {
   font-size: 18px;
   color: #555;
 }
+
 .hero-img img {
   max-width: 450px;
   width: 100%;
@@ -91,15 +107,18 @@ nav a.active, nav a:hover {
   color: red;
   font-weight: bold;
 }
+
 .section-title {
   font-size: 28px;
   margin-bottom: 30px;
 }
+
 .menu-grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .menu-item {
   background: white;
   border: 1px solid #eee;
@@ -109,15 +128,18 @@ nav a.active, nav a:hover {
   min-width: 250px;
   text-align: center;
 }
+
 .menu-item img {
   max-width: 150px;
 }
+
 .menu-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
 }
+
 .price {
   font-weight: bold;
   color: #333;
@@ -127,23 +149,28 @@ nav a.active, nav a:hover {
 .our-story {
   padding: 50px 0;
 }
+
 .story-content {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .story-img img {
   max-width: 450px;
 }
+
 .story-text h4 {
   color: #b58500;
   margin-bottom: 10px;
 }
+
 .story-text h2 {
   font-size: 28px;
   margin-bottom: 15px;
 }
+
 .btn {
   background: #ffb300;
   color: black;
@@ -158,16 +185,19 @@ nav a.active, nav a:hover {
   background: #fff6e9;
   padding: 50px 0;
 }
+
 .features-grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .feature {
   flex: 1;
   min-width: 200px;
   text-align: center;
 }
+
 .feature img {
   width: 40px;
   margin-bottom: 10px;
@@ -177,11 +207,13 @@ nav a.active, nav a:hover {
 .testimonials {
   padding: 50px 0;
 }
+
 .testimonial-grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .testimonial {
   background: white;
   border: 1px solid #eee;
@@ -191,6 +223,7 @@ nav a.active, nav a:hover {
   min-width: 200px;
   text-align: center;
 }
+
 .testimonial img {
   width: 60px;
   height: 60px;
@@ -198,21 +231,15 @@ nav a.active, nav a:hover {
   margin-bottom: 10px;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
-  background: #ffb300;
-  padding: 20px 0;
+    background: #ffcc00;
+    color: black;
+    padding: 20px 0;
 }
-.footer-content {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.footer .container {
+    justify-content: space-between;
 }
-.footer-col {
-  flex: 1;
-  min-width: 200px;
-}
-.footer-col h3 {
-  color: #b00000;
-  margin-bottom: 5px;
+.footer h3 {
+    color: red;
 }
