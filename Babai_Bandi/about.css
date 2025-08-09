@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #ffcc00;
+    padding: 10px 0;
+}
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    height: 60px;
+}
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar nav ul li {
+    margin: 0 15px;
+}
+.navbar nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.navbar nav ul li a.active {
+    border-bottom: 2px solid red;
+}
+.social-icons img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 0;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* OUR STORY */
+.our-story .story-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.our-story .story-text {
+    flex: 1;
+    padding-left: 40px;
+}
+.our-story h5 {
+    color: orange;
+}
+.our-story .btn-watch {
+    display: inline-block;
+    margin-top: 20px;
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* WHY CHOOSE US */
+.why-choose .choose-text {
+    flex: 1;
+    padding-right: 40px;
+}
+.why-choose .choose-text h5 {
+    color: orange;
+}
+.why-choose ul {
+    list-style: none;
+    padding: 0;
+}
+.why-choose ul li {
+    margin-bottom: 8px;
+}
+
+/* TEAM */
+.team {
+    text-align: center;
+}
+.team h5 {
+    color: orange;
+}
+.team-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.team-member {
+    text-align: center;
+    flex: 1;
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+.footer {
+    background: #ffcc00;
+    color: black;
+    padding: 20px 0;
+}
+.footer .container {
+    justify-content: space-between;
+}
+.footer h3 {
+    color: red;
+}
