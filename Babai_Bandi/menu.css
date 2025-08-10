@@ -1,16 +1,27 @@
-body {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+/* Global container */
 .container {
     width: 90%;
+    max-width: 1200px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
+/* ========== NAVBAR ========== */
 .navbar {
-    background: white;
     padding: 15px 0;
     border-bottom: 1px solid #eee;
 }
@@ -19,24 +30,33 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.nav-links {
+.logo {
+    height: 60px;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-.nav-links a {
+nav a {
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+    font-weight: bold;
+    color: #222;
 }
 
-.nav-links a.active {
+nav a.active,
+nav a:hover {
     color: red;
-    border-bottom: 2px solid red;
-    padding-bottom: 3px;
+}
+
+.social-icons img {
+    width: 45px;
+    margin-left: 10px;
 }
 
 .hero {
@@ -89,7 +109,7 @@ body {
     background: #fff;
     padding: 12px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu-card img {
