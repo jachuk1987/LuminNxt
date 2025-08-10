@@ -149,19 +149,17 @@ nav a:hover {
     object-fit: cover;
 }
 
+/* ========== FOOTER (Shared) ========== */
 .footer {
-    background: #ffb400;
-    color: white;
-    padding: 20px 10%;
+    background: #ffcc00;
+    color: black;
+    padding: 20px 0;
 }
 
-.footer-container {
-    display: flex;
+.footer .container {
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.footer a {
-    color: white;
-    text-decoration: none;
+.footer h3 {
+    color: red;
 }
