@@ -61,9 +61,9 @@ nav a:hover {
 }
 
 /* ========== SECTIONS GLOBAL ========== */
-section {
+/* section {
   padding: 50px 0;
-}
+} */
 
 .section-subtitle {
   color: red;
@@ -76,7 +76,7 @@ section {
 }
 
 .me1 {
-  margin-left: 165px;
+  margin-left: 120px;
 }
 
 .me1 h2 {
