@@ -188,6 +188,7 @@ section {
 .story-text {
   flex: 1;
   padding-left: 40px;
+  line-height: 1.8;
 }
 
 .story-text h4,
@@ -222,6 +223,10 @@ section {
   background: #fff6e9;
 }
 
+.features h4 {
+  color: red;
+}
+
 .features-grid {
   display: flex;
   gap: 20px;
@@ -231,12 +236,21 @@ section {
 .feature {
   flex: 1;
   min-width: 200px;
-  text-align: center;
+  line-height: 1.9;
 }
 
 .feature img {
   width: 40px;
   margin-bottom: 10px;
+}
+
+.feature h3 {
+  color: brown;
+}
+
+.me2 {
+  margin-left: 120px;
+  line-height: 2.1;
 }
 
 /* ========== TESTIMONIALS (Home) ========== */
