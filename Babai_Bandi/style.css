@@ -90,6 +90,7 @@ section {
 }
 
 /* ========== HERO (Home) ========== */
+
 .hero-content {
   display: flex;
   align-items: center;
@@ -130,6 +131,24 @@ section {
   max-width: 450px;
   width: 100%;
   border-radius: 10px;
+}
+
+/* Arrows under truck */
+.hero-arrows {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  margin-left: 1100px;
+}
+
+.arrow {
+  background-color: #ffb300;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* ========== MENU GRID (Home) ========== */
@@ -264,7 +283,6 @@ section {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  line-height: 1.6;
   font-size: 25px;
 }
 
