@@ -187,10 +187,13 @@ section {
   line-height: 1.8;
 }
 
-.story-text h4,
-.story-text h5 {
+.story-text h4 {
   color: orange;
   margin-bottom: 10px;
+}
+
+.story-text h3 {
+  color: #b78c2b;
 }
 
 .story-text h2 {
@@ -352,7 +355,7 @@ section {
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 340px;
+  width: 350px;
   transition: transform 0.3s ease;
 }
 
@@ -388,7 +391,7 @@ section {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -436,6 +439,52 @@ section {
 }
 
 /* ========== MENU PAGE ========== */
+
+/* Container styling to match page width */
+.food-intro-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.food-intro-container {
+    max-width: 1200px; /* matches menu section width */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.food-intro-text {
+    flex: 1;
+}
+
+.food-intro-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.food-intro-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.food-intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.food-intro-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 .menu-categories {
   text-align: center;
   margin: 20px 0;
@@ -459,7 +508,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -503,8 +552,8 @@ section {
 }
 
 .carousel-images img {
-  width: 200px;
-  height: 150px;
+  width: 240px;
+  height: 220px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -570,6 +619,7 @@ button {
   color: white;
   border: none;
   padding: 12px;
+  margin: 20px;
   border-radius: 6px;
   cursor: pointer;
 }
