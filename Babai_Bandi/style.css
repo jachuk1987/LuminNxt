@@ -61,9 +61,9 @@ nav a:hover {
 }
 
 /* ========== SECTIONS GLOBAL ========== */
-/* section {
+section {
   padding: 50px 0;
-} */
+}
 
 .section-subtitle {
   color: red;
@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 .me1 {
-  margin-left: 120px;
+  margin-left: 160px;
 }
 
 .me1 h2 {
@@ -246,7 +246,7 @@ nav a:hover {
 }
 
 .me2 {
-  margin-left: 120px;
+  margin-left: 160px;
   line-height: 2.1;
 }
 
@@ -286,13 +286,14 @@ nav a:hover {
 }
 
 .cust1 {
-  margin-left: 100px;
+  margin-left: 145px;
   padding: 20px;
   color: red;
 }
 
 .cust2 {
-  margin-left: 120px;
+  margin-left: 150px;
+  padding: 12px;
 }
 
 /* ========== WHY CHOOSE US (About) ========== */
@@ -344,8 +345,8 @@ nav a:hover {
 
 /* ========== FOOTER (Shared) ========== */
 .footer {
-  background: #f4a900; /* close to screenshot's yellow-orange */
-  padding: 40px 0;
+  background: #f4a900;
+  padding: 80px 0;
   font-family: Arial, sans-serif;
 }
 
@@ -385,17 +386,6 @@ nav a:hover {
 
 /* ===== Additional styles from style1.css ===== */
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  color: #222;
-  background-color: #fff;
-}
 
 /* Global container */
 .container {
@@ -451,7 +441,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 10%;
+  /* padding: 50px 10%; */
 }
 
 .hero-text {
@@ -615,7 +605,7 @@ button:hover {
 .footer {
   background: #ffcc00;
   color: black;
-  padding: 20px 0;
+  padding: 80px 0;
 }
 
 .footer .container {
@@ -623,5 +613,5 @@ button:hover {
 }
 
 .footer h3 {
-  color: red;
+  color: brown;
 }
