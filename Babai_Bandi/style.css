@@ -235,7 +235,6 @@ section {
 .btn,
 .btn-watch {
   background-color: #fdb913;
-  /* bright yellow-orange */
   color: white;
   padding: 0px 32px;
   margin: 24px 0;
@@ -249,10 +248,12 @@ section {
   transition: background-color 0.3s ease;
 }
 
-
+.btn-watch{
+  border-radius: 8px;
+}
 
 .play-icon {
-  color: #b80000; /* Only play icon gets colored */
+  color: #b80000;
   margin: 20px;
 }
 
