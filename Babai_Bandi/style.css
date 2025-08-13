@@ -232,20 +232,30 @@ section {
   font-size: 15.73px;
 }
 
-.btn {
-  background-color: #fdb913; /* bright yellow-orange */
+.btn,
+.btn-watch {
+  background-color: #fdb913;
+  /* bright yellow-orange */
   color: white;
-  padding: 12px 24px;
-  margin: 24px;
+  padding: 0px 32px;
+  margin: 24px 0;
   text-decoration: none;
   display: inline-flex;
-  align-items: center; /* vertical centering */
+  align-items: center;
   justify-content: space-between;
   font-weight: 500;
   font-size: 16px;
-  border-radius: 2px; /* no pill shape */
+  border-radius: 2px;
   transition: background-color 0.3s ease;
 }
+
+
+
+.play-icon {
+  color: #b80000; /* Only play icon gets colored */
+  margin: 20px;
+}
+
 
 .btn .arrow {
   margin-left: 10px;
@@ -253,18 +263,8 @@ section {
 }
 
 .btn:hover {
-  background-color: #e5a50a; /* slightly darker on hover */
-}
-
-.btn-watch {
-  background: orange;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-  font-weight: bold;
-  border-radius: 25px;
+  background-color: #e5a50a;
+  /* slightly darker on hover */
 }
 
 /* ========== FEATURES (Home) ========== */

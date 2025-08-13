@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Babai Bandi Header</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Header Container */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        position: relative;
+        padding: 10px 50px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    /* Yellow Curved Shape */
+    .header::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to bottom, #fbb800, #f7a900);
+        border-bottom-left-radius: 50% 100%;
+        z-index: 0;
+    }
+
+    /* Logo Section */
+    .logo {
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+    .logo img {
+        height: 80px;
+    }
+
+    /* Navigation Menu */
+    nav {
+        display: flex;
+        gap: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        z-index: 1;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+    }
+    nav a.active {
+        color: red;
+    }
+    nav a.active::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: red;
+    }
+
+    /* Social Icons */
+    .social {
+        display: flex;
+        gap: 15px;
+        z-index: 1;
+    }
+    .social a {
+        background: red;
+        color: white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 14px;
+        text-decoration: none;
+    }
+</style>
+<!-- For Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <!-- Logo -->
+    <div class="logo">
+        <img src="logo.png" alt="Babai Bandi Logo">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#" class="active">ABOUT US</a>
+        <a href="#">MENU</a>
+        <a href="#">CONTACT US</a>
+    </nav>
+
+    <!-- Social Media -->
+    <div class="social">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-utensils"></i></a>
+    </div>
+</header>
+
+</body>
+</html>
