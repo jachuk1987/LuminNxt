@@ -124,7 +124,7 @@ section {
 
 .hero-text p {
   font-size: 24px;
-  color: #555;
+  color: #808080;
 }
 
 .hero-img img {
@@ -166,7 +166,7 @@ section {
   flex: 1;
   min-width: 250px;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .menu-item img {
@@ -191,6 +191,7 @@ section {
 
 .menu-item p {
   font-size: 20px;
+  color: #808080;
 }
 
 /* ========== OUR STORY (Shared) ========== */
@@ -231,7 +232,29 @@ section {
   font-size: 15.73px;
 }
 
-.btn,
+.btn {
+  background-color: #fdb913; /* bright yellow-orange */
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center; /* vertical centering */
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 2px; /* no pill shape */
+  transition: background-color 0.3s ease;
+}
+
+.btn .arrow {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #e5a50a; /* slightly darker on hover */
+}
+
 .btn-watch {
   background: orange;
   color: white;
