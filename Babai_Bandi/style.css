@@ -236,6 +236,7 @@ section {
   background-color: #fdb913; /* bright yellow-orange */
   color: white;
   padding: 12px 24px;
+  margin: 24px;
   text-decoration: none;
   display: inline-flex;
   align-items: center; /* vertical centering */
