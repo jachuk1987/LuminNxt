@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -10,57 +9,59 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="top-border"></div>
-        <div class="container nav-container">
-            <img alt="Babai Bandi Logo" class="logo" src="./asset/bb_logo.png" />
+    <div class="header-hero">
+        <div class="yellow-bg"></div>
+
+        <!-- HEADER -->
+        <header class="navbar container nav-container">
+            <img class="logo" src="./asset/logo.png" alt="Babai Bandii Logo">
             <nav>
                 <ul>
-                    <li><a class="active" href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">CONTACT US</a></li>
                 </ul>
             </nav>
             <div class="social-icons">
-                <a href="#"><img alt="WhatsApp" src="./asset/whatsapp.png" /></a>
-                <a href="#"><img alt="Facebook" src="./asset/facebook.png" /></a>
-                <a href="#"><img alt="Instagram" src="./asset/instagram.png" /></a>
-                <a href="#"><img alt="Twitter" src="./asset/twitter.png" /></a>
+                <img src="./asset/whatsapp.png" alt="WhatsApp">
+                <img src="./asset/facebook.png" alt="Facebook">
+                <img src="./asset/instagram.png" alt="Instagram">
             </div>
-        </div>
-    </header>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <img alt="" src="./asset/patch.png" />
-                <h1>Its time to enjoy the finer foods in <span class="accent">Life</span></h1>
-                <p>Locally Procured, Environmentally Responsible and Tasty</p>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <img class="patch" alt="Patch" src="./asset/patch.png">
+                    <h1>Its time to enjoy the finer foods in <span class="accent">Life</span></h1>
+                    <p>Locally Procured, Environmentally Responsible and Tasty</p>
+                </div>
+                <div class="hero-img">
+                    <img alt="Food Truck" src="./asset/truck.png">
+                </div>
             </div>
 
-            <!-- Yellow background shape -->
-            <div class="yellow-bg"></div>
+        </section>
+    </div>
 
-            <div class="hero-img">
-                <img alt="Food Truck" src="./asset/truck.png" />
-            </div>
-        </div>
-
-        <div class="hero-arrows">
-            <button class="arrow left">←</button>
-            <button class="arrow right">→</button>
-        </div>
-    </section>
+    <!-- ===== Below sections kept as-is ===== -->
 
     <!-- Popular Dishes -->
     <section class="menu">
         <div>
             <div class="section-heading">
-                <h4 class="section-subtitle">Popular Dishes _______</h4>
-                <h2 class="section-title">Browse Our Menu</h2>
+                <div>
+                    <h4 class="section-subtitle">Popular Dishes _______</h4>
+                    <h2 class="section-title">Browse Our Menu</h2>
+                </div>
+                <div class="hero-arrows">
+                    <button class="arrow left">←</button>
+                    <button class="arrow right">→</button>
+                </div>
             </div>
+
             <div class="container">
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -71,8 +72,7 @@
                         </div>
                         <img alt="" src="./asset/star rating.png" />
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                        </p>
+                            pariatur.</p>
                     </div>
                     <div class="menu-item">
                         <img alt="Idli Vada" class="sec" src="./asset/dosa2.png" />
@@ -82,8 +82,7 @@
                         </div>
                         <img alt="" src="./asset/star rating.png" />
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                        </p>
+                            pariatur.</p>
                     </div>
                     <div class="menu-item">
                         <img alt="Poori Curry" src="./asset/dosa3.png" />
@@ -93,13 +92,13 @@
                         </div>
                         <img alt="" src="./asset/star rating.png" />
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                        </p>
+                            pariatur.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Our Story -->
     <section class="our-story">
         <div class="container story-content">
@@ -116,12 +115,13 @@
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                     nulla
                     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id
-                    est laborum.</p>
+                    anim id est
+                    laborum.</p>
                 <a class="btn" href="#">Read More <span class="arrow">›</span></a>
             </div>
         </div>
     </section>
+
     <!-- Trusted and Experienced -->
     <section class="features">
         <div>
@@ -163,6 +163,7 @@
             </div>
         </div>
     </section>
+
     <!-- Testimonials -->
     <section class="testimonials">
         <div>
@@ -202,6 +203,7 @@
             </div>
         </div>
     </section>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-content">

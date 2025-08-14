@@ -19,22 +19,43 @@ body {
 /* Global container */
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+}
+
+/* ========== HEADER + HERO WRAPPER ========== */
+.header-hero {
+  position: relative;
+  overflow: hidden;
+  /* keeps the arc tidy */
+}
+
+/* Yellow arc covering header + hero */
+.yellow-bg {
+  position: absolute;
+  top: -170px;
+  right: 0;
+  bottom: -80px;
+  width: 35%;
+  background: #fbbf24;
+  border-top-left-radius: 959px;
+  border-bottom-left-radius: 959px;
+  z-index: 0;
 }
 
 /* ========== NAVBAR ========== */
 .navbar {
+  position: relative;
+  z-index: 2;
+  /* above yellow background */
   padding: 15px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 0;
+  /* no divider — merged look */
 }
 
 .nav-container {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 1200px;
 }
 
 .logo {
@@ -63,67 +84,42 @@ nav a:hover {
   margin-left: 10px;
 }
 
-/* ========== SECTIONS GLOBAL ========== */
+/* ========== HERO (Home) ========== */
 section {
   padding: 10px 0;
 }
 
-.section-subtitle {
-  color: red;
-  font-weight: bold;
-}
-
-.section-title {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.section-heading {
-  margin-left: 160px;
-}
-
-.section-heading h2 {
-  margin: 20px;
-  margin-left: -5px;
-}
-
-/* ========== HERO (Home) ========== */
 .hero {
   position: relative;
-  background: white;
-  overflow: hidden;
-  padding: 50px 0;
+  z-index: 2;
+  /* above the background */
+  background: transparent;
 }
 
 .hero-content {
+  height: 650px;
+  /* controls total hero height like the reference */
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 2;
 }
 
+/* Left text */
 .hero-text {
-  max-width: 32%;
+  max-width: 38%;
   z-index: 2;
 }
 
-.tagline {
-  background: #ffb300;
-  display: inline-block;
-  padding: 8px 12px;
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-/* .hero-text h1 {
-  font-size: 60px;
+.hero-text img {
+  max-width: 380px;
   margin-bottom: 15px;
-} */
+}
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: bold;
   line-height: 1.3;
 }
@@ -133,40 +129,29 @@ section {
 }
 
 .hero-text p {
-  font-size: 24px;
+  font-size: 22px;
   color: #808080;
   margin-top: 10px;
 }
 
-/* Yellow bottom half-moon */
-.yellow-bg {
-  position: absolute;
-  bottom: -150px;
-  /* ensures full bottom curve visible */
-  right: -150px;
-  width: 900px;
-  height: 900px;
-  background: #fbbf24;
-  border-radius: 50%;
-  z-index: 0;
-}
-
-/* Truck image */
+/* Truck image — anchored to wrapper bottom-right */
 .hero-img {
-  position: relative;
+  position: absolute;
+  right: -120px;
+  bottom: 0;
   z-index: 1;
 }
 
 .hero-img img {
-  max-width: 500px;
-  display: block;
+  max-width: 760px;
+  height: 558px;
 }
 
 /* Arrows */
 .hero-arrows {
-  margin-top: 20px;
+  /* margin-top: 14px; */
   text-align: center;
-  z-index: 3;
+  margin-left: 900px;
 }
 
 .hero-arrows .arrow {
@@ -180,7 +165,29 @@ section {
   border-radius: 50%;
 }
 
-/* ========== MENU GRID (Home) ========== */
+/* ======== Rest of sections (kept from your original) ======== */
+
+.section-subtitle {
+  color: red;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  margin-left: 160px;
+  display: flex;
+}
+
+.section-heading h2 {
+  margin: 20px;
+  margin-left: -5px;
+}
+
+/* MENU GRID */
 .menu-grid {
   display: flex;
   gap: 20px;
@@ -191,7 +198,7 @@ section {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 15px;
-  width: 250px;
+  width: 380px;
 }
 
 .menu-item img {
@@ -219,7 +226,7 @@ section {
   color: #808080;
 }
 
-/* ========== OUR STORY (Shared) ========== */
+/* OUR STORY */
 .our-story .story-content {
   display: flex;
   gap: 40px;
@@ -289,7 +296,7 @@ section {
   background-color: #e5a50a;
 }
 
-/* ========== FEATURES (Home) ========== */
+/* FEATURES */
 .features {
   background: #fff6e9;
 }
@@ -319,10 +326,10 @@ section {
 
 .section-heading {
   margin-left: 160px;
-  line-height: 2.1;
+  line-height: 2;
 }
 
-/* ========== TESTIMONIALS (Home) ========== */
+/* TESTIMONIALS */
 .testimonial-grid {
   display: flex;
   gap: 20px;
@@ -365,91 +372,10 @@ section {
   padding: 12px;
 }
 
-/* ========== WHY CHOOSE US (About) ========== */
-.why-choose .choose-text {
-  width: 600px;
-  padding-right: 40px;
-  line-height: 2.2;
-}
-
-.why-choose h3 {
-  color: #b78c2b;
-}
-
-.why-choose ul {
-  list-style: none;
-  padding: 0;
-}
-
-.why-choose ul li {
-  margin-bottom: 8px;
-}
-
-/* ========== TEAM (About) ========== */
-.team {
-  padding: 50px 0;
-}
-
-.team-title {
-  color: #b78c2b;
-  font-size: 1.2rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-left: 160px;
-  margin-bottom: 20px;
-}
-
-.team-title span {
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background: #b78c2b;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.team-member {
-  background: white;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-5px);
-}
-
-.team-member img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.team-member h3 {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-.team-member p {
-  color: gray;
-  margin: 0;
-}
-
-/* ========== FOOTER (Shared) ========== */
+/* FOOTER */
 .footer {
   background: #f4a900;
   padding: 70px 0;
-  font-family: 'Gotham', sans-serif;
   border-bottom: 10px solid #b80000;
 }
 
@@ -485,6 +411,7 @@ section {
   line-height: 1.5;
   margin: 0;
 }
+
 
 /* ========== MENU PAGE ========== */
 .food-intro-section {
