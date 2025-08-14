@@ -1,62 +1,76 @@
-.hero-section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 550px;
-  background-color: white;
-  overflow: hidden;
-  padding: 0 50px;
+.hero {
+    position: relative;
+    background: white;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
 }
 
 /* Left text */
 .hero-text {
-  position: relative;
-  z-index: 2;
-  max-width: 50%;
+    max-width: 32%;
+    z-index: 2;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1.3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.3;
 }
 
-.hero-text span {
-  color: red;
+.hero-text .accent {
+    color: red;
 }
 
 .hero-text p {
-  color: gray;
-  margin-top: 10px;
+    color: gray;
+    margin-top: 10px;
 }
 
-.highlight-text {
-  display: inline-block;
-  background: #fbbf24;
-  padding: 8px 15px;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 20px;
-}
-
-/* Yellow half-moon background */
+/* Yellow bottom half-moon */
 .yellow-bg {
-  position: absolute;
-  bottom: -150px; /* pushes circle down so bottom is fully visible */
-  right: -150px;
-  width: 900px;
-  height: 900px;
-  background: #fbbf24;
-  border-radius: 50%;
-  z-index: 0;
+    position: absolute;
+    bottom: -150px; /* ensures full bottom curve visible */
+    right: -150px;
+    width: 900px;
+    height: 900px;
+    background: #fbbf24;
+    border-radius: 50%;
+    z-index: 0;
 }
 
 /* Truck image */
-.truck-img {
-  position: relative;
-  z-index: 1;
-  max-width: 500px;
-  margin-right: 50px;
+.hero-img {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-img img {
+    max-width: 500px;
+    display: block;
+}
+
+/* Arrows */
+.hero-arrows {
+    margin-top: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.hero-arrows .arrow {
+    background: #fbbf24;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
 }
