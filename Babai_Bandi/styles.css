@@ -1,0 +1,35 @@
+.hero-section {
+  position: relative;
+  height: 500px;
+  background: white;
+  overflow: hidden;
+}
+
+.yellow-bg {
+  position: absolute;
+  right: -150px;
+  top: -50px;
+  width: 700px;
+  height: 700px;
+  background: #fbbf24;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.truck-img {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  width: 450px;
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  padding: 50px;
+  z-index: 2;
+}
+
+.hero-text span {
+  color: red;
+}
