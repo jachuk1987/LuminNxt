@@ -67,10 +67,8 @@ body {
 .navbar {
   position: relative;
   z-index: 2;
-  /* above yellow background */
   padding: 15px 0;
   border-bottom: 0;
-  /* no divider — merged look */
 }
 
 .nav-container {
@@ -111,13 +109,11 @@ section {
 .hero {
   position: relative;
   z-index: 2;
-  /* above the background */
   background: transparent;
 }
 
 .hero-content {
   height: 650px;
-  /* controls total hero height like the reference */
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -153,10 +149,9 @@ section {
   margin-top: 10px;
 }
 
-/* Truck image — anchored to wrapper bottom-right */
 .hero-img {
   position: absolute;
-  right: -120px;
+  right: -160px;
   bottom: 0;
   z-index: 1;
 }
