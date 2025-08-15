@@ -14,6 +14,8 @@ body {
 .top-border {
   height: 8px;
   background-color: #ffb300;
+  position: relative;
+  z-index: 2;
 }
 
 /* Global container */
@@ -28,11 +30,16 @@ body {
 .header-hero {
   position: relative;
   overflow: hidden;
-  /* keeps the arc tidy */
+}
+
+.header-hero1 {
+  position: relative;
+  overflow: hidden;
+  height: 140px;
 }
 
 /* Yellow arc covering header + hero */
-.yellow-bg {
+/* .yellow-bg {
   position: absolute;
   top: -170px;
   right: 0;
@@ -42,6 +49,17 @@ body {
   border-top-left-radius: 959px;
   border-bottom-left-radius: 959px;
   z-index: 0;
+} */
+
+.yellow-bgcorner {
+  position: absolute;
+  bottom: -80px;
+  right: -250px;
+  width: 800px;
+  height: 800px;
+  background: #fbbf24;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 /* ========== NAVBAR ========== */
@@ -244,12 +262,17 @@ section {
   line-height: 1.8;
 }
 
+.choose-text {
+  line-height: 1.8;
+}
+
 .story-text h4 {
   color: orange;
   margin-bottom: 10px;
 }
 
-.story-text h3 {
+.story-text h3,
+.choose-text h3{
   color: #b78c2b;
 }
 
@@ -266,7 +289,7 @@ section {
 .btn-watch {
   background-color: #fdb913;
   color: white;
-  padding: 0px 32px;
+  padding: 6px 32px;
   margin: 24px 0;
   text-decoration: none;
   display: inline-flex;
@@ -295,6 +318,66 @@ section {
 .btn:hover {
   background-color: #e5a50a;
 }
+
+.team {
+  padding: 50px 0;
+}
+
+.team-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b17b2d;
+  position: relative;
+  display: inline-block;
+  margin-left: 160px;
+}
+
+.team-title span {
+  display: inline-block;
+  height: 2px;
+  background-color: #b17b2d;
+  width: 50px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
 
 /* FEATURES */
 .features {
@@ -411,9 +494,6 @@ section {
   line-height: 1.5;
   margin: 0;
 }
-
-
-/* ========== About Us PAGE ========== */
 
 
 /* ========== MENU PAGE ========== */
