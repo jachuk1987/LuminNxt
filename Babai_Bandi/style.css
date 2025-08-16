@@ -43,7 +43,6 @@ body {
   position: absolute;
   top: -100px;
   right: -250px;
-  /* bottom: -80px; */
   width: 800px;
   height: 975px;
   background-color: #ffb300;
@@ -73,10 +72,6 @@ body {
 
 .nav-container {
   justify-content: space-between;
-}
-
-.logo {
-  /* height: 60px; */
 }
 
 nav ul {

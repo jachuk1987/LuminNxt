@@ -14,33 +14,64 @@ body {
 .top-border {
   height: 8px;
   background-color: #ffb300;
+  position: relative;
+  z-index: 2;
 }
 
 /* Global container */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+}
+
+/* ========== HEADER + HERO WRAPPER ========== */
+.header-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-hero1 {
+  position: relative;
+  overflow: hidden;
+  height: 140px;
+}
+
+/* Yellow arc covering header + hero */
+.yellow-bg {
+  position: absolute;
+  top: -100px;
+  right: -250px;
+  width: 800px;
+  height: 975px;
+  background-color: #ffb300;
+  border-top-left-radius: 959px;
+  border-bottom-left-radius: 959px;
+  z-index: 0;
+}
+
+.yellow-bgcorner {
+  position: absolute;
+  bottom: -80px;
+  right: -250px;
+  width: 800px;
+  height: 800px;
+  background: #fbbf24;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 /* ========== NAVBAR ========== */
 .navbar {
+  position: relative;
+  z-index: 2;
   padding: 15px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 0;
 }
 
 .nav-container {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.logo {
-  height: 60px;
 }
 
 nav ul {
@@ -65,57 +96,42 @@ nav a:hover {
   margin-left: 10px;
 }
 
-/* ========== SECTIONS GLOBAL ========== */
-section {
-  padding: 50px 0;
-}
-
-.section-subtitle {
-  color: red;
-  font-weight: bold;
-}
-
-.section-title {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.me1 {
-  margin-left: 160px;
-}
-
-.me1 h2 {
-  margin: 20px;
-  margin-left: -5px;
-}
-
 /* ========== HERO (Home) ========== */
+section {
+  padding: 10px 0;
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
 
 .hero-content {
+  height: 650px;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  position: relative;
 }
 
+/* Left text */
 .hero-text {
-  flex: 1;
-  max-width: 500px;
-  padding-right: 40px;
+  max-width: 38%;
+  z-index: 2;
 }
 
-.tagline {
-  background: #ffb300;
-  display: inline-block;
-  padding: 8px 12px;
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 20px;
+.hero-text img {
+  max-width: 380px;
+  margin-bottom: 15px;
 }
 
 .hero-text h1 {
-  font-size: 60px;
-  margin-bottom: 15px;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.3;
 }
 
 .hero-text .accent {
@@ -123,39 +139,67 @@ section {
 }
 
 .hero-text p {
-  font-size: 24px;
+  font-size: 22px;
   color: #808080;
+  margin-top: 10px;
+}
+
+.hero-img {
+  position: absolute;
+  right: -160px;
+  bottom: 0;
+  z-index: 1;
 }
 
 .hero-img img {
-  max-width: 450px;
-  width: 100%;
-  border-radius: 10px;
+  max-width: 760px;
+  height: 558px;
 }
 
-/* Arrows under truck */
+/* Arrows */
 .hero-arrows {
-  position: relative;
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  margin-left: 1100px;
+  /* margin-top: 14px; */
+  text-align: center;
+  margin-left: 900px;
 }
 
-.arrow {
-  background-color: #ffb300;
+.hero-arrows .arrow {
+  background: #fbbf24;
   border: none;
-  border-radius: 50%;
+  color: white;
   padding: 10px 15px;
-  font-size: 20px;
+  margin: 0 5px;
   cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
 }
 
-/* ========== MENU GRID (Home) ========== */
+/* ======== Rest of sections (kept from your original) ======== */
+
+.section-subtitle {
+  color: red;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  margin-left: 160px;
+  display: flex;
+}
+
+.section-heading h2 {
+  margin: 20px;
+  margin-left: -5px;
+}
+
+/* MENU GRID */
 .menu-grid {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .menu-item {
@@ -163,14 +207,11 @@ section {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 15px;
-  flex: 1;
-  min-width: 250px;
-  align-items: center;
-  /* text-align: center; */
+  width: 380px;
 }
 
 .menu-item img {
-  max-width: 250px;
+  width: 250px;
 }
 
 .sec {
@@ -194,23 +235,25 @@ section {
   color: #808080;
 }
 
-/* ========== OUR STORY (Shared) ========== */
+/* OUR STORY */
 .our-story .story-content {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
   align-items: center;
 }
 
-.story-img img,
 .story-image img {
-  max-width: 100%;
+  width: 500px;
   border-radius: 8px;
 }
 
 .story-text {
-  flex: 1;
+  width: 600px;
   padding-left: 40px;
+  line-height: 1.8;
+}
+
+.choose-text {
   line-height: 1.8;
 }
 
@@ -219,7 +262,8 @@ section {
   margin-bottom: 10px;
 }
 
-.story-text h3 {
+.story-text h3,
+.choose-text h3{
   color: #b78c2b;
 }
 
@@ -236,7 +280,7 @@ section {
 .btn-watch {
   background-color: #fdb913;
   color: white;
-  padding: 0px 32px;
+  padding: 6px 32px;
   margin: 24px 0;
   text-decoration: none;
   display: inline-flex;
@@ -248,7 +292,7 @@ section {
   transition: background-color 0.3s ease;
 }
 
-.btn-watch{
+.btn-watch {
   border-radius: 8px;
 }
 
@@ -256,7 +300,6 @@ section {
   color: #b80000;
   margin: 20px;
 }
-
 
 .btn .arrow {
   margin-left: 10px;
@@ -267,7 +310,67 @@ section {
   background-color: #e5a50a;
 }
 
-/* ========== FEATURES (Home) ========== */
+.team {
+  padding: 50px 0;
+}
+
+.team-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b17b2d;
+  position: relative;
+  display: inline-block;
+  margin-left: 160px;
+}
+
+.team-title span {
+  display: inline-block;
+  height: 2px;
+  background-color: #b17b2d;
+  width: 50px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* FEATURES */
 .features {
   background: #fff6e9;
 }
@@ -279,12 +382,10 @@ section {
 .features-grid {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .feature {
-  flex: 1;
-  min-width: 200px;
+  width: 250px;
   line-height: 1.9;
 }
 
@@ -297,16 +398,15 @@ section {
   color: brown;
 }
 
-.me2 {
+.section-heading {
   margin-left: 160px;
-  line-height: 2.1;
+  line-height: 2;
 }
 
-/* ========== TESTIMONIALS (Home) ========== */
+/* TESTIMONIALS */
 .testimonial-grid {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
   font-size: 25px;
 }
 
@@ -315,8 +415,7 @@ section {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 15px;
-  flex: 1;
-  min-width: 200px;
+  width: 300px;
   text-align: center;
 }
 
@@ -347,104 +446,22 @@ section {
   padding: 12px;
 }
 
-/* ========== WHY CHOOSE US (About) ========== */
-.why-choose .choose-text {
-  flex: 1;
-  padding-right: 40px;
-  line-height: 2.2;
-}
-
-.why-choose h3 {
-  color: #b78c2b;
-}
-
-.why-choose ul {
-  list-style: none;
-  padding: 0;
-}
-
-.why-choose ul li {
-  margin-bottom: 8px;
-}
-
-/* ========== TEAM (About) ========== */
-.team {
-  padding: 50px 0;
-}
-
-.team-title {
-  color: #b78c2b;
-  font-size: 1.2rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-left: 160px;
-  margin-bottom: 20px;
-}
-
-.team-title span {
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background: #b78c2b;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.team-member {
-  background: white;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-5px);
-}
-
-.team-member img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.team-member h3 {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-.team-member p {
-  color: gray;
-  margin: 0;
-}
-
-/* ========== FOOTER (Shared) ========== */
+/* FOOTER */
 .footer {
   background: #f4a900;
   padding: 70px 0;
-  font-family: 'Gotham', sans-serif;
   border-bottom: 10px solid #b80000;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .footer-content div {
-  flex: 1;
+  width: 300px;
 }
 
 .footer h3 {
@@ -469,6 +486,7 @@ section {
   margin: 0;
 }
 
+
 /* ========== MENU PAGE ========== */
 .food-intro-section {
   padding: 50px 0;
@@ -476,16 +494,14 @@ section {
 }
 
 .food-intro-container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 40px;
 }
 
 .food-intro-text {
-  flex: 1;
+  width: 600px;
 }
 
 .food-intro-text h2 {
@@ -504,13 +520,11 @@ section {
 }
 
 .food-intro-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+  width: 500px;
 }
 
 .food-intro-image img {
-  max-width: 100%;
+  width: 500px;
   height: auto;
 }
 
@@ -535,9 +549,9 @@ section {
 
 .menu-items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 500px);
   gap: 15px;
-  width: 82%;
+  width: 1000px;
   margin: auto;
 }
 
@@ -592,11 +606,11 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 40px 10%;
+  padding: 40px 100px;
 }
 
 .contact-info {
-  flex: 1;
+  width: 500px;
   background: #ffb400;
   color: white;
   padding: 20px;
@@ -616,7 +630,7 @@ section {
 }
 
 .contact-form {
-  flex: 1;
+  width: 500px;
 }
 
 .contact-form form {
