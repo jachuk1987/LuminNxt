@@ -174,7 +174,7 @@
 
  .lead {
    color: var(--muted);
-   max-width: 46ch;
+   /* max-width: 46ch; */
    font-size: 22px;
  }
 
