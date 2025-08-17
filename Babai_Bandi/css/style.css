@@ -453,6 +453,7 @@
    border: 1px solid #c3c6ca;
    border-radius: 16px;
    padding: 18px;
+   width: 300px;
    box-shadow: var(--shadow);
    display: flex;
    flex-direction: column;
