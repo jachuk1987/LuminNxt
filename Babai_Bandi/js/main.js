@@ -13,17 +13,17 @@ $(document).ready(function () {
         nav: true,
         autoplay: true,
         autoplayTimeout: 8000,
-        responsive: {
-            0: { items: 1 },     // mobile
-            600: { items: 2 },   // tablet
-            1000: { items: 3 },   // desktop    
-        }
+        // responsive: {
+        //     0: { items: 1 },     // mobile
+        //     600: { items: 2 },   // tablet
+        //     1000: { items: 3 },   // desktop    
+        // }
     });
 
     // Mobile Menu Toggle
-    $(".menu-toggle").click(function () {
-        $(".menu").toggleClass("active");
-        $(this).find("i").toggleClass("fa-bars fa-times");
-    });
+    // $(".menu-toggle").click(function () {
+    //     $(".menu").toggleClass("active");
+    //     $(this).find("i").toggleClass("fa-bars fa-times");
+    // });
 });
 
