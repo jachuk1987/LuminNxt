@@ -19,5 +19,11 @@ $(document).ready(function () {
             1000: { items: 3 },   // desktop    
         }
     });
+
+    // Mobile Menu Toggle
+    $(".menu-toggle").click(function () {
+        $(".menu").toggleClass("active");
+        $(this).find("i").toggleClass("fa-bars fa-times");
+    });
 });
 
