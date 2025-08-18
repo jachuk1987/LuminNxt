@@ -1,0 +1,211 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #fff;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+.btn-quote {
+  padding: 8px 18px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #222;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.highlight { color: orange; }
+.highlight-blue { color: #2d65f2; font-weight: 600; }
+.hero-text p {
+  margin-bottom: 20px;
+}
+.btn-main {
+  background: orange;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.hero-img img {
+  max-width: 500px;
+}
+
+/* Services */
+.services {
+  padding: 60px 0;
+  text-align: center;
+}
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 22%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.card h3 {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* About */
+.about {
+  padding: 60px 0;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text {
+  flex: 1;
+  padding-right: 40px;
+}
+.about-img img {
+  max-width: 400px;
+}
+
+/* How It Works */
+.how-it-works {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+.works-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.works-text ul {
+  margin-top: 20px;
+}
+.works-text li {
+  margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 0;
+  text-align: center;
+}
+.testimonial-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.clients {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.clients img {
+  max-height: 40px;
+}
+
+/* Newsletter */
+.newsletter {
+  background: #f2f0ff;
+  padding: 50px 0;
+  text-align: center;
+}
+.newsletter form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.newsletter input {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+.newsletter button {
+  padding: 12px 20px;
+  border: none;
+  background: orange;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
