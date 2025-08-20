@@ -4,157 +4,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUMINNXT - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>LuminNXT - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- Header -->
-  <header>
-    <div class="logo">LUMIN<span class="highlight">NXT</span></div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="#" class="quote-btn">Get a Quote</a>
+  <header class="header">
+    <div class="container header-container">
+      <img src="./asset/Logo.png" alt="LUMINNXT Logo" />
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Technologies</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn-quote">Get a Quote</a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>
-        Analyze, rate and score For <span class="orange">NXT</span>
-        <span class="blue">Extent</span> Approach.
-      </h1>
-      <p>We provide the expertise and support to propel your business forward in the digital landscape.</p>
-      <a href="#" class="btn">Find out more</a>
-    </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328cd0c1" alt="Team">
-    </div>
-  </section>
-
-  <!-- Domain Section -->
-  <section class="domain">
-    <h2>Don’t Just Dream It. Domain It.</h2>
-    <div class="domain-search">
-      <input type="text" placeholder="Enter a domain name to search">
-      <button>Search</button>
-    </div>
-    <div class="steps">
-      <div>1. Select Plan</div>
-      <div>2. Choose Domain</div>
-      <div>3. Login/Register</div>
-      <div>4. Make Payment</div>
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1>Analyze, rate and score For <span class="orange">NXT</span> <span class="blue-bg">Extent</span> Approach.
+        </h1>
+        <p>We provide the expertise and support to propel your business forward in the digital landscape.</p>
+        <a href="#" class="btn-primary">Find out more</a>
+      </div>
+      <div class="hero-img">
+        <img src="dummy-hero.jpg" alt="Hero Image">
+      </div>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Domain Search -->
+  <section class="domain-search">
+    <div class="container">
+      <h2>Don’t Just Dream It. Domain It.</h2>
+      <form>
+        <input type="text" placeholder="Enter a domain name to search">
+        <select>
+          <option>.com</option>
+          <option>.in</option>
+          <option>.org</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+      <div class="steps">
+        <div class="step">1. Select Plan</div>
+        <div class="step">2. Choose Domain</div>
+        <div class="step">3. Login/Register</div>
+        <div class="step">4. Make Payment</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
   <section class="services">
-    <h2>We Offer Best Services</h2>
-    <div class="services-grid">
-      <div class="service-box">
-        <h3>Product Information</h3>
-        <p>Product innovation is derived from both Market Research Insights and Strategic approach.</p>
-      </div>
-      <div class="service-box">
-        <h3>Web Services</h3>
-        <p>Our Knowledge Management Applications are an important core.</p>
-      </div>
-      <div class="service-box">
-        <h3>Application Development</h3>
-        <p>We develop custom applications as per business requirements.</p>
-      </div>
-      <div class="service-box">
-        <h3>Data Analytics</h3>
-        <p>Combining Real World and Analytical Data Expertise.</p>
+    <div class="container">
+      <h2>We Offer Best Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="dummy-icon.png" alt="">
+          <h3>Product Information</h3>
+          <p>Product innovation is derived from design, market research, and strategy approaches.</p>
+        </div>
+        <div class="service-card">
+          <img src="dummy-icon.png" alt="">
+          <h3>Web Services</h3>
+          <p>Knowledge management applications are integral to our core services.</p>
+        </div>
+        <div class="service-card">
+          <img src="dummy-icon.png" alt="">
+          <h3>Application Development</h3>
+          <p>We develop custom applications as per business requirements.</p>
+        </div>
+        <div class="service-card">
+          <img src="dummy-icon.png" alt="">
+          <h3>Data Analytics</h3>
+          <p>Combining market and product data, expertise provides better-driven approaches.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="about">
-    <h2>Innovations in Excellence: Constructing a Digital Future Together</h2>
-    <div class="about-grid">
+    <div class="container about-container">
       <div class="about-text">
-        <p><strong>24/7 SUPPORT</strong> – Our Quality composed of technical experts in any technology area will round the clock.</p>
-        <p><strong>99.9% AVAILABILITY</strong> – We strive to give you ultimate opportunity to make your dreams succeed.</p>
-        <p><strong>TRAINING SESSIONS</strong> – Our Technical division focuses on training support to the ever-expanding IT industry worldwide.</p>
+        <h2>Innovations in Excellence: Constructing a Digital Future Together</h2>
+        <ul>
+          <li><strong>24/7 Support:</strong> Quality ongoing technical support.</li>
+          <li><strong>99.9% Uptime:</strong> Always accessible, no missed opportunities.</li>
+          <li><strong>Training Sessions:</strong> Focus on IT support around the world.</li>
+        </ul>
       </div>
-      <div class="about-image">
-        <img src="https://via.placeholder.com/400x250" alt="About Illustration">
+      <div class="about-img">
+        <img src="dummy-about.jpg" alt="">
       </div>
     </div>
   </section>
 
-  <!-- How it Works -->
-  <section class="how-it-works">
-    <h2>Researching, brainstorming, and developing a work strategy</h2>
-    <ul>
-      <li><strong>Innovation Identity Review:</strong> Assess Process Orientation & Business Transformation.</li>
-      <li><strong>Collective Solution Approach:</strong> Collaborative team solutions to business shifts.</li>
-      <li><strong>Process Review Meet:</strong> Initial review sessions & release notes before development stages.</li>
-    </ul>
+  <!-- How It Works -->
+  <section class="how">
+    <div class="container how-container">
+      <div class="how-img">
+        <img src="dummy-how.jpg" alt="">
+      </div>
+      <div class="how-text">
+        <h2>Researching, brainstorming, and developing a work strategy</h2>
+        <ul>
+          <li><strong>Innovation Identity Review</strong> – Assess processes and business needs.</li>
+          <li><strong>Collective Solution Approach</strong> – Collaborative problem solving.</li>
+          <li><strong>Process Review Meet</strong> – Structured reviews for improvements.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Testimonials -->
   <section class="testimonials">
-    <h2>What People Say About Us</h2>
-    <div class="testimonial-card">
-      <p>"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next."</p>
-      <strong>- Mike Taylor, Paris, France</strong>
-    </div>
-    <div class="testimonial-card">
-      <p>"Next level results delivered exactly on time. Outstanding work!"</p>
-      <strong>- Chris Thomas, CEO of Microsoft</strong>
+    <div class="container">
+      <h2>What People Say About Us</h2>
+      <div class="testimonial">
+        <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next.”
+        </p>
+        <h4>Mike Taylor</h4>
+        <span>Paris, France</span>
+      </div>
+      <div class="testimonial">
+        <p>“Great working experience. Dedicated team delivering results as promised.”</p>
+        <h4>Chris Thomas</h4>
+        <span>CEO of Microsoft</span>
+      </div>
     </div>
   </section>
 
-  <!-- Clients Logos -->
-  <section class="clients">
-    <img src="https://via.placeholder.com/100x40?text=Spotify" alt="Spotify">
-    <img src="https://via.placeholder.com/100x40?text=Nike" alt="Nike">
-    <img src="https://via.placeholder.com/100x40?text=Hilfiger" alt="Hilfiger">
-    <img src="https://via.placeholder.com/100x40?text=LV" alt="Louis Vuitton">
-    <img src="https://via.placeholder.com/100x40?text=RedBull" alt="RedBull">
+  <!-- Logos -->
+  <section class="logos">
+    <div class="container logos-grid">
+      <img src="dummy-logo.png" alt="Spotify">
+      <img src="dummy-logo.png" alt="Nike">
+      <img src="dummy-logo.png" alt="Tommy">
+      <img src="dummy-logo.png" alt="Louis Vuitton">
+      <img src="dummy-logo.png" alt="Red Bull">
+    </div>
   </section>
 
-  <!-- Newsletter -->
-  <section class="newsletter">
-    <h2>Looking for a project? We are here to help</h2>
-    <div class="newsletter-box">
-      <input type="email" placeholder="Your email">
-      <button>Send</button>
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Looking for a project? We are here to help</h2>
+      <form>
+        <input type="email" placeholder="Your email">
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <div>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col">
         <h4>Company</h4>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Careers</a>
-        <a href="#">Technologies</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Technologies</a></li>
+        </ul>
       </div>
-      <div>
+      <div class="footer-col">
         <h4>Contact</h4>
-        <a href="#">Contact Us</a>
-        <a href="#">FAQ</a>
-        <a href="#">Affiliates</a>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Affiliates</a></li>
+        </ul>
       </div>
     </div>
-    <p class="copy">© 2025 LUMINNXT. All rights reserved.</p>
+    <div class="footer-bottom">
+      <p>All rights reserved © luminext.com</p>
+    </div>
   </footer>
 
 </body>
