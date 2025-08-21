@@ -4,11 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #222;
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -21,24 +23,29 @@ body {
   padding: 15px 0;
   border-bottom: 1px solid #eee;
 }
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
 }
+
 .nav-links a.active {
   color: #007bff;
 }
+
 .btn-quote {
   background: #000;
   color: #fff;
@@ -54,6 +61,7 @@ body {
   text-align: center;
   padding: 40px 0;
 }
+
 .hero-banner h2 {
   font-size: 28px;
   font-weight: 600;
@@ -64,18 +72,22 @@ body {
   text-align: center;
   padding: 50px 20px;
 }
+
 .intro h1 {
   font-size: 32px;
   font-weight: 700;
 }
+
 .highlight-blue {
   background: #e8f2ff;
   color: #007bff;
   padding: 0 5px;
 }
+
 .highlight-orange {
   color: #ff6600;
 }
+
 .intro p {
   margin-top: 15px;
   color: #666;
@@ -88,20 +100,24 @@ body {
   gap: 40px;
   margin: 60px auto;
 }
+
 .vision-mission h3 {
   margin-bottom: 10px;
 }
+
 .mission-quote {
   background: #fff;
   padding: 20px;
   border-left: 4px solid #ff6600;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
+
 .mission-quote blockquote {
   font-size: 18px;
   font-style: italic;
   margin-bottom: 10px;
 }
+
 .author {
   font-weight: bold;
   color: #333;
@@ -109,31 +125,93 @@ body {
 
 /* Timeline */
 .timeline {
-  background: #fafafa;
-  padding: 60px 20px;
-  text-align: center;
+  position: relative;
+  padding: 100px 0;
+  background: #fff;
 }
-.timeline .btn-orange {
-  display: inline-block;
-  margin: 20px 0;
-  background: #ff6600;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+
+.timeline-content {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
 }
+
+.timeline .intro {
+  max-width: 500px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+}
+
 .steps {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
+  position: relative;
+  z-index: 2;
 }
+
 .step {
-  width: 30%;
+  position: absolute;
+  width: 250px;
+  text-align: left;
 }
-.number {
-  font-size: 50px;
-  color: #ddd;
+
+.step .number {
+  font-size: 100px;
   font-weight: bold;
+  color: rgba(0, 0, 0, 0.07);
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  z-index: 0;
+}
+
+.step .dot {
+  width: 22px;
+  height: 22px;
+  background: #ff6600;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.step h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.step p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+/* Positioning steps along the curve */
+.step1 {
+  top: 280px;
+  left: 40px;
+}
+
+.step2 {
+  top: 150px;
+  left: 420px;
+}
+
+.step3 {
+  top: 60px;
+  left: 800px;
 }
 
 /* Why Unique */
@@ -143,14 +221,17 @@ body {
   align-items: center;
   padding: 60px 20px;
 }
+
 .why-unique .images {
   display: flex;
   gap: 20px;
 }
+
 .why-unique .images img {
   width: 250px;
   border-radius: 10px;
 }
+
 .why-unique .text {
   flex: 1;
 }
@@ -160,32 +241,40 @@ footer {
   background: #f9f9f9;
   padding: 40px 20px;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-col h4 {
   margin-bottom: 15px;
 }
+
 .footer-col ul {
   list-style: none;
 }
+
 .footer-col ul li {
   margin-bottom: 8px;
 }
+
 .footer-col ul a {
   text-decoration: none;
   color: #333;
 }
+
 .social-icons img {
   width: 25px;
   margin-right: 10px;
 }
+
 .app-links img {
   width: 120px;
   margin-top: 10px;
 }
-copyright {
+
+.copyright {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
