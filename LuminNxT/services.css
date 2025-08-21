@@ -1,0 +1,154 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.navbar .logo img {
+  height: 40px;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.navbar .nav-links li.active a {
+  color: #0077ff;
+}
+.btn-quote {
+  background: #fff;
+  border: 1px solid #333;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero */
+.services-hero {
+  text-align: center;
+  background: #fdeedc;
+  padding: 60px 20px;
+}
+.services-hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Services Section */
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
+  gap: 40px;
+}
+.services-text {
+  flex: 1;
+}
+.services-text h2 {
+  font-size: 1.8rem;
+}
+.highlight-orange {
+  color: #ff6600;
+}
+.highlight-blue {
+  color: #0066ff;
+}
+.services-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.service-box img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.service-box h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.service-box p {
+  font-size: 0.95rem;
+}
+
+/* Extra Services */
+.extra-services {
+  background: #f9f6ff;
+  text-align: center;
+  padding: 60px 40px;
+}
+.extra-services p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.extra-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.extra-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.extra-box img {
+  height: 40px;
+  margin-bottom: 15px;
+}
+.extra-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #f9f9f9;
+  padding: 40px 60px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-links h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+.footer-app img {
+  height: 40px;
+  margin: 5px 0;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
