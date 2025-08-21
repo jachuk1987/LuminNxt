@@ -1,55 +1,65 @@
 /* General */
+
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
+  font-family: 'Inter', sans-serif;
   color: #333;
   line-height: 1.6;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Navbar */
 .navbar {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-.navbar .logo img {
-  height: 40px;
-}
-.navbar .nav-links {
+
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
-.navbar .nav-links li a {
+
+.nav-links a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
 }
-.navbar .nav-links li.active a {
-  color: #0077ff;
+
+.nav-links a.active {
+  color: #007bff;
 }
+
 .btn-quote {
-  background: #fff;
-  border: 1px solid #333;
-  padding: 8px 18px;
-  border-radius: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  font-size: 14px;
 }
 
 /* Hero */
-.services-hero {
+.hero-banner {
+  background: #fde8cc;
   text-align: center;
-  background: #fdeedc;
-  padding: 60px 20px;
+  padding: 40px 0;
 }
-.services-hero h1 {
-  font-size: 2rem;
-  font-weight: bold;
+
+.hero-banner h2 {
+  font-size: 28px;
+  font-weight: 600;
 }
 
 /* Services Section */
