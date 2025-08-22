@@ -1,0 +1,200 @@
+/* General */
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #007bff;
+}
+
+.btn-quote {
+    background: #000;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Hero */
+.hero-banner {
+    background: #fde8cc;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero-banner h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Discover Section */
+.discover {
+    padding: 60px 0;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.discover-info h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.discover-info h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.discover-info p {
+    margin: 5px 0;
+}
+
+.discover-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #f9f6ff;
+    padding: 80px 0;
+    position: relative;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.form-text h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.submit-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #e6b800;
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-icons {
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.app-links img {
+    height: 35px;
+    margin: 8px 0;
+}
