@@ -4,212 +4,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LuminNXT - Home</title>
+  <title>LUMINNXT - Home</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-container">
-      <img src="./asset/Logo.png" alt="LUMINNXT Logo" />
-      <nav class="nav">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-          <li><a href="./technologies.html">Technologies</a></li>
-          <li><a href="#">Contact Us</a></li>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="./asset/Logo.png" alt="LUMINNXT Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="technologies.html">Technologies</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-      <a href="#" class="btn-quote">Get a Quote</a>
+      <a href="quote.html" class="btn-quote">Get a Quote</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-container">
-      <div class="hero-text">
-        <h1>Analyze, rate and score For <span class="orange">NXT</span> <span class="blue-bg">Extent</span> Approach.
-        </h1>
-        <p>We provide the expertise and support to propel your business forward in the digital landscape.</p>
-        <a href="#" class="btn-primary">Find out more</a>
-      </div>
-      <div class="hero-img">
-        <img src="dummy-hero.jpg" alt="Hero Image">
-      </div>
-    </div>
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <h1>About Us</h1>
   </section>
 
-  <!-- Domain Search -->
+  <!-- Domain Search Section -->
   <section class="domain-search">
-    <div class="container">
-      <h2>Don’t Just Dream It. Domain It.</h2>
-      <form>
-        <input type="text" placeholder="Enter a domain name to search">
-        <select>
-          <option>.com</option>
-          <option>.in</option>
-          <option>.org</option>
-        </select>
-        <button type="submit">Search</button>
-      </form>
-      <div class="steps">
-        <div class="step">1. Select Plan</div>
-        <div class="step">2. Choose Domain</div>
-        <div class="step">3. Login/Register</div>
-        <div class="step">4. Make Payment</div>
+    <h2>Don't Just Dream It. Domain It.</h2>
+    <div class="search-box">
+      <span>www.</span>
+      <input type="text" placeholder="Enter a domain name to search">
+      <select>
+        <option>.com</option>
+        <option>.net</option>
+        <option>.org</option>
+      </select>
+      <button>Search</button>
+    </div>
+    <div class="domain-steps">
+      <div class="step">
+        <h4>1. Select Plan</h4>
+        <p>Choosing the appropriate hosting plan is crucial for your website’s success...</p>
+      </div>
+      <div class="step">
+        <h4>2. Choose Domain</h4>
+        <p>Select a domain name that represents the purpose of your website...</p>
+      </div>
+      <div class="step">
+        <h4>3. Login/Register</h4>
+        <p>Begin your journey to establish your website and connect...</p>
+      </div>
+      <div class="step">
+        <h4>4. Make Payment</h4>
+        <p>We provide a range of secure payment options to ensure...</p>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="services">
-    <div class="container">
-      <h2>We Offer Best Services</h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <img src="dummy-icon.png" alt="">
-          <h3>Product Information</h3>
-          <p>Product innovation is derived from design, market research, and strategy approaches.</p>
-        </div>
-        <div class="service-card">
-          <img src="dummy-icon.png" alt="">
-          <h3>Web Services</h3>
-          <p>Knowledge management applications are integral to our core services.</p>
-        </div>
-        <div class="service-card">
-          <img src="dummy-icon.png" alt="">
-          <h3>Application Development</h3>
-          <p>We develop custom applications as per business requirements.</p>
-        </div>
-        <div class="service-card">
-          <img src="dummy-icon.png" alt="">
-          <h3>Data Analytics</h3>
-          <p>Combining market and product data, expertise provides better-driven approaches.</p>
-        </div>
-      </div>
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <h2>Find Your Perfect Plan</h2>
+    <p>Explore the perfect strategy to drive your business expansion...</p>
+    <div class="toggle">
+      <button class="active">Monthly</button>
+      <button>Yearly</button>
     </div>
-  </section>
-
-  <!-- About -->
-  <section class="about">
-    <div class="container about-container">
-      <div class="about-text">
-        <h2>Innovations in Excellence: Constructing a Digital Future Together</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Pro</h3>
+        <p class="price">$2.99 <span>per month</span></p>
         <ul>
-          <li><strong>24/7 Support:</strong> Quality ongoing technical support.</li>
-          <li><strong>99.9% Uptime:</strong> Always accessible, no missed opportunities.</li>
-          <li><strong>Training Sessions:</strong> Focus on IT support around the world.</li>
+          <li>Free domain for 1 year</li>
+          <li>Free SSL</li>
+          <li>Migrate your site free</li>
+          <li>Email marketing</li>
+          <li>Create up to 25 websites</li>
         </ul>
+        <button>Get Started</button>
       </div>
-      <div class="about-img">
-        <img src="dummy-about.jpg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works -->
-  <section class="how">
-    <div class="container how-container">
-      <div class="how-img">
-        <img src="dummy-how.jpg" alt="">
-      </div>
-      <div class="how-text">
-        <h2>Researching, brainstorming, and developing a work strategy</h2>
+      <div class="plan best">
+        <h3>Business <span>Best Offer</span></h3>
+        <p class="price">$3.99 <span>per month</span></p>
         <ul>
-          <li><strong>Innovation Identity Review</strong> – Assess processes and business needs.</li>
-          <li><strong>Collective Solution Approach</strong> – Collaborative problem solving.</li>
-          <li><strong>Process Review Meet</strong> – Structured reviews for improvements.</li>
+          <li>AI backups</li>
+          <li>Build ecommerce site</li>
+          <li>AI Agent for WordPress</li>
+          <li>Ready-to-go WP sites</li>
+          <li>Create up to 50 websites</li>
         </ul>
+        <button>Get Started</button>
       </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <div class="container">
-      <h2>What People Say About Us</h2>
-      <div class="testimonial">
-        <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next.”
-        </p>
-        <h4>Mike Taylor</h4>
-        <span>Paris, France</span>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p class="price">$9.99 <span>per month</span></p>
+        <ul>
+          <li>Free domain for 1 year</li>
+          <li>Free SSL</li>
+          <li>Migrate your site free</li>
+          <li>Email marketing</li>
+          <li>Create up to 100 websites</li>
+        </ul>
+        <button>Get Started</button>
       </div>
-      <div class="testimonial">
-        <p>“Great working experience. Dedicated team delivering results as promised.”</p>
-        <h4>Chris Thomas</h4>
-        <span>CEO of Microsoft</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Logos -->
-  <section class="logos">
-    <div class="container logos-grid">
-      <img src="dummy-logo.png" alt="Spotify">
-      <img src="dummy-logo.png" alt="Nike">
-      <img src="dummy-logo.png" alt="Tommy">
-      <img src="dummy-logo.png" alt="Louis Vuitton">
-      <img src="dummy-logo.png" alt="Red Bull">
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <div class="container">
-      <h2>Looking for a project? We are here to help</h2>
-      <form>
-        <input type="email" placeholder="Your email">
-        <button type="submit">Send</button>
-      </form>
     </div>
   </section>
 
   <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-left">
-                <img src="./asset/Logo.png" alt="LUMINNXT Logo" class="logo-img">
-            </div>
-            <div class="footer-links">
-                <div>
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a href="./services.html">Services</a></li>
-                        <li><a href="./careers.html">Careers</a></li>
-                        <li><a href="./technologies.html">Technologies</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-right">
-                <div class="social-icons">
-                    <a href="#"><img src="./asset/fb-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="./asset/insta-icon.png" alt="Instagram"></a>
-                    <a href="#"><img src="./asset/twitter-icon.png" alt="Twitter"></a>
-                </div>
-                <p>Discover our app</p>
-                <div class="app-links">
-                    <img src="./asset/Google Play.png" alt="Google Play">
-                    <img src="./asset/Apple Store.png" alt="App Store">
-                </div>
-                <p class="copyright">All rights reserved @luminxt.com</p>
-            </div>
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="./asset/logo.png" alt="LUMINNXT Logo">
+        <p>Book your trip in minute, get full control for much longer.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Technologies</a></li>
+          </ul>
         </div>
-    </footer>
-
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="./asset/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="./asset/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="./asset/twitter.svg" alt="Twitter"></a>
+        <div class="app-links">
+          <img src="./asset/google-play.png" alt="Google Play">
+          <img src="./asset/app-store.png" alt="App Store">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>All rights reserved @ luminxxt.com</p>
+    </div>
+  </footer>
 </body>
 
 </html>
