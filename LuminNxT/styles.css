@@ -547,3 +547,54 @@ textarea {
   height: 35px;
   margin: 8px 0;
 }
+
+
+/* Domain Search */
+.domain-search {
+  background: #002366;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.domain-search h2 {
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.search-box span,
+.search-box input,
+.search-box select,
+.search-box button {
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+}
+
+.search-box select {
+  border: none;
+}
+
+.search-box button {
+  background: #ffcc66;
+}
+
+.domain-steps {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.domain-steps .step {
+  max-width: 200px;
+}
