@@ -256,7 +256,7 @@ body {
   background: #fff;
   padding: 30px;
   border-left: 6px solid #ff6600;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .mission-quote blockquote {
@@ -331,7 +331,7 @@ body {
 .step .number {
   font-size: 60px;
   font-weight: bold;
-  color: rgba(0,0,0,0.1);
+  color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: -40px;
   left: 50%;
