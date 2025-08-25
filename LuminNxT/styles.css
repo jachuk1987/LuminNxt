@@ -102,6 +102,7 @@ body {
   justify-content: space-between;
   gap: 40px;
   margin: 60px auto;
+  align-items: flex-start;
 }
 
 .mission-quote {
@@ -126,20 +127,20 @@ body {
 .timeline {
   position: relative;
   width: 100%;
-  padding: 60px 20px;
+  padding: 80px 20px;
   background: #fff;
   overflow: hidden;
 }
 
 .timeline-content {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   position: relative;
 }
 
 .timeline-intro {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .timeline-intro h2 {
@@ -152,6 +153,9 @@ body {
   font-size: 1rem;
   color: #555;
   margin-bottom: 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .timeline-intro .btn {
@@ -184,62 +188,53 @@ body {
 .steps {
   position: relative;
   z-index: 2;
-  /* keeps dots/numbers above SVG line */
 }
 
 .step {
   position: absolute;
   text-align: center;
-  width: 200px;
+  width: 220px;
   transform: translateX(-50%);
 }
 
 .step .number {
-  font-size: 20px;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 8px;
-  color: #333;
+  font-size: 100px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.1); /* faint background number */
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .step .dot {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: #ff6600;
   border: 6px solid #fff;
   border-radius: 50%;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 15px auto;
   box-shadow: 0 0 0 3px #ff6600;
+  position: relative;
+  z-index: 2;
 }
 
 /* Positioning the steps along the curve */
 .step1 {
-  top: 250px;
-  /* adjust to match path */
-  left: 100px;
+  top: 260px;
+  left: 150px;
 }
 
 .step2 {
-  top: 180px;
+  top: 200px;
   left: 500px;
 }
 
 .step3 {
-  top: 100px;
-  left: 850px;
+  top: 90px;
+  left: 800px;
 }
-
-.step h4 {
-  margin: 5px 0;
-  color: #222;
-  font-size: 1.1rem;
-}
-
-.step p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
 
 /* Why Unique */
 .why-unique {
@@ -247,6 +242,7 @@ body {
   height: 800px;
   background: url('./asset/team.png') no-repeat center center/cover;
 }
+
 
 /* ==============================
    SERVICES PAGE
