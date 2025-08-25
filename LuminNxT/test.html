@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Line Graph with Dots</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fff;
+    }
+    svg {
+      width: 80%;
+      height: auto;
+    }
+    .line {
+      fill: none;
+      stroke: #ff6a00;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .dot {
+      fill: #ff6a00;
+      stroke: #fff;
+      stroke-width: 6; /* white border */
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Interpolated Smooth Curve that passes through dots -->
+    <path class="line" 
+          d="M 50 300 
+             C 100 300, 200 280, 150 280 
+             S 300 200, 450 200 
+             S 600 100, 750 100 
+             S 850 75, 900 50" />
+
+    <!-- Dots -->
+    <circle class="dot" cx="150" cy="280" r="10"/>
+    <circle class="dot" cx="450" cy="200" r="10"/>
+    <circle class="dot" cx="750" cy="100" r="10"/>
+  </svg>
+</body>
+</html>
