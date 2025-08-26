@@ -712,13 +712,13 @@ textarea {
   font-size: 14px;
 }
 
-.footer-right {
+/* .footer-right {
 font-size: 22px;
-}
+} */
 
-.social-icons {
+/* .social-icons {
   font-size: 18px;
-  margin: -15px 5px;
+  margin: -10px -15px;
   cursor: pointer;
 }
 
@@ -730,9 +730,9 @@ font-size: 22px;
 .app-links img {
   height: 35px;
   margin: 8px 0;
-}
+} */
 
 .copyright {
-  font-size: 16px;
+  font-size: 20px;
   color: #555;
 }
