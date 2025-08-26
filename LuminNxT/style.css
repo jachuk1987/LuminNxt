@@ -2,11 +2,10 @@
    GLOBAL STYLES
 ============================== */
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  /* font-family: 'Space Grotesk', sans-serif; */
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #222;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -48,7 +47,8 @@ body {
 
 .btn-quote {
   display: inline-block;
-  border: 2px solid rgb(87, 84, 84); /* Border color */
+  border: 2px solid rgb(87, 84, 84);
+  /* Border color */
   color: black;
   padding: 8px 15px;
   border-radius: 5px;
