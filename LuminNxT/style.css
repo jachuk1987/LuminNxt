@@ -449,8 +449,17 @@ body {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature img {
+  width: 150px;
+  height: 150px;
 }
 
 .feature i {
