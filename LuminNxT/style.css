@@ -451,6 +451,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  justify-items: center;
+  text-align: center;
 }
 
 .feature {
@@ -458,8 +460,8 @@ body {
 }
 
 .feature img {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
 }
 
 .feature i {
