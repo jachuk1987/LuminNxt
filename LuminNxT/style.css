@@ -580,12 +580,16 @@ body {
   background: #fff;
   display: flex;
   align-items: center;
-  /* gap: 20px; */
+  gap: 20px;
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   max-width: 800px;
   margin: 0 auto;
+}
+
+.feature-box img {
+  width: 250px;
 }
 
 .highlight-box {
