@@ -2,9 +2,8 @@
    GLOBAL STYLES
 ============================== */
 body {
-  /* font-family: 'Space Grotesk', sans-serif; */
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.2;
   color: #222;
 }
 
