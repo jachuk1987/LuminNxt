@@ -144,6 +144,11 @@ body {
   text-align: center;
 }
 
+.heading {
+  width: 50%;
+  margin: auto;
+}
+
 .pricing .toggle {
   margin: 1rem 0;
 }
@@ -202,6 +207,11 @@ body {
   border-radius: 6px;
   background: #fff;
   cursor: pointer;
+}
+
+.plan.best button {
+  background-color: orange;
+  color: #e8f2ff;
 }
 
 /* ==============================
@@ -752,4 +762,99 @@ font-size: 22px;
 .copyright {
   font-size: 20px;
   color: #555;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 12px;
+  }
+  .services-content {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .services-text,
+  .services-grid {
+    width: 100%;
+  }
+  .technologies {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tech-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .domain-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vision-mission {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .discover-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .extra-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Small Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-banner h1 {
+    font-size: 20px;
+  }
+  .intro-main h1 {
+    font-size: 22px;
+  }
+  .plan {
+    width: 100%;
+  }
+  .feature img {
+    width: 50px;
+    height: 50px;
+  }
+  .btn,
+  .btn-primary,
+  .btn-quote {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
 }
