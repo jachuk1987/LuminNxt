@@ -789,6 +789,15 @@ font-size: 22px;
     width: 100%;
     max-width: 500px;
   }
+  .feature-box {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+  .feature-box img {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 
 /* Mobiles (max-width: 768px) */
@@ -834,6 +843,25 @@ font-size: 22px;
     flex-direction: column;
     gap: 20px;
   }
+  .technologies {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .feature-box {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+  .feature-box img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .icons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
 /* Small Mobiles (max-width: 480px) */
@@ -856,5 +884,14 @@ font-size: 22px;
   .btn-quote {
     font-size: 12px;
     padding: 8px 14px;
+  }
+   .technologies h2 {
+    font-size: 22px;
+  }
+  .feature-section h2 {
+    font-size: 20px;
+  }
+  .feature-box img {
+    max-width: 250px;
   }
 }
