@@ -372,7 +372,7 @@ body {
 /* Why Unique */
 .why-unique {
   width: 100%;
-  min-height: 400px;
+  min-height: 800px;
   background: url('./asset/team.png') no-repeat center center;
   background-size: cover;      /* fills entire section */
 }
