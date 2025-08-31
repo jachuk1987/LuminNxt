@@ -775,6 +775,7 @@ font-size: 22px;
   }
 
   .why-unique {
+    width: 100%;
     min-height: 300px;
     background-position: center top;
   }
