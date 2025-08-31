@@ -773,27 +773,38 @@ font-size: 22px;
   .nav-links {
     gap: 12px;
   }
+
+  .why-unique {
+    min-height: 300px;
+    background-position: center top;
+  }
+
   .services-content {
     flex-direction: column;
     padding: 40px 20px;
   }
+
   .services-text,
   .services-grid {
     width: 100%;
   }
+
   .technologies {
     flex-direction: column;
     text-align: center;
   }
+
   .tech-image img {
     width: 100%;
     max-width: 500px;
   }
+
   .feature-box {
     flex-direction: column;
     text-align: center;
     max-width: 100%;
   }
+
   .feature-box img {
     width: 100%;
     max-width: 400px;
@@ -806,58 +817,71 @@ font-size: 22px;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
   }
+
   .domain-steps {
     flex-direction: column;
     align-items: center;
   }
+
   .plans {
     flex-direction: column;
     align-items: center;
   }
+
   .vision-mission {
     flex-direction: column;
     padding: 40px 20px;
   }
+
   .features {
     grid-template-columns: 1fr;
   }
+
   .discover-grid,
   .form-grid {
     grid-template-columns: 1fr;
   }
+
   .extra-grid {
     flex-direction: column;
     align-items: center;
   }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
     gap: 20px;
   }
+
   .footer-links {
     flex-direction: column;
     gap: 20px;
   }
+
   .technologies {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
   }
+
   .feature-box {
     flex-direction: column;
     gap: 20px;
     padding: 15px;
   }
+
   .feature-box img {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
   }
+
   .icons {
     flex-wrap: wrap;
     gap: 15px;
@@ -869,28 +893,35 @@ font-size: 22px;
   .hero-banner h1 {
     font-size: 20px;
   }
+
   .intro-main h1 {
     font-size: 22px;
   }
+
   .plan {
     width: 100%;
   }
+
   .feature img {
     width: 50px;
     height: 50px;
   }
+
   .btn,
   .btn-primary,
   .btn-quote {
     font-size: 12px;
     padding: 8px 14px;
   }
-   .technologies h2 {
+
+  .technologies h2 {
     font-size: 22px;
   }
+
   .feature-section h2 {
     font-size: 20px;
   }
+
   .feature-box img {
     max-width: 250px;
   }
