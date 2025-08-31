@@ -768,7 +768,6 @@ font-size: 22px;
    RESPONSIVE DESIGN
 ============================== */
 
-/* Tablets (max-width: 992px) */
 @media (max-width: 992px) {
   .nav-links {
     gap: 12px;
