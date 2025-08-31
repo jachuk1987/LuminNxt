@@ -374,8 +374,7 @@ body {
   width: 100%;
   min-height: 400px;
   background: url('./asset/team.png') no-repeat center center;
-  background-size: contain;    /* show entire image */
-  background-color: #f5f5f5;   /* fallback color behind image */
+  background-size: cover;      /* fills entire section */
 }
 
 
