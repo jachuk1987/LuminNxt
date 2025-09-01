@@ -340,34 +340,38 @@ body {
   position: absolute;
 }
 
+.step h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.step p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
 .step .number {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: -40px;
-  left: 50%;
+  left: -10px;
   transform: translateX(-50%);
   z-index: -1;
 }
 
 .step .dot {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   background: #ff6600;
   border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -25px;
   margin: 0 auto 15px;
-}
-
-.step h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.step p {
-  font-size: 12px;
-  line-height: 1.8;
 }
 
 
