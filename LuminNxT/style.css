@@ -374,6 +374,22 @@ body {
   margin: 0 auto 15px;
 }
 
+/* Step positions along curve */
+.step1 {
+  left: 60px;
+  top: 240px;
+}
+
+.step2 {
+  left: 420px;
+  top: 120px;
+}
+
+.step3 {
+  right: 100px;
+  top: 40px;
+}
+
 
 /* Why Unique */
 .why-unique {
