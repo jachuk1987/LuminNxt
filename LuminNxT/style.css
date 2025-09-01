@@ -290,12 +290,13 @@ body {
 }
 
 .timeline-intro {
-  max-width: 600px;
+  max-width: 500px;
   margin-bottom: 40px;
 }
 
 .timeline-intro h2 {
   font-size: 26px;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
