@@ -125,14 +125,14 @@ body {
   border-radius: 0 6px 6px 0;
 }
 
-.domain-steps {
+.domain-offers {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
   gap: 2rem;
 }
 
-.domain-steps .step {
+.domain-offers .offer {
   max-width: 200px;
 }
 
@@ -283,91 +283,120 @@ body {
   color: #555;
 }
 
-/* Timeline */
+/* Timeline Section */
 .timeline {
   padding: 80px 0;
   position: relative;
 }
 
 .timeline-intro {
-  max-width: 600px;
+  max-width: 500px;
   margin-bottom: 40px;
 }
 
 .timeline-intro h2 {
-  font-size: 26px;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
 .timeline-intro p {
+  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  color: #444;
 }
 
-.btn {
-  background: #ff6600;
+.timeline-intro .btn {
+  background: #ff9900;
   color: #fff;
   border: none;
-  padding: 12px 24px;
-  font-size: 14px;
-  border-radius: 5px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.3s;
 }
 
+.timeline-intro .btn:hover {
+  background: #e67e00;
+}
+
+/* Curve line */
 .timeline-wrapper {
   position: relative;
+  width: 100%;
+  height: 400px;
 }
 
 .timeline-line {
-  width: 100%;
-  height: 250px;
-}
-
-.steps {
-  display: flex;
-  justify-content: space-between;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
-  padding: 0 20px;
+  height: 100%;
+}
+
+/* Steps */
+.steps {
+  position: relative;
+  height: 100%;
 }
 
 .step {
-  text-align: center;
-  max-width: 250px;
-  position: relative;
-}
-
-.step .number {
-  font-size: 60px;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-
-.step .dot {
-  width: 14px;
-  height: 14px;
-  background: #ff6600;
-  border-radius: 50%;
-  margin: 0 auto 15px;
+  width: 220px;
+  text-align: left;
 }
 
 .step h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0;
 }
 
 .step p {
-  font-size: 12px;
-  line-height: 1.8;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
 }
 
+/* Big background numbers */
+.step .number {
+  font-size: 80px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.1);
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  z-index: -1;
+}
+
+/* Orange dots */
+.step .dot {
+  width: 16px;
+  height: 16px;
+  background: #ff6600;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+}
+
+/* Step positions along curve */
+.step1 {
+  left: 60px;
+  top: 240px;
+}
+
+.step2 {
+  left: 420px;
+  top: 120px;
+}
+
+.step3 {
+  right: 100px;
+  top: 40px;
+}
 
 /* Why Unique */
 .why-unique {
@@ -778,171 +807,104 @@ font-size: 22px;
 
 /* Tablets (max-width: 992px) */
 @media (max-width: 992px) {
-  .nav-links {
-    gap: 12px;
-  }
-
-  .why-unique {
-    width: 100%;
-    /* min-height: 300px; */
-    background-position: center top;
-  }
-
-  .services-content {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .services-text,
-  .services-grid {
-    width: 100%;
-  }
-
-  .technologies {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .tech-image img {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .feature-box {
-    flex-direction: column;
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .feature-box img {
-    width: 100%;
-    max-width: 400px;
-  }
-}
-
-/* Mobiles (max-width: 768px) */
-@media (max-width: 768px) {
   .navbar .container {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 12px;
   }
-
-  .why-unique {
-    width: 100%;
-    /* min-height: 220px; */
-    background-position: center top;
+  .hero-banner h1 {
+    font-size: 24px;
   }
-
-  .domain-steps {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .plans {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .vision-mission {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .services-content {
     flex-direction: column;
     padding: 40px 20px;
   }
-
-  .features {
-    grid-template-columns: 1fr;
-  }
-
-  .discover-grid,
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .extra-grid {
+  .technologies {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
-
+  .feature-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .discover-grid, .form-grid {
+    grid-template-columns: 1fr;
+  }
   .footer-container {
     flex-direction: column;
     text-align: center;
     gap: 20px;
   }
+}
 
-  .footer-links {
-    flex-direction: column;
-    gap: 20px;
+/* Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 20px 0;
   }
-
-  .technologies {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
+  .hero-banner h1 {
+    font-size: 20px;
   }
-
-  .feature-box {
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px;
+  .intro-main h1 {
+    font-size: 22px;
   }
-
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .tech-image img {
+    width: 100%;
+    max-width: 400px;
+  }
   .feature-box img {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
   }
-
-  .icons {
-    flex-wrap: wrap;
-    gap: 15px;
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
 /* Small Mobiles (max-width: 480px) */
 @media (max-width: 480px) {
   .hero-banner h1 {
+    font-size: 18px;
+  }
+  .intro-main h1 {
     font-size: 20px;
   }
-
-  .intro-main h1 {
-    font-size: 22px;
-  }
-
   .plan {
     width: 100%;
   }
-
-  .why-unique {
-    width: 100%;
-    /* min-height: 180px; */
-    background-position: center top;
-  }
-
   .feature img {
     width: 50px;
     height: 50px;
   }
-
-  .btn,
-  .btn-primary,
-  .btn-quote {
+  .btn, .btn-primary, .btn-quote {
     font-size: 12px;
     padding: 8px 14px;
   }
-
   .technologies h2 {
     font-size: 22px;
   }
-
   .feature-section h2 {
     font-size: 20px;
   }
-
   .feature-box img {
     max-width: 250px;
   }
