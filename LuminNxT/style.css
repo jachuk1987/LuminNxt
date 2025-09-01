@@ -47,7 +47,6 @@ body {
 .btn-quote {
   display: inline-block;
   border: 2px solid rgb(87, 84, 84);
-  /* Border color */
   color: black;
   padding: 8px 15px;
   border-radius: 5px;
@@ -390,7 +389,6 @@ body {
   top: 40px;
 }
 
-
 /* Why Unique */
 .why-unique {
   width: 100%;
@@ -398,13 +396,6 @@ body {
   background: url('./asset/team.png') no-repeat center center;
   background-size: cover;
 }
-
-/* .why-unique {
-  width: 100%;
-  height: 800px;
-  background: url('./asset/team.png') no-repeat center center/cover;
-} */
-
 
 /* ==============================
    SERVICES PAGE
@@ -418,7 +409,6 @@ body {
 
 .services-text {
   width: 30%;
-  /* flex: 1; */
 }
 
 .services-text h2 {
@@ -427,7 +417,6 @@ body {
 
 .services-grid {
   width: 60%;
-  /* flex: 1; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -769,203 +758,102 @@ textarea {
   font-size: 14px;
 }
 
-/* .footer-right {
-font-size: 22px;
-} */
-
-/* .social-icons {
-  font-size: 18px;
-  margin: -10px -15px;
-  cursor: pointer;
-}
-
-.footer-right h4 {
-  font-size: 22px;
-  color: #555;
-}
-
-.app-links img {
-  height: 35px;
-  margin: 8px 0;
-} */
-
 .copyright {
   font-size: 20px;
   color: #555;
 }
 
 /* ==============================
-   RESPONSIVE DESIGN
+   RESPONSIVE BREAKPOINTS
 ============================== */
 
-/* Tablets (max-width: 992px) */
-@media (max-width: 992px) {
-  .nav-links {
-    gap: 12px;
-  }
-
-  .why-unique {
-    width: 100%;
-    /* min-height: 300px; */
-    background-position: center top;
-  }
-
-  .services-content {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .services-text,
-  .services-grid {
-    width: 100%;
-  }
-
-  .technologies {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .tech-image img {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .feature-box {
-    flex-direction: column;
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .feature-box img {
-    width: 100%;
-    max-width: 400px;
+/* Large Desktops (1200px and above) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }
 
-/* Mobiles (max-width: 768px) */
-@media (max-width: 768px) {
-  .navbar .container {
-    flex-direction: column;
-    align-items: flex-start;
+/* Laptops & Medium Screens (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .plans {
+    gap: 1.5rem;
   }
+  .services-content {
+    gap: 30px;
+  }
+}
 
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .vision-mission,
+  .services-content,
+  .technologies {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .tech-image img {
+    max-width: 400px;
+    margin: auto;
+  }
+  .feature-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* Mobiles (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
   .nav-links {
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
   }
-
-  .why-unique {
-    width: 100%;
-    /* min-height: 220px; */
-    background-position: center top;
-  }
-
   .domain-steps {
     flex-direction: column;
-    align-items: center;
   }
-
   .plans {
     flex-direction: column;
     align-items: center;
   }
-
-  .vision-mission {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
   .features {
     grid-template-columns: 1fr;
   }
-
   .discover-grid,
   .form-grid {
     grid-template-columns: 1fr;
   }
-
-  .extra-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .footer-container {
     flex-direction: column;
+    gap: 20px;
     text-align: center;
-    gap: 20px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .technologies {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .feature-box {
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .feature-box img {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .icons {
-    flex-wrap: wrap;
-    gap: 15px;
   }
 }
 
-/* Small Mobiles (max-width: 480px) */
-@media (max-width: 480px) {
-  .hero-banner h1 {
+/* Small Phones (<576px) */
+@media (max-width: 575px) {
+  .hero-banner h1,
+  .hero-banner h2 {
     font-size: 20px;
   }
-
-  .intro-main h1 {
-    font-size: 22px;
+  .plans {
+    width: 100%;
   }
-
   .plan {
-    width: 100%;
+    width: 90%;
   }
-
-  .why-unique {
-    width: 100%;
-    /* min-height: 180px; */
-    background-position: center top;
+  .vision-mission {
+    padding: 20px;
   }
-
-  .feature img {
-    width: 50px;
-    height: 50px;
+  .feature-box img {
+    max-width: 260px;
   }
-
   .btn,
   .btn-primary,
-  .btn-quote {
-    font-size: 12px;
-    padding: 8px 14px;
-  }
-
-  .technologies h2 {
-    font-size: 22px;
-  }
-
-  .feature-section h2 {
-    font-size: 20px;
-  }
-
-  .feature-box img {
-    max-width: 250px;
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
   }
 }
