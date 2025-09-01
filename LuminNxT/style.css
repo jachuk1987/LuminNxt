@@ -317,9 +317,12 @@ body {
 
 .timeline-wrapper {
   position: relative;
+  width: 100%;
+  height: 400px;
 }
 
 .timeline-line {
+  position: absolute;
   width: 100%;
   height: 250px;
 }
