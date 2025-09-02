@@ -47,7 +47,6 @@ body {
 .btn-quote {
   display: inline-block;
   border: 2px solid rgb(87, 84, 84);
-  /* Border color */
   color: black;
   padding: 8px 15px;
   border-radius: 5px;
@@ -125,14 +124,14 @@ body {
   border-radius: 0 6px 6px 0;
 }
 
-.domain-steps {
+.domain-offers {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
   gap: 2rem;
 }
 
-.domain-steps .step {
+.domain-offers .offer {
   max-width: 200px;
 }
 
