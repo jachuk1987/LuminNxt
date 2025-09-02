@@ -47,7 +47,6 @@ body {
 .btn-quote {
     display: inline-block;
     border: 2px solid rgb(87, 84, 84);
-    /* Border color */
     color: black;
     padding: 8px 15px;
     border-radius: 5px;
