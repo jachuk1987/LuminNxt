@@ -223,42 +223,63 @@ body {
     width: 300px;
 }
 
-/* Footer */
+/* ==============================
+   FOOTER
+============================== */
 .footer {
-    background: #f7f7f7;
-    padding: 60px 0;
+  background: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.footer a {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #444;
+.footer-links {
+  display: flex;
+  gap: 60px;
 }
 
-.footer-apps img {
-    display: block;
-    margin-bottom: 10px;
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-.footer .logo span {
-    color: #ff6600;
+.footer-links ul {
+  list-style: none;
+  padding: 0;
 }
 
-.footer p {
-    font-size: 14px;
-    color: #666;
+.footer-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
 }
+
+/* .footer-right {
+font-size: 22px;
+} */
+
+/* .social-icons {
+  font-size: 18px;
+  margin: -10px -15px;
+  cursor: pointer;
+}
+
+.footer-right h4 {
+  font-size: 22px;
+  color: #555;
+}
+
+.app-links img {
+  height: 35px;
+  margin: 8px 0;
+} */
 
 .copyright {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 13px;
-    color: #888;
+  font-size: 20px;
+  color: #555;
 }
