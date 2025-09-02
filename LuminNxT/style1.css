@@ -1,19 +1,10 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* ==============================
+   GLOBAL STYLES
+============================== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.2;
     color: #222;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .container {
@@ -22,37 +13,46 @@ a {
     margin: auto;
 }
 
-/* Navbar */
+/* ==============================
+   NAVBAR
+============================== */
 .navbar {
-    padding: 20px 0;
+    background: #fff;
+    padding: 15px 0;
     border-bottom: 1px solid #eee;
 }
 
-.nav-container {
+.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.logo span {
-    color: #ff6600;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
-    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
     font-weight: 500;
 }
 
-.quote-btn {
-    border: 1px solid #222;
-    background: none;
-    padding: 8px 16px;
-    border-radius: 4px;
+.nav-links a.active {
+    color: #007bff;
+}
+
+.btn-quote {
+    display: inline-block;
+    border: 2px solid rgb(87, 84, 84);
+    /* Border color */
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 /* Hero */
