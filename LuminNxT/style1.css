@@ -452,85 +452,67 @@ body {
     cursor: pointer;
 }
 
-/* Footer */
-footer {
-    background: #181c27;
-    color: #fff;
-    padding-top: 45px;
-    font-size: 1em;
+/* ==============================
+   FOOTER
+============================== */
+.footer {
+  background: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
 }
 
-.footer-top {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px 28px 30px;
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    flex-wrap: wrap;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.footer-col {
-    min-width: 135px;
-    margin-bottom: 13px;
+.footer-links {
+  display: flex;
+  gap: 60px;
 }
 
-.logo-col {
-    flex: 1.5;
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-.footer-col h5 {
-    color: #ffab34;
-    margin: 10px 0 17px 0;
-    font-size: 1.08em;
+.footer-links ul {
+  list-style: none;
+  padding: 0;
 }
 
-.footer-col a {
-    display: block;
-    color: #dde;
-    margin-bottom: 7px;
-    font-size: 0.97em;
-    text-decoration: none;
-    transition: .2s;
+.footer-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
 }
 
-.footer-col a:hover {
-    color: #ffab34;
+/* .footer-right {
+font-size: 22px;
+} */
+
+/* .social-icons {
+  font-size: 18px;
+  margin: -10px -15px;
+  cursor: pointer;
 }
 
-.footer-social-icons a {
-    display: inline-block;
-    margin-right: 14px;
-    vertical-align: middle;
+.footer-right h4 {
+  font-size: 22px;
+  color: #555;
 }
 
-.footer-social-icons img {
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
+.app-links img {
+  height: 35px;
+  margin: 8px 0;
+} */
+
+.copyright {
+  font-size: 20px;
+  color: #555;
 }
 
-.social span {
-    display: inline-block;
-    margin: 10px 8px 10px 0;
-    font-size: 0.99em;
-}
-
-.app-icon {
-    height: 22px;
-    width: 22px;
-    margin-top: 7px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.footer-bottom {
-    background: #171922;
-    padding: 13px 0;
-    text-align: center;
-    color: #aaa;
-    font-size: 0.95em;
-}
 
 @media (max-width:1050px) {
     .about-content {
