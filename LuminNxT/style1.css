@@ -211,7 +211,24 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    /* margin-top: 40px; */
+    margin-top: 40px;
+}
+
+.grid1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.grid2 {
+    margin: 10px;
+}
+
+.grid3 {
+    margin: 10px;
+}
+
+.grid4 {
+    margin: 10px;
 }
 
 
