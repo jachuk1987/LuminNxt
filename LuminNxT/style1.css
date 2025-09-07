@@ -233,141 +233,142 @@ body {
    ABOUT US
 ============================== */
 .about {
-  padding: 80px 0;
+    padding: 80px 0;
 }
 
 .about-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
 }
 
 .about h3 {
-  color: #ff7b00;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+    color: #ff7b00;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .about h2 {
-  font-size: 28px;
-  line-height: 1.4;
-  margin-bottom: 40px;
-  color: #0a0a23;
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    color: #0a0a23;
 }
 
 .about-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
 }
 
 .about-item .icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  margin-right: 15px;
-  flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 15px;
+    flex-shrink: 0;
 }
 
 .about-item h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #0a0a23;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0a0a23;
 }
 
 .about-item p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
 }
 
 .about-img img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* ==============================
    HOW IT WORKS
 ============================== */
 .how-it-works {
-  padding: 80px 0;
+    padding: 80px 0;
 }
 
 .how-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
 }
 
 .how-image img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .how-content h3 {
-  color: #6c6c6c;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .how-content h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #0f1a40;
-  line-height: 1.3;
-  margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f1a40;
+    line-height: 1.3;
+    margin-bottom: 30px;
 }
 
 .how-item {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
-  align-items: flex-start;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
 }
 
 .how-item .icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
 }
 
 .icon.yellow {
-  background: #f9c74f;
+    background: #f9c74f;
 }
+
 .icon.orange {
-  background: #f3722c;
+    background: #f3722c;
 }
+
 .icon.blue {
-  background: #277da1;
+    background: #277da1;
 }
 
 .how-item h4 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  color: #0f1a40;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: #0f1a40;
 }
 
 .how-item p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #444;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
 }
 
 .how-item a {
-  color: #4a3aff;
-  font-weight: 600;
-  font-size: 13px;
-  margin-left: 5px;
-  text-decoration: none;
+    color: #4a3aff;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 5px;
+    text-decoration: none;
 }
-
 
 /* ==============================
    TESTIMONIALS
