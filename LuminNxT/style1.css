@@ -272,11 +272,6 @@ body {
   flex-shrink: 0;
 }
 
-/* Icon colors */
-.icon.yellow { background: #ffc107; }
-.icon.red { background: #ff6b6b; }
-.icon.teal { background: #00897b; }
-
 .about-item h4 {
   font-size: 16px;
   font-weight: 600;
