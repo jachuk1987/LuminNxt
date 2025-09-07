@@ -374,82 +374,84 @@ body {
    TESTIMONIALS
 ============================== */
 .testimonials {
-  padding: 80px 0;
+    padding: 80px 0;
 }
 
 .testimonials-header h4 {
-  color: #7c7c7c;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
+    color: #7c7c7c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .testimonials-header h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #0d1b3f;
-  margin-top: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0d1b3f;
+    margin-top: 10px;
 }
 
 .testimonial-card {
-  position: relative;
-  background: #fff;
-  padding: 30px;
-  margin-top: 40px;
-  border-radius: 12px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
-  max-width: 600px;
+    position: relative;
+    background: #fff;
+    padding: 40px 30px 30px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
 }
 
+/* Avatar top-right floating */
 .testimonial-card .avatar {
-  position: absolute;
-  top: -30px;
-  left: 20px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
 }
 
 .testimonial-card .avatar img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .testimonial-content p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .testimonial-content h4 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #0d1b3f;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0d1b3f;
 }
 
 .testimonial-content span {
-  font-size: 14px;
-  color: #777;
+    font-size: 14px;
+    color: #777;
 }
 
 .testimonial-nav {
-  display: flex;
-  gap: 8px;
-  margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
 }
 
 .testimonial-nav .dot {
-  width: 10px;
-  height: 10px;
-  background: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .testimonial-nav .dot.active {
-  background: #0d1b3f;
+    background: #0d1b3f;
 }
 
 /* ==============================
