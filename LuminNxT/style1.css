@@ -375,7 +375,18 @@ body {
 ============================== */
 .testimonials {
   padding: 80px 0;
-  text-align: center;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Left side heading */
+.testimonials-header {
+  flex: 1;
 }
 
 .testimonials-header h4 {
@@ -393,19 +404,45 @@ body {
   margin-top: 10px;
 }
 
-/* Testimonial Card */
+.testimonial-nav-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.testimonial-nav-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.testimonial-nav-dots .dot.active {
+  background: #0d1b3f;
+}
+
+/* Right side testimonial display */
+.testimonial-display {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .testimonial-card {
   position: relative;
   background: #fff;
   padding: 30px 40px 40px 100px;
-  margin: 50px auto 0;
   border-radius: 12px;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
-  max-width: 650px;
+  max-width: 600px;
   text-align: left;
+  flex: 1;
 }
 
-/* Avatar aligned left */
+/* Avatar aligned left inside card */
 .testimonial-card .avatar {
   position: absolute;
   top: 30px;
@@ -413,14 +450,13 @@ body {
 }
 
 .testimonial-card .avatar img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Content */
 .testimonial-content p {
   font-size: 16px;
   color: #444;
@@ -441,27 +477,32 @@ body {
   color: #777;
 }
 
-/* Navigation dots */
-.testimonial-nav {
+/* Arrows */
+.testimonial-arrows {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 25px;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.testimonial-nav .dot {
-  width: 10px;
-  height: 10px;
-  background: #ddd;
-  border-radius: 50%;
-  display: inline-block;
+.testimonial-arrows .arrow {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: #0d1b3f;
   cursor: pointer;
+  transition: color 0.2s;
 }
 
-.testimonial-nav .dot.active {
-  background: #0d1b3f;
+.testimonial-arrows .arrow:hover {
+  color: #ff6600; /* hover accent */
 }
 
+/* ==============================
+   CLIENTS
+============================== */
+.client {
+    width: 90%;
+}
 
 /* ==============================
    NEWSLETTER
