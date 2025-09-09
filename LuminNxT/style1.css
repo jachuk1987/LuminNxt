@@ -122,7 +122,7 @@ body {
     text-align: center;
     padding: 3rem 2rem;
     border-radius: 22px;
-    margin: 40px 30px 0;
+    margin: 40px 40px 0;
 
 }
 
@@ -203,7 +203,7 @@ body {
    SERVICES
 ============================== */
 .services {
-    padding: 80px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -374,158 +374,157 @@ body {
    TESTIMONIALS
 ============================== */
 .testimonials {
-  padding: 80px 0;
+    padding: 80px 0;
 }
 
 .testimonials-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 /* Left side heading */
 .testimonials-header {
-  flex: 1;
+    flex: 1;
 }
 
 .testimonials-header h4 {
-  color: #7c7c7c;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
+    color: #7c7c7c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
 .testimonials-header h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #0d1b3f;
-  margin-top: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0d1b3f;
+    margin-top: 10px;
 }
 
 .testimonial-nav-dots {
-  display: flex;
-  gap: 8px;
-  margin-top: 25px;
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
 }
 
 .testimonial-nav-dots .dot {
-  width: 10px;
-  height: 10px;
-  background: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .testimonial-nav-dots .dot.active {
-  background: #0d1b3f;
+    background: #0d1b3f;
 }
 
 /* Right side testimonial display */
 .testimonial-display {
-  flex: 2;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .testimonial-card {
-  position: relative;
-  background: #fff;
-  padding: 30px 40px 40px 100px;
-  border-radius: 12px;
-  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
-  max-width: 600px;
-  text-align: left;
-  flex: 1;
+    position: relative;
+    background: #fff;
+    padding: 30px 40px 40px 100px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    text-align: left;
+    flex: 1;
 }
 
 /* Avatar aligned left inside card */
 .testimonial-card .avatar {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 .testimonial-card .avatar img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-content p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  font-style: italic;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
 .testimonial-content h4 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #0d1b3f;
-  margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0d1b3f;
+    margin-bottom: 5px;
 }
 
 .testimonial-content span {
-  font-size: 14px;
-  color: #777;
+    font-size: 14px;
+    color: #777;
 }
 
 /* Arrows */
 .testimonial-arrows {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .testimonial-arrows .arrow {
-  background: transparent;
-  border: none;
-  font-size: 22px;
-  color: #0d1b3f;
-  cursor: pointer;
-  transition: color 0.2s;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #0d1b3f;
+    cursor: pointer;
+    transition: color 0.2s;
 }
 
 .testimonial-arrows .arrow:hover {
-  color: #ff6600; /* hover accent */
+    color: #ff6600;
 }
 
 /* ==============================
    CLIENTS
 ============================== */
 .clients {
-  padding: 60px 0;
-  text-align: center;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .clients-logos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap; /* responsive */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .clients-logos img {
-  max-height: 50px;   /* same height for all */
-  width: auto;        /* keep aspect ratio */
-  filter: grayscale(100%); /* black & white logos */
-  opacity: 0.8;
-  transition: all 0.3s ease;
+    max-height: 50px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
 
 .clients-logos img:hover {
-  filter: grayscale(0); /* color on hover */
-  opacity: 1;
+    filter: grayscale(0);
+    opacity: 1;
 }
-
 
 /* ==============================
    NEWSLETTER
