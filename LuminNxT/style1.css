@@ -500,9 +500,32 @@ body {
 /* ==============================
    CLIENTS
 ============================== */
-.client {
-    width: 90%;
+.clients {
+  padding: 60px 0;
+  text-align: center;
 }
+
+.clients-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* responsive */
+}
+
+.clients-logos img {
+  max-height: 50px;   /* same height for all */
+  width: auto;        /* keep aspect ratio */
+  filter: grayscale(100%); /* black & white logos */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.clients-logos img:hover {
+  filter: grayscale(0); /* color on hover */
+  opacity: 1;
+}
+
 
 /* ==============================
    NEWSLETTER
