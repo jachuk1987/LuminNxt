@@ -61,7 +61,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 160px 0 80px;
   position: relative;
   background: #fff;
   min-height: 100vh;
