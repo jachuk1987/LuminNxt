@@ -64,27 +64,14 @@ body {
    HERO SECTION
 ============================== */
 .hero {
-  background: #f9fafe;
-  padding: 180px 0 80px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
-}
-
-/* HERO TEXT */
-.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 8%;
-  background: #fff;
+  padding: 120px 8% 80px; /* reduced top padding so it merges with navbar */
   position: relative;
+  background: #fff; /* white background for text side */
+  overflow: hidden;
+  min-height: 100vh; /* ensures it covers full screen height */
 }
 
 .hero-content {
