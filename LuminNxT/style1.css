@@ -11,138 +11,152 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    box-sizing: border-box;
+}
+
+/* Ensure all top-level sections align with container */
+.hero,
+.domain-search,
+.services,
+.newsletter {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 /* ==============================
    NAVBAR
 ============================== */
 .navbar {
-  background: #fff;
-  padding: 15px 0;
-  border-bottom: 1px solid #eee;
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
 }
 
 .nav-links a.active {
-  color: #007bff;
+    color: #007bff;
 }
 
 .btn-quote {
-  display: inline-block;
-  border: 2px solid rgb(87, 84, 84);
-  color: black;
-  padding: 8px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 14px;
+    display: inline-block;
+    border: 2px solid rgb(87, 84, 84);
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 /* ==============================
    HERO SECTION
 ============================== */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  background: #fff;
-  min-height: 100vh;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 100px 0;
+    /* spacing below navbar */
 }
 
 .hero-content {
-  flex: 1;
-  max-width: 48%;
-  z-index: 2;
+    flex: 1;
+    max-width: 48%;
+    z-index: 2;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.3;
-  color: #111;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #111;
 }
 
 .highlight-nxt {
-  color: #ff6600;
-  font-weight: bold;
+    color: #ff6600;
+    font-weight: bold;
 }
 
 .highlight-extent {
-  background: #3a7ddb;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 4px;
+    background: #3a7ddb;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 
 .hero-content p {
-  margin: 20px 0;
-  color: #555;
-  font-size: 1.1rem;
+    margin: 20px 0;
+    color: #555;
+    font-size: 1.1rem;
 }
 
 .btn {
-  display: inline-block;
-  background: #ff9500;
-  color: #fff;
-  padding: 12px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
+    display: inline-block;
+    background: #ff9500;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background: #e68400;
+    background: #e68400;
 }
 
 .hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 /* Smooth organic blob background */
 .hero-image::before {
-  content: "";
-  position: absolute;
-  top: -80px;
-  right: -120px;
-  width: 650px;
-  height: 650px;
-  background: #ffeedb;
-  border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -120px;
+    width: 650px;
+    height: 650px;
+    background: #ffeedb;
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+    z-index: -1;
 }
 
 /* Hero image styling */
 .hero-image img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 55% 45% 50% 40% / 45% 55% 40% 50%;
-  object-fit: cover;
-  position: relative;
+    max-width: 90%;
+    height: auto;
+    border-radius: 55% 45% 50% 40% / 45% 55% 40% 50%;
+    object-fit: cover;
+    position: relative;
 }
-
 
 /* ==============================
    DOMAIN SEARCH
@@ -153,8 +167,7 @@ body {
     text-align: center;
     padding: 3rem 2rem;
     border-radius: 22px;
-    margin: 40px 40px 0;
-
+    margin-top: 40px;
 }
 
 .domain-search h2 {
@@ -241,23 +254,22 @@ body {
 .service-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
 }
 
 .grid1 {
-    margin: 85px 0 0 10px;
+    margin: 85px 0 0 0px;
 }
 
 .grid2 {
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 0px;
 }
 
 .grid3 {
-    margin: 60px 0 0 10px;
+    margin: 60px 0 0 0px;
 }
 
 .grid4 {
-    margin: 85px 0 0 10px;
+    margin: 85px 0 0 0px;
 }
 
 /* ==============================
