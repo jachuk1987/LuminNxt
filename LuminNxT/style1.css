@@ -246,18 +246,26 @@ body {
 
 .grid1 {
     margin: 85px 0 0 0px;
+    width: auto;
+    height: auto;
 }
 
 .grid2 {
     margin: 10px 0 0 0px;
+    width: auto;
+    height: auto;
 }
 
 .grid3 {
     margin: 60px 0 0 0px;
+    width: auto;
+    height: auto;
 }
 
 .grid4 {
     margin: 85px 0 0 0px;
+    width: auto;
+    height: auto;
 }
 
 /* ==============================
