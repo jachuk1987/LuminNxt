@@ -240,14 +240,8 @@ body {
 /* ==============================
    SERVICES
 ============================== */
-.services {
-    padding: 20px 0;
-    text-align: center;
-}
-
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
 }
 
 .grid1 {
