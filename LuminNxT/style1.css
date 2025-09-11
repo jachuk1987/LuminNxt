@@ -78,8 +78,6 @@ body {
     background: #fff;
     min-height: 100vh;
     overflow: hidden;
-    padding: 100px 0;
-    /* spacing below navbar */
 }
 
 .hero-content {
@@ -145,7 +143,6 @@ body {
     width: 650px;
     height: 650px;
     background: #ffeedb;
-    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
     z-index: -1;
 }
 
@@ -153,7 +150,6 @@ body {
 .hero-image img {
     max-width: 90%;
     height: auto;
-    border-radius: 55% 45% 50% 40% / 45% 55% 40% 50%;
     object-fit: cover;
     position: relative;
 }
