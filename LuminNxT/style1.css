@@ -242,7 +242,12 @@ body {
 ============================== */
 .service-grid {
     display: flex;
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+}
+
+.service-grid img:hover {
+    transform: translateY(-5px);
 }
 
 .grid1 {
@@ -258,13 +263,13 @@ body {
 }
 
 .grid3 {
-    margin: 60px 0 0 -100px;
+    margin: 60px 0 0 -80px;
     width: 220px;
     height: auto;
 }
 
 .grid4 {
-    margin: 85px 0 0 50px;
+    margin: 85px 0 0 60px;
     width: 220px;
     height: auto;
 }
