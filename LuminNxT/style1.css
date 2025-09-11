@@ -14,7 +14,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Ensure all top-level sections align with container */
 .hero,
 .domain-search,
 .services,
@@ -135,7 +134,7 @@ body {
 }
 
 /* Smooth organic blob background */
-.hero-image::before {
+/* .hero-image::before {
     content: "";
     position: absolute;
     top: -80px;
@@ -144,9 +143,8 @@ body {
     height: 650px;
     background: #ffeedb;
     z-index: -1;
-}
+} */
 
-/* Hero image styling */
 .hero-image img {
     max-width: 90%;
     height: auto;
