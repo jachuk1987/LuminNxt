@@ -340,10 +340,6 @@ body {
 /* ==============================
    HOW IT WORKS
 ============================== */
-.how-it-works {
-    padding: 80px 0;
-}
-
 .how-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
