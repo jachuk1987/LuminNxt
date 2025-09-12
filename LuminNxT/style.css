@@ -423,7 +423,6 @@ body {
 
 .services-grid {
   width: 60%;
-  /* flex: 1; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
