@@ -100,7 +100,9 @@ body {
   align-self: center;
   color: #333;
 }
-.search-box input, .search-box select {
+
+.search-box input,
+.search-box select {
   padding: 10px;
   border: none;
   outline: none;
