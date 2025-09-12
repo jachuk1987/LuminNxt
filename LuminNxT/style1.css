@@ -133,16 +133,7 @@ body {
     position: relative;
 }
 
-/* .hero-image::before {
-    content: "";
-    position: absolute;
-    top: -80px;
-    right: -120px;
-    width: 650px;
-    height: 650px;
-    background: #ffeedb;
-    z-index: -1;
-} */
+
 
 .hero-image img {
     max-width: 90%;
