@@ -283,6 +283,9 @@ body {
 /* ==============================
    ABOUT US
 ============================== */
+.about {
+    padding: -100px 0;
+}
 
 .about-inner {
     display: grid;
