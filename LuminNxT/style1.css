@@ -132,7 +132,6 @@ body {
     align-items: center;
     position: relative;
     z-index: 1000;
-    margin-top: -200px;
 }
 
 .hero-image img {
