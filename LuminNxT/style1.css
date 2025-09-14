@@ -29,14 +29,18 @@ body {
    NAVBAR
 ============================== */
 .navbar {
-    position: absolute;       /* Make navbar float on top of hero */
+    position: absolute;
+    /* Make navbar float on top of hero */
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;  /* Remove white background */
+    background: transparent;
+    /* Remove white background */
     padding: 20px 0;
-    border: none;              /* Remove bottom border */
-    z-index: 10;               /* Make sure it stays above hero */
+    border: none;
+    /* Remove bottom border */
+    z-index: 10;
+    /* Make sure it stays above hero */
 }
 
 .navbar .container {
@@ -47,17 +51,20 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;               /* White text to contrast hero background */
+    color: #fff;
+    /* White text to contrast hero background */
     font-weight: 500;
 }
 
 .nav-links a.active {
-    color: #3a7ddb;            /* Highlighted link color */
+    color: #3a7ddb;
+    /* Highlighted link color */
 }
 
 .btn-quote {
     display: inline-block;
-    border: 2px solid #fff;    /* White border for visibility */
+    border: 2px solid #fff;
+    /* White border for visibility */
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
@@ -235,6 +242,7 @@ body {
     text-align: center;
     margin-top: 30px;
 }
+
 .service-grid {
     display: flex;
     grid-template-columns: repeat(4, 1fr);
