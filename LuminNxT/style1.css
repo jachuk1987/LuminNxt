@@ -85,9 +85,7 @@ body {
     background: #fff;
     min-height: 100vh;
     overflow: hidden;
-    padding-top: 100px; /* <-- Added space for navbar overlap */
 }
-
 
 .hero-content {
     flex: 1;
