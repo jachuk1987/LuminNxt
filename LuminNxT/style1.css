@@ -29,18 +29,9 @@ body {
    NAVBAR
 ============================== */
 .navbar {
-    position: absolute;
-    /* Make navbar float on top of hero */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    /* Remove white background */
-    padding: 20px 0;
-    border: none;
-    /* Remove bottom border */
-    z-index: 10;
-    /* Make sure it stays above hero */
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .navbar .container {
@@ -49,30 +40,31 @@ body {
     align-items: center;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
 .nav-links a {
     text-decoration: none;
-    color: #fff;
-    /* White text to contrast hero background */
+    color: #333;
     font-weight: 500;
 }
 
 .nav-links a.active {
-    color: #3a7ddb;
-    /* Highlighted link color */
+    color: #007bff;
 }
 
 .btn-quote {
     display: inline-block;
-    border: 2px solid #fff;
-    /* White border for visibility */
-    color: #fff;
+    border: 2px solid rgb(87, 84, 84);
+    color: black;
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
-    background: transparent;
 }
-
 
 /* ==============================
    HERO SECTION
@@ -242,7 +234,6 @@ body {
     text-align: center;
     margin-top: 30px;
 }
-
 .service-grid {
     display: flex;
     grid-template-columns: repeat(4, 1fr);
