@@ -131,6 +131,7 @@ body {
     justify-content: right;
     align-items: center;
     position: absolute;
+    z-index: 1000;
 }
 
 .hero-image img {
