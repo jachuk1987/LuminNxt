@@ -34,7 +34,7 @@
       color: #1b1b1b;
     }
     .navbar .logo span {
-      color: #f97316; /* orange for NXT */
+      color: #f97316;
     }
     .navbar ul {
       display: flex;
@@ -119,11 +119,13 @@
     }
     .hero-image img {
       width: 100%;
-      clip-path: path('M 0 100 Q 10 50 50 0 Q 90 50 100 100 Z');
-      border-radius: 0 0 0 50px;
+      height: 100%;
       object-fit: cover;
+      border-radius: 0 0 0 120px;
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
 
+    /* --- Responsive --- */
     @media (max-width: 900px) {
       .hero {
         flex-direction: column;
