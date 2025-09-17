@@ -8,14 +8,16 @@
 
 /* Navbar */
 .navbar {
-  position: relative;
+  position: absolute; /* sits above hero */
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
-  background: transparent; /* keeps image merging effect */
+  background: transparent; /* merge effect */
 }
 
 .navbar .container {
@@ -32,7 +34,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
 .nav-links li a {
@@ -44,7 +46,7 @@
 .quote-btn button {
   border: 1px solid #000;
   background: transparent;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
@@ -55,17 +57,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 50px;
-  background: linear-gradient(to right, #fff 50%, #fff7ef 50%);
+  padding: 140px 60px 80px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffffff 50%, #fff2e0 50%);
   position: relative;
 }
 
 .hero-content {
   max-width: 50%;
+  z-index: 2;
 }
 
 .hero-content h1 {
-  font-size: 42px;
+  font-size: 46px;
   line-height: 1.3;
   font-weight: 700;
   color: #111;
@@ -86,7 +90,7 @@
 
 .hero-content p {
   margin: 20px 0;
-  font-size: 16px;
+  font-size: 17px;
   color: #555;
 }
 
@@ -94,7 +98,7 @@
   display: inline-block;
   background: #ff9900;
   color: #fff;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -105,15 +109,16 @@
   background: #e68900;
 }
 
-/* Hero Image Styling */
+/* Hero Image Styling with organic shape */
 .hero-image {
   position: relative;
-  z-index: 5;
+  z-index: 1;
   max-width: 45%;
 }
 
 .hero-image img {
   width: 100%;
-  border-radius: 0 0 0 50%;
+  height: auto;
   object-fit: cover;
+  clip-path: ellipse(70% 60% at 70% 40%); /* organic oval shape */
 }
