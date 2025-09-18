@@ -79,10 +79,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
-    padding: 0 5%;
-    background: linear-gradient(90deg, #fafafa 50%, #fff5ea 50%);
     position: relative;
+    background: #fff;
+    overflow: hidden;
 }
 
 .hero-content {
