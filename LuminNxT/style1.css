@@ -29,6 +29,15 @@ body {
    NAVBAR
 ============================== */
 .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    z-index: 10;
 }
 
 .navbar .container {
@@ -231,6 +240,7 @@ body {
     text-align: center;
     margin-top: 30px;
 }
+
 .service-grid {
     display: flex;
     grid-template-columns: repeat(4, 1fr);
