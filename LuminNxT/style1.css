@@ -37,7 +37,6 @@ body {
   align-items: center;
   padding: 2rem 0;
   z-index: 10;
-  border-bottom: 1px solid #eee;
 }
 
 .navbar .container {
