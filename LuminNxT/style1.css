@@ -713,7 +713,7 @@ body {
   }
 }
 
-/* Mobile Phones */
+/* Small Mobiles (max-width: 480px) */
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 2rem;
