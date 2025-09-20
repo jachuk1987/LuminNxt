@@ -603,7 +603,7 @@ body {
    RESPONSIVE DESIGN
 ============================== */
 
-/* Large Tablets & Small Laptops */
+/* Tablets (max-width: 992px) */
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
