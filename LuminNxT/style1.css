@@ -272,7 +272,7 @@ body {
    ABOUT US
 ============================== */
 .about {
-  padding: -100px 0;
+  margin-top: -30px;
 }
 
 .about-inner {
