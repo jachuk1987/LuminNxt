@@ -234,6 +234,28 @@ body {
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+  justify-items: center;
+  align-items: start;
+}
+
+.service-grid > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-grid img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+
+/* .service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-top: 50px;
   gap: 20px;
   justify-items: center;
@@ -242,7 +264,7 @@ body {
 .service-grid img:hover {
   transform: translateY(-5px);
   transition: 0.3s ease;
-}
+} */
 
 /* ==============================
    ABOUT US
