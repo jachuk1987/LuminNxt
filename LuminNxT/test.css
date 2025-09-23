@@ -665,6 +665,10 @@ body {
 
   .service-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .service-grid img {
+    max-width: 150px;
   }
 
   .testimonial-card {
