@@ -117,7 +117,7 @@ body {
 
 .btn {
   display: inline-block;
-  background: #ff9500;
+  background: #ff9500b5;
   color: #fff;
   padding: 12px 28px;
   border-radius: 6px;
@@ -149,7 +149,7 @@ body {
    DOMAIN SEARCH
 ============================== */
 .domain-search {
-  background: #ff7b00;
+  background: #ff9500b5;
   color: #fff;
   text-align: center;
   padding: 4rem 2rem;
