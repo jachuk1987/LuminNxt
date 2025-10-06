@@ -241,7 +241,7 @@ body {
 }
 
 .intro-main h1 {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 700;
 }
 
@@ -555,8 +555,8 @@ body {
   gap: 40px;
 }
 
-.technologies h2 {
-  font-size: 32px;
+.technologies h1 {
+  font-size: 42px;
   margin-bottom: 20px;
 }
 
