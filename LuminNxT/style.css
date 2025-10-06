@@ -488,7 +488,17 @@ body {
   display: flex;
 }
 
+.feature1 {
+  max-width: 350px;
+  display: flex;
+}
+
 .feature img {
+  width: 75px;
+  height: 75px;
+}
+
+.feature1 img {
   width: 75px;
   height: 75px;
 }
