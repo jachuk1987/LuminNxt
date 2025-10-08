@@ -308,9 +308,11 @@ body {
   position: relative;
 }
 
+/* Adjust timeline-intro for Image 2's intro text alignment (it appears left-aligned) */
 .timeline-intro {
   max-width: 520px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; (Removed the margin to bring content closer to the timeline) */
+  margin-bottom: 40px; 
 }
 
 .timeline-intro h2 {
@@ -348,15 +350,17 @@ body {
   margin-top: 40px;
 }
 
+/* 1. Increased height of the SVG to match the curve's amplitude */
 .timeline-line {
   width: 100%;
-  height: 320px;
+  height: 400px; /* Increased height */
 }
 
 .steps {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* 2. Aligned items to the top since the first dot is relatively low */
+  align-items: flex-start; 
   position: absolute;
   top: 0;
   left: 0;
@@ -366,32 +370,47 @@ body {
 
 .step {
   position: relative;
-  max-width: 230px;
+  max-width: 250px; /* Slight increase in width */
   text-align: left;
   pointer-events: auto;
+  /* Added margin-left/right to center text blocks below the dots better */
+  margin: 0 10px; 
 }
 
+/* 3. Updated Step Positions to match the new curve */
 .step1 {
-  top: 170px;
+  /* Aligned low on the left */
+  top: 190px; 
+  margin-top: -10px; /* Adjust number position slightly */
 }
 
 .step2 {
-  top: 60px;
+  /* Aligned higher in the middle */
+  top: 130px; 
+  margin-top: -10px;
 }
 
 .step3 {
+  /* Aligned highest on the right */
   top: 0px;
+  margin-top: -10px;
 }
 
+/* 4. Update the number position and style for the floating number box effect */
 .step .number {
   position: absolute;
-  top: -60px;
+  /* Moved number to align with the dot's center */
+  top: 20px; 
   left: 50%;
   transform: translateX(-50%);
-  font-size: 90px;
+  font-size: 150px; /* Increased size significantly */
   font-weight: 700;
   color: rgba(0, 0, 0, 0.1);
   z-index: 0;
+  /* Added a background and padding to simulate the 'box' in Image 2 */
+  background: #fff; 
+  padding: 0 10px;
+  line-height: 1; /* Tightened line height */
 }
 
 .dot {
@@ -401,7 +420,7 @@ body {
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  margin-bottom: 25px;
+  margin-bottom: 10px; /* Reduced margin to bring text closer */
 }
 
 .step h4 {
