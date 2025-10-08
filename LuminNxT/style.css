@@ -308,10 +308,8 @@ body {
   position: relative;
 }
 
-/* Adjust timeline-intro for Image 2's intro text alignment (it appears left-aligned) */
 .timeline-intro {
   max-width: 520px;
-  /* margin-bottom: 60px; (Removed the margin to bring content closer to the timeline) */
   margin-bottom: 40px;
 }
 
@@ -350,17 +348,14 @@ body {
   margin-top: 40px;
 }
 
-/* 1. Increased height of the SVG to match the curve's amplitude */
 .timeline-line {
   width: 100%;
   height: 400px;
-  /* Increased height */
 }
 
 .steps {
   display: flex;
   justify-content: space-between;
-  /* 2. Aligned items to the top since the first dot is relatively low */
   align-items: flex-start;
   position: absolute;
   top: 0;
