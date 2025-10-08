@@ -367,29 +367,22 @@ body {
 .step {
   position: relative;
   max-width: 250px;
-  /* Slight increase in width */
   text-align: left;
   pointer-events: auto;
-  /* Added margin-left/right to center text blocks below the dots better */
   margin: 0 10px;
 }
 
-/* 3. Updated Step Positions to match the new curve */
 .step1 {
-  /* Aligned low on the left */
   top: 190px;
   margin-top: -10px;
-  /* Adjust number position slightly */
 }
 
 .step2 {
-  /* Aligned higher in the middle */
   top: 130px;
   margin-top: -10px;
 }
 
 .step3 {
-  /* Aligned highest on the right */
   top: 0px;
   margin-top: -10px;
 }
