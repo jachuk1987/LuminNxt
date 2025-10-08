@@ -387,23 +387,18 @@ body {
   margin-top: -10px;
 }
 
-/* 4. Update the number position and style for the floating number box effect */
 .step .number {
   position: absolute;
-  /* Moved number to align with the dot's center */
-  top: 20px;
-  left: 50%;
+  top: -105px;
+  left: 35%;
   transform: translateX(-50%);
   font-size: 150px;
-  /* Increased size significantly */
   font-weight: 700;
   color: rgba(0, 0, 0, 0.1);
   z-index: 0;
-  /* Added a background and padding to simulate the 'box' in Image 2 */
   background: #fff;
   padding: 0 10px;
   line-height: 1;
-  /* Tightened line height */
 }
 
 .dot {
@@ -414,7 +409,6 @@ body {
   position: relative;
   z-index: 2;
   margin-bottom: 10px;
-  /* Reduced margin to bring text closer */
 }
 
 .step h4 {
