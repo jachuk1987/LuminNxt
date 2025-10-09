@@ -302,14 +302,51 @@ body {
 }
 
 /* Timeline */
-/* Timeline */
 .timeline {
   padding: 80px 0;
   font-family: "Inter", sans-serif;
   position: relative;
 }
 
-/* ... (Unchanged styles for timeline-intro, h2, p, btn, timeline-wrapper) ... */
+.timeline-intro {
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.timeline-intro h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.timeline-intro p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e65c00;
+}
+
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
 
 .timeline-line {
   width: 100%;
@@ -319,8 +356,7 @@ body {
 .steps {
   display: flex;
   justify-content: space-between;
-  /* Use align-items: flex-end to align text blocks with the line's low points */
-  align-items: flex-end; /* ⚠️ CHANGED: Use flex-end for Image 2's base alignment */
+  align-items: flex-start;
   position: absolute;
   top: 0;
   left: 0;
@@ -336,37 +372,30 @@ body {
   margin: 0 10px;
 }
 
-/* ⚠️ UPDATED STEP POSITIONS to match the new, lower-starting curve ⚠️ */
 .step1 {
-  /* Aligned low on the left path (around y=350) */
-  top: 280px; /* Adjusted down */
+  top: 190px;
   margin-top: -10px;
 }
 
 .step2 {
-  /* Aligned high in the middle path (around y=250) */
-  top: 150px; /* Adjusted up */
+  top: 130px;
   margin-top: -10px;
 }
 
 .step3 {
-  /* Aligned low on the right path (around y=300) */
-  top: 240px; /* Adjusted down */
+  top: 0px;
   margin-top: -10px;
 }
 
-/* ⚠️ UPDATED NUMBER POSITIONING for the gray box ⚠️ */
 .step .number {
   position: absolute;
-  /* Move the number further up and slightly to the left relative to the dot */
-  top: -130px; /* Adjusted higher */
-  left: 30%; /* Adjusted left */
+  top: -105px;
+  left: 35%;
   transform: translateX(-50%);
   font-size: 150px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.1);
   z-index: 0;
-  /* The white background is correct for the floating box effect */
   background: #fff;
   padding: 0 10px;
   line-height: 1;
@@ -379,11 +408,8 @@ body {
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  /* The dot needs to be positioned higher relative to the text block */
-  margin-bottom: 25px; /* Adjusted margin to push text down from dot */
+  margin-bottom: 10px;
 }
-
-/* ... (Unchanged styles for step h4, step p) ... */
 
 .step h4 {
   font-size: 17px;
