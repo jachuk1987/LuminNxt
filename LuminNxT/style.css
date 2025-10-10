@@ -373,17 +373,17 @@ body {
 }
 
 .step1 {
-  top: 190px;
+  top: 340px;
   margin-top: -10px;
 }
 
 .step2 {
-  top: 130px;
+  top: 150px;
   margin-top: -10px;
 }
 
 .step3 {
-  top: 0px;
+  top: 10px;
   margin-top: -10px;
 }
 
@@ -408,7 +408,7 @@ body {
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .step h4 {
@@ -427,6 +427,7 @@ body {
 .why-unique {
   width: 100%;
   min-height: 800px;
+  margin-top: 130px;
   background: url('./asset/team.png') no-repeat center center;
   background-size: cover;
 }
