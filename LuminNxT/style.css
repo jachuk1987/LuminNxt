@@ -356,7 +356,7 @@ body {
 .steps {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   position: absolute;
   top: 0;
   left: 0;
