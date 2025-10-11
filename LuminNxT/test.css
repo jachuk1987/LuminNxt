@@ -1,10 +1,11 @@
-/* --- Basic Reset and Typography --- */
+/* --- Basic Styles and Font Adjustments --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     color: #333;
+    /* Use a better web-safe sans-serif if available, e.g., 'Helvetica Neue', Arial, sans-serif; */
 }
 
 h1 {
@@ -14,20 +15,20 @@ h1 {
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.1em; /* Slightly larger heading for the timeline text */
     font-weight: 600;
     margin: 0 0 0.5em 0;
 }
 
 p {
     font-size: 0.8em;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0;
-    max-width: 250px; /* Limit text width for better column look */
+    max-width: 250px; 
 }
 
 .find-out-more {
-    background-color: #ff8c00; /* Bright orange */
+    background-color: #ff8c00; 
     color: white;
     border: none;
     padding: 10px 25px;
@@ -36,10 +37,9 @@ p {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.2s;
 }
 
-/* --- Main Layout Container (Flex) --- */
+/* --- Main Layout Container --- */
 .page-container {
     display: flex;
     max-width: 1200px; 
@@ -52,11 +52,11 @@ p {
     padding-right: 50px;
 }
 
-/* --- Timeline Container (Relative positioning context) --- */
+/* --- Timeline Container (Positioning Context) --- */
 .timeline-container {
-    flex: 0 0 65%; /* Right section width */
+    flex: 0 0 65%; 
     position: relative; 
-    height: 400px; /* Set height for absolute positioning */
+    height: 400px; /* Defines the height for absolute positioning */
 }
 
 /* --- The SVG Curved Line --- */
@@ -66,33 +66,32 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 5; /* Behind dots, but above nothing else */
+    z-index: 5; 
 }
 
 /* --- Timeline Items (Absolute Positioning) --- */
 .timeline-item {
     position: absolute;
-    /* Common styling for all items */
 }
 
-/* Item 1 - Leftmost and Low */
+/* REVISED: Item 1 - Leftmost and Low point */
 .item-1 {
-    top: 250px; /* Aligns with the low point of the curve */
+    top: 260px; /* Slightly lower to match the image dip */
     left: 0;
     text-align: left;
 }
 
-/* Item 2 - Middle and High */
+/* REVISED: Item 2 - Middle and Medium-High point */
 .item-2 {
-    top: 150px; /* Aligns with the middle high point of the curve */
-    left: 45%; 
-    transform: translateX(-50%); /* Center item text block */
+    top: 170px; /* Adjusted to match the middle part of the wave */
+    left: 50%; 
+    transform: translateX(-50%); 
     text-align: center;
 }
 
-/* Item 3 - Rightmost and Medium-High */
+/* REVISED: Item 3 - Rightmost and Highest point */
 .item-3 {
-    top: 80px; /* Aligns with the final high point of the curve */
+    top: 90px; /* Adjusted to match the final peak */
     right: 0; 
     text-align: right;
 }
@@ -105,23 +104,26 @@ p {
     color: #cccccc; 
     opacity: 0.6; 
     line-height: 1;
-    z-index: 1; /* Below the text and dot */
+    z-index: 1; 
 }
 
+/* Number 1 position is below the text block */
 .item-1 .timeline-number {
-    top: -100px;
-    left: -20px;
+    top: 0px; 
+    left: 0px; 
 }
 
+/* Number 2 position is partially behind the text block */
 .item-2 .timeline-number {
-    top: -100px;
+    top: -50px; /* Moved up */
     left: 50%;
     transform: translateX(-50%);
 }
 
+/* Number 3 position is above and right of the text block */
 .item-3 .timeline-number {
-    top: -100px;
-    right: -20px;
+    top: -100px; 
+    right: 0px;
 }
 
 /* --- The Orange Dots --- */
@@ -131,45 +133,44 @@ p {
     height: 20px;
     background-color: #ff8c00; 
     border-radius: 50%;
-    z-index: 10; /* Ensures dot is on top of the SVG line */
+    z-index: 10; 
 }
 
-/* Dot positioning relative to their parent item */
-/* These coordinates place the dot exactly at the start point of the curve */
+/* Dot 1 position relative to its item-1 (at 260px) */
 .dot-1 {
-    top: -20px; /* Relative to item-1 top (250px) */
+    top: -15px; 
     left: 0;
     transform: translateX(-50%);
 }
 
-/* Dot positioning relative to their parent item */
-/* These coordinates place the dot exactly at the middle high point of the curve */
+/* Dot 2 position relative to its item-2 (at 170px) */
 .dot-2 {
-    top: -20px; /* Relative to item-2 top (150px) */
+    top: -15px; 
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* Dot positioning relative to their parent item */
-/* These coordinates place the dot exactly at the final high point of the curve */
+/* Dot 3 position relative to its item-3 (at 90px) */
 .dot-3 {
-    top: -20px; /* Relative to item-3 top (80px) */
+    top: -15px; 
     right: 0;
     transform: translateX(50%);
 }
 
-/* --- Text Alignment Adjustments --- */
+/* --- Text Alignment and Margin Adjustments --- */
 .item-text {
     position: relative;
-    z-index: 20; /* Ensure text is above everything */
-    padding-top: 10px; /* Space between dot and text */
+    z-index: 20; 
+    padding-top: 20px; /* Space below the dot */
 }
 
+/* Shift text 1 to the right of the dot */
 .item-1 .item-text {
-    padding-left: 10px; /* Shift text right of the dot */
+    padding-left: 15px; 
 }
 
+/* Shift text 3 to the left of the dot */
 .item-3 .item-text {
-    padding-right: 10px; /* Shift text left of the dot */
+    padding-right: 15px; 
     text-align: right;
 }
