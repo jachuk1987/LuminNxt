@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem Ipsum Timeline</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,12 +16,16 @@
         <button class="find-out-more">Find out more</button>
     </div>
 
-    <div class="timeline">
-        <div class="timeline-line"></div> 
+    <div class="timeline-container">
+        
+        <svg class="timeline-svg" viewBox="0 0 700 300" preserveAspectRatio="none">
+            <path d="M 0 250 C 100 150, 200 180, 350 180 C 500 180, 600 100, 700 100" 
+                  fill="none" stroke="#ff8c00" stroke-width="3"/>
+        </svg>
 
         <div class="timeline-item item-1">
             <span class="timeline-number">1</span>
-            <div class="dot-container"><span class="timeline-dot"></span></div>
+            <span class="timeline-dot dot-1"></span>
             <div class="item-text">
                 <h2>2008 Founded</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -30,7 +34,7 @@
 
         <div class="timeline-item item-2">
             <span class="timeline-number">2</span>
-            <div class="dot-container"><span class="timeline-dot"></span></div>
+            <span class="timeline-dot dot-2"></span>
             <div class="item-text">
                 <h2>50+ Companies</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -39,7 +43,7 @@
 
         <div class="timeline-item item-3">
             <span class="timeline-number">3</span>
-            <div class="dot-container"><span class="timeline-dot"></span></div>
+            <span class="timeline-dot dot-3"></span>
             <div class="item-text">
                 <h2>20+ Professionals</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
