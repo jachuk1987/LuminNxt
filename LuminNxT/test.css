@@ -1,0 +1,194 @@
+/* --- Basic Reset and Typography --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em; /* Adjust as needed */
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Main Layout Container --- */
+.page-container {
+    display: flex;
+    max-width: 1200px; /* Max width for content */
+    margin: 50px auto; /* Center on page */
+    padding: 20px;
+}
+
+/* --- Left Side: Header Content --- */
+.header-content {
+    flex: 0 0 40%; /* Takes up about 40% of the width */
+    padding-right: 50px;
+}
+
+.find-out-more {
+    background-color: #ff8c00; /* Bright orange */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.find-out-more:hover {
+    background-color: #e57e00;
+}
+
+/* --- Right Side: Timeline Structure --- */
+.timeline {
+    flex: 0 0 60%; /* Takes up about 60% of the width */
+    position: relative; /* Context for absolute positioning of line and numbers */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Distribute space between items */
+    padding-top: 150px; /* Space for the line and large numbers */
+    height: 400px; /* Set a height to contain the items and curve */
+}
+
+/* --- Timeline Items (1, 2, 3) --- */
+.timeline-item {
+    position: relative; /* Context for dot and number */
+    width: 30%; /* Ensure items are distributed */
+    text-align: left; /* Text alignment */
+}
+
+/* --- The Large Grey Numbers (1, 2, 3) --- */
+.timeline-number {
+    position: absolute;
+    top: -150px; /* Adjust to position above the content */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12em; /* Very large text */
+    font-weight: 900;
+    color: #cccccc; /* Light grey color */
+    opacity: 0.5; /* Slight transparency */
+    line-height: 1;
+    z-index: 1; /* Behind the dot and line */
+}
+
+/* Reposition item-1's number to the left to match the image */
+.item-1 .timeline-number {
+    left: 0;
+    transform: translateX(0);
+}
+
+/* Reposition item-3's number to the right to match the image */
+.item-3 .timeline-number {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+/* --- The Orange Dots --- */
+.dot-container {
+    position: relative;
+    height: 20px; /* Space placeholder */
+    margin-bottom: 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ff8c00; /* Bright orange */
+    border-radius: 50%;
+    z-index: 10; /* Ensure dot is on top of the line */
+}
+
+/* Adjust dot positions for items 1 and 3 to match the image */
+.item-1 .timeline-dot {
+    left: 0;
+    transform: none;
+    top: 200px; /* Manually positioning dot 1 down on the wave */
+}
+
+.item-3 .timeline-dot {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.item-text {
+    /* For item 1, align text to the right side of the dot */
+    margin-left: -20px; /* Shift content slightly left to be below the dot */
+    position: relative;
+    z-index: 5;
+}
+
+.item-1 .item-text {
+    margin-top: 200px; /* Drop the text down to align with the dot position */
+    margin-left: 10px; /* Pull text to the right of the dot */
+}
+
+.item-2 .item-text {
+    margin-top: 0; /* Align with the top of the line */
+    margin-left: 0;
+    text-align: center;
+}
+
+.item-3 .item-text {
+    margin-top: 0;
+    margin-right: 10px; /* Pull text to the left of the dot */
+    text-align: right;
+}
+
+/* --- The Curved Timeline Line (Simplification) --- */
+/* NOTE: For a perfect curve, you should use an SVG. 
+   This CSS attempts to simulate the *visual path* of the dots 
+   using a custom element, but it will not create a true, smooth curve.
+   The dots are manually positioned along the path. 
+*/
+.timeline-line {
+    position: absolute;
+    top: 150px; /* Start of the line */
+    left: 0;
+    right: 0;
+    height: 100%; 
+    z-index: 5; 
+    /* This creates a wave using a CSS pseudo-element or border/shadow tricks. 
+       A real wave is best done with an SVG path.
+       Here is a basic way to visually represent the path by positioning the dots: */
+}
+
+/* --- SVG or Path Simulation Placeholder (Replace this with a real SVG for perfection) --- */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 150px; /* Adjusted to match dot positioning */
+    left: 0;
+    right: 0;
+    height: 100px; /* Height of the container for the curve */
+    border: 3px solid #ff8c00;
+    border-color: transparent transparent transparent transparent; /* Start with transparent borders */
+    /* This is an *extreme* simplification of a wave. 
+       A real implementation would use an SVG path for the exact curve seen in the image. */
+    z-index: 5;
+}
+
+/* Manually position the dots relative to the line structure */
+.item-2 .timeline-dot {
+    top: -50px; /* Move dot 2 up on the wave */
+}
