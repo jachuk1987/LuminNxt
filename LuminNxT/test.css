@@ -173,4 +173,183 @@ p {
 .item-3 .item-text {
     padding-right: 15px; 
     text-align: right;
+}/* --- Basic Styles and Typography --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.2em; 
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.1em; 
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+}
+
+p {
+    font-size: 0.8em;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 250px; 
+}
+
+.find-out-more {
+    background-color: #ff8c00; 
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* --- Main Layout Container --- */
+.page-container {
+    display: flex;
+    max-width: 1200px; 
+    margin: 50px auto; 
+    padding: 20px;
+}
+
+.header-content {
+    flex: 0 0 35%; 
+    padding-right: 50px;
+}
+
+/* --- Timeline Container (Positioning Context) --- */
+.timeline-container {
+    flex: 0 0 65%; 
+    position: relative; 
+    height: 400px; /* Space for the curve and content */
+    padding-top: 50px; /* Push everything down slightly */
+}
+
+/* --- The SVG Curved Line --- */
+.timeline-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5; 
+}
+
+/* --- Timeline Items (Absolute Positioning) --- */
+/* These positions align the text block's reference point with the dot's height */
+.timeline-item {
+    position: absolute;
+}
+
+/* Item 1 - Aligns with the low point of the curve (y=250 in SVG) */
+.item-1 {
+    top: 250px; 
+    left: 0;
+}
+
+/* Item 2 - Aligns with the mid-point of the curve (y=150 in SVG) */
+.item-2 {
+    top: 150px; 
+    left: 48%; 
+    transform: translateX(-50%); 
+}
+
+/* Item 3 - Aligns with the peak point of the curve (y=80 in SVG) */
+.item-3 {
+    top: 80px; 
+    right: 0; 
+}
+
+/* --- The Large Grey Numbers (1, 2, 3) --- */
+.timeline-number {
+    position: absolute;
+    font-size: 12em; 
+    font-weight: 900;
+    color: #cccccc; 
+    opacity: 0.6; 
+    line-height: 1;
+    z-index: 1; 
+}
+
+/* Position 1 below and right of the text */
+.item-1 .timeline-number {
+    top: -50px; 
+    left: 0px; 
+}
+
+/* Position 2 behind the text */
+.item-2 .timeline-number {
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Position 3 above and right of the text */
+.item-3 .timeline-number {
+    top: -100px; 
+    right: 0px;
+}
+
+/* --- The Orange Dots (Must sit directly on the curve) --- */
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff8c00; 
+    border-radius: 50%;
+    z-index: 10; 
+    /* Push up 10px (half height) to center it vertically on the line */
+    transform: translateY(-50%); 
+}
+
+/* Dot 1 position relative to its item-1 */
+.dot-1 {
+    top: 0; 
+    left: 0;
+    transform: translate(-50%, -50%); /* Adjust to center on the start point */
+}
+
+/* Dot 2 position relative to its item-2 */
+.dot-2 {
+    top: 0; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dot 3 position relative to its item-3 */
+.dot-3 {
+    top: 0; 
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/* --- Text Alignment and Margin Adjustments --- */
+.item-text {
+    position: relative;
+    z-index: 20; 
+    /* Adjust padding to place text block correctly below the dot */
+    padding-top: 20px; 
+}
+
+.item-1 .item-text {
+    padding-left: 15px; /* Shift text right of the dot */
+    text-align: left;
+}
+
+.item-2 .item-text {
+    text-align: center;
+}
+
+.item-3 .item-text {
+    padding-right: 15px; /* Shift text left of the dot */
+    text-align: right;
 }
