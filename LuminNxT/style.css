@@ -303,177 +303,130 @@ body {
 
 /* Timeline */
 .timeline {
-    padding: 80px 0;
-    font-family: "Inter", sans-serif;
-    position: relative;
+  padding: 80px 0;
+  font-family: "Inter", sans-serif;
+  position: relative;
 }
 
 .timeline-intro {
-    max-width: 520px;
-    margin-bottom: 40px;
+  max-width: 520px;
+  margin-bottom: 40px;
 }
 
 .timeline-intro h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .timeline-intro p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #333;
-    margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 25px;
 }
 
-/* Button color change from #ff6600 to match the image orange */
 .btn {
-    background: #ff8c00; 
-    color: #fff;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    font-size: 15px;
-    transition: 0.3s ease;
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-    background: #e65c00;
+  background: #e65c00;
 }
 
 .timeline-wrapper {
-    position: relative;
-    width: 100%;
-    margin-top: 40px;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .timeline-line {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .steps {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Changed to flex-start for easier positioning */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
 }
 
 .step {
-    position: absolute; /* Use absolute position for precise placement */
-    max-width: 250px;
-    text-align: left;
-    pointer-events: auto;
-    margin: 0;
+  position: relative;
+  max-width: 250px;
+  text-align: left;
+  pointer-events: auto;
+  margin: 0 10px;
 }
 
-/* **Adjusted positioning based on the new SVG path points** */
-
 .step1 {
-    /* Dot near (10, 300) */
-    left: 5%; 
-    top: 290px; /* Aligns dot with y=300 */
+  top: 190px;
+  margin-top: -10px;
 }
 
 .step2 {
-    /* Dot near (500, 250) */
-    left: 45%; 
-    top: 240px; /* Aligns dot with y=250 */
+  top: 130px;
+  margin-top: -10px;
 }
 
 .step3 {
-    /* Dot near (980, 50) */
-    left: 85%; 
-    top: 40px; /* Aligns dot with y=50 */
+  top: 0px;
+  margin-top: -10px;
 }
 
-
-/* **Styles for the Content Box to match Capture.PNG** */
-.step-content {
-    background: #fff; /* White background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-    position: relative;
-    z-index: 2;
-    margin-top: 20px; /* Default margin from dot */
-}
-
-/* **Number positioning and styling to match Capture.PNG** */
 .step .number {
-    position: absolute;
-    /* Removed transform for simpler positioning */
-    font-size: 150px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.1);
-    z-index: 0; /* Ensures it is behind the content box */
-    line-height: 1;
+  position: absolute;
+  top: -105px;
+  left: 35%;
+  transform: translateX(-50%);
+  font-size: 150px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+  background: #fff;
+  padding: 0 10px;
+  line-height: 1;
 }
-
-/* Step 1: Content is below the dot */
-.step1 .number {
-    top: -50px; 
-    left: 10px;
-}
-.step1 .step-content {
-    margin-top: 30px;
-}
-
-
-/* Step 2: Content is below the dot */
-.step2 .number {
-    top: -50px; 
-    left: 10px;
-}
-.step2 .step-content {
-    margin-top: 30px;
-}
-
-/* Step 3: Content is below the dot */
-.step3 .number {
-    /* Shifted up and to the left to be partially visible behind the text */
-    top: -150px; 
-    left: -50px;
-}
-.step3 .step-content {
-    margin-top: 30px;
-}
-
 
 .dot {
-    width: 22px;
-    height: 22px;
-    background: #ff8c00; /* Matching the stroke color */
-    border-radius: 50%;
-    position: relative;
-    z-index: 3; /* Above the content box and number */
-    margin-bottom: 0; /* Resetting original margin */
+  width: 22px;
+  height: 22px;
+  background: #ff6600;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
 }
 
 .step h4 {
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .step p {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #333;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
 }
 
 /* Why Unique */
 .why-unique {
   width: 100%;
   min-height: 800px;
-  margin-top: 130px;
   background: url('./asset/team.png') no-repeat center center;
   background-size: cover;
 }
