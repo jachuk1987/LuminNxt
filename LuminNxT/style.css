@@ -346,6 +346,7 @@ body {
   position: relative;
   width: 100%;
   margin-top: 40px;
+  overflow-x: hidden;
 }
 
 .timeline-line {
@@ -362,6 +363,7 @@ body {
   left: 0;
   width: 100%;
   pointer-events: none;
+  gap: 30px;
 }
 
 .step {
@@ -369,8 +371,9 @@ body {
   max-width: 250px;
   text-align: left;
   pointer-events: auto;
-  margin: 0 10px;
-  padding-top: 50px;
+  margin: 0;
+  padding-top: 0;
+  flex-shrink: 0;
 }
 
 .step1 {
