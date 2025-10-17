@@ -380,12 +380,12 @@ body {
 
 .step2 {
   top: 220px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .step3 {
-  top: 0px;
-  margin-top: -10px;
+  top: 90px;
+  margin-top: 0;
 }
 
 .step .number {
