@@ -390,9 +390,9 @@ body {
 
 .step .number {
   position: absolute;
-  top: -105px;
-  left: 35%;
-  transform: translateX(-50%);
+  top: -160px;
+  left: 20%;
+  transform: none;
   font-size: 150px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.1);
@@ -410,6 +410,7 @@ body {
   position: relative;
   z-index: 2;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
 .step h4 {
