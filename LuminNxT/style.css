@@ -328,7 +328,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* --- CHANGED --- */
 .btn {
   background: #f0b90b;
   /* Yellow color from image 2 */
@@ -347,7 +346,6 @@ body {
   /* Darker yellow for hover */
 }
 
-/* --- CHANGED --- */
 .timeline-wrapper {
   position: relative;
   width: 100%;
@@ -364,7 +362,6 @@ body {
   left: 0;
 }
 
-/* --- CHANGED --- */
 .steps {
   /* This container just holds the steps */
   position: absolute;
@@ -376,7 +373,6 @@ body {
   /* Allows clicking through */
 }
 
-/* --- CHANGED --- */
 .step {
   /* Each step is now absolutely positioned */
   position: absolute;
@@ -386,31 +382,28 @@ body {
   /* Re-enable pointers for text */
 }
 
-/* --- NEW POSITIONING ---
-  These values are set to place the dot on the new SVG path.
+/* --- UPDATED STEP POSITIONS --- 
+  These values are tuned to place the dots on the new SVG path.
+  We use calc() to center the dot (11px = half dot width) 
+  on the percentage-based X-coordinate.
 */
 .step1 {
-  top: 280px;
-  /* Vertical position of the dot */
-  left: 5%;
-  /* Horizontal position of the dot */
+  top: 320px;
+  left: calc(10% - 11px);
 }
 
 .step2 {
-  top: 130px;
-  /* Vertical position of the dot */
-  left: 45%;
-  /* Horizontal position of the dot */
+  top: 189px;
+  left: calc(45% - 11px);
 }
 
 .step3 {
-  top: 30px;
-  /* Vertical position of the dot */
-  left: 85%;
-  /* Horizontal position of the dot */
+  top: 57px;
+  left: calc(85% - 11px);
 }
+/* --- END UPDATED STEP POSITIONS --- */
 
-/* --- CHANGED --- */
+
 .step .number {
   position: absolute;
   top: 30px;
@@ -438,7 +431,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* --- ADDED --- */
 .step h4 {
   font-size: 17px;
   font-weight: 700;
@@ -449,7 +441,6 @@ body {
   /* --- ABOVE number --- */
 }
 
-/* --- ADDED --- */
 .step p {
   font-size: 14px;
   line-height: 1.8;
