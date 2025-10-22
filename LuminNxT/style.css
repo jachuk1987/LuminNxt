@@ -302,10 +302,13 @@ body {
 }
 
 /* Timeline */
+/* Timeline styles */
 .timeline {
   padding: 80px 0;
   font-family: "Inter", sans-serif;
   position: relative;
+  overflow: hidden;
+  /* Added to contain elements */
 }
 
 .timeline-intro {
@@ -327,7 +330,8 @@ body {
 }
 
 .btn {
-  background: #ff6600;
+  background: #f0b90b;
+  /* Changed from orange to yellow */
   color: #fff;
   padding: 12px 28px;
   border: none;
@@ -339,65 +343,73 @@ body {
 }
 
 .btn:hover {
-  background: #e65c00;
+  background: #d4a30a;
+  /* Darker yellow for hover */
 }
 
 .timeline-wrapper {
   position: relative;
   width: 100%;
   margin-top: 40px;
+  height: 450px;
+  /* Set a fixed height */
 }
 
 .timeline-line {
   width: 100%;
   height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .steps {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  /* Removed display: flex and related properties */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   pointer-events: none;
+  height: 100%;
 }
 
 .step {
-  position: relative;
+  position: absolute;
+  /* Each step is now absolutely positioned */
   max-width: 250px;
   text-align: left;
   pointer-events: auto;
-  margin: 0 10px;
 }
 
 .step1 {
-  top: 190px;
-  margin-top: -10px;
+  top: 280px;
+  /* Position for dot */
+  left: 5%;
 }
 
 .step2 {
   top: 130px;
-  margin-top: -10px;
+  /* Position for dot */
+  left: 45%;
 }
 
 .step3 {
-  top: 0px;
-  margin-top: -10px;
+  top: 30px;
+  /* Position for dot */
+  left: 85%;
 }
 
 .step .number {
   position: absolute;
-  top: -105px;
+  top: 30px;
+  /* Align with top of text */
   left: 35%;
   transform: translateX(-50%);
   font-size: 150px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.08);
+  /* Lighter gray, no background */
   z-index: 0;
-  background: #fff;
-  padding: 0 10px;
   line-height: 1;
 }
 
@@ -415,12 +427,16 @@ body {
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .step p {
   font-size: 14px;
   line-height: 1.8;
   color: #333;
+  position: relative;
+  z-index: 1;
 }
 
 /* Why Unique */
