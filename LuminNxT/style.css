@@ -307,7 +307,6 @@ body {
   font-family: "Inter", sans-serif;
   position: relative;
   overflow: hidden;
-  /* Prevents SVG overflow */
 }
 
 .timeline-intro {
