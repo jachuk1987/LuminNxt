@@ -359,7 +359,6 @@ body {
 }
 
 .steps {
-  /* This container just holds the steps */
   position: absolute;
   top: 0;
   left: 0;
