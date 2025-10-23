@@ -406,7 +406,6 @@ body {
   z-index: 0;
   /* --- BEHIND text --- */
   line-height: 1;
-  /* Removed background */
 }
 
 .dot {
