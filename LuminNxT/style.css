@@ -347,7 +347,6 @@ body {
   position: relative;
   width: 100%;
   margin-top: 40px;
-  /* Set a fixed height to contain the absolutely positioned steps */
   height: 450px;
 }
 
