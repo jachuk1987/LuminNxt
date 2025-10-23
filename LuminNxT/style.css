@@ -368,7 +368,6 @@ body {
 }
 
 .step {
-  /* Each step is now absolutely positioned */
   position: absolute;
   max-width: 250px;
   text-align: left;
