@@ -398,7 +398,7 @@ body {
 .step .number {
   position: absolute;
   top: 30px;
-  left: 35%;
+  left: 25%;
   transform: translateX(-50%);
   font-size: 150px;
   font-weight: 700;
