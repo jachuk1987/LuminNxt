@@ -423,6 +423,7 @@ body {
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
+  left: -50px;
 }
 
 .step p {
