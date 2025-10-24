@@ -422,7 +422,6 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
   position: relative;
-  /* Required for z-index */
   z-index: 1;
   /* --- ABOVE number --- */
 }
