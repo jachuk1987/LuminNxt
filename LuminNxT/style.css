@@ -404,7 +404,6 @@ body {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.08);
   z-index: 0;
-  /* --- BEHIND text --- */
   line-height: 1;
 }
 
