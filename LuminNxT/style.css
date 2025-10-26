@@ -381,18 +381,24 @@ body {
 */
 .step1 {
   top: 320px;
-  left: calc(10% - 11px);
+  left: calc(5% - 11px);
 }
 
 .step2 {
-  top: 189px;
-  left: calc(45% - 11px);
+  top: 250px;
+  left: calc(30% - 11px);
 }
 
 .step3 {
-  top: 57px;
+  top: 150px;
+  left: calc(60% - 11px);
+}
+
+.step4 {
+  top: 50px;
   left: calc(85% - 11px);
 }
+
 
 
 .step .number {
