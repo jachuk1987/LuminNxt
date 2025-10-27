@@ -3,168 +3,174 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Babai Banbi - Indian Food Truck</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
-
-  <!-- Font Awesome CDN -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <!-- jQuery CDN -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>    
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+ <!-- jQuery -->
+<script src="js/jquery-3.6.0.min.js"></script>
 
 </head>
-
 <body>
   <!-- Header -->
   <header class="header" id="topMenu">
-    <div class="wrapper nav">
-      <div class="brand">
-        <div class="brand__logo">
-          <img src="./asset/bbf-logo.png" alt="Babai Banbi Logo" />
+    <div class="container">
+<nav class="navbar navbar-expand-md"> 
+    <a class="navbar-brand" href="index.html"><img src="images/bb_logo.png" alt="Babai Banbi Logo" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+      <div class="main-menu">
+       <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="location.html">LOCATIONS</a></li>
+          </ul>   
         </div>
-      </div>
-
-      <!-- Hamburger Button (visible only on mobile) -->
-      <button class="menu-toggle" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Main Menu -->
-      <nav class="menu" aria-label="Main Navigation">
-        <a href="./index.html">HOME</a>
-        <a class="active" href="./about.html">ABOUT US</a>
-        <a href="./menu.html">MENU</a>
-        <a href="./contact.html">CONTACT US</a>
-      </nav>
-
-      <!-- Social Icons -->
-      <nav class="social">
-        <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="social-media">
+          <ul>
+            <li><a href="https://wa.me/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="blob1" aria-hidden="true"></div>
-    <div class="wrapper wrap">
-      <div class="heroText">
-        <div class="ctaRow">
+  <!--banner-->
+  
+   <div class="container">
+    <div class="gap"></div>
+  
+<!-- Our Story -->
+  <div class="Our-story">
+    <div class="row">
+    <div class="col-ld-6 col-md-6 col-sm-12">
+      <img src="images/idly1.png" alt="idly1" class="img-fluid">
+    </div>
+    <div class="col-ld-6 col-md-6 col-sm-12">
+        <div class="about-right">
+      <h2 class="title-ye">Our Story</h2>
+      <h1 class="main-title ">COOKING WITH LOVE, THAT YOU EAT WITH PLEASURE</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+         <a class="read"><span><i class="fa fa-play-circle" aria-hidden="true"></i> Watch Demo</span></a> 
+         </div>
+    </div>
+    </div>
+  </div>
 
+<div class="Our-story">
+    <div class="row">
+    <div class="col-ld-6 col-md-6 col-sm-12">
+        <div class="about-right">
+      <h2 class="title-ye">Why Choose us </h2>
+      <h1 class="main-title ">COOKING WITH LOVE, THAT YOU EAT WITH PLEASURE</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+         
+        <div class="choose">
+            <ul>
+                <li>Sed ut perspiciatis unde omnis iste natus.</li>
+                <li>Nemo enim ipsam voluptatem quia voluptas sit.</li>
+                <li>Ut enim ad minima veniam, quis nostrum exercitationem.</li>
+                <li>Quis autem vel eum iure reprehenderit.</li>
+                <li>Ut enim ad minima veniam, quis nostrum exercitation.</li>
+            </ul>
+        </div>
+         </div>
+    </div>
+    <div class="col-ld-6 col-md-6 col-sm-12">
+      <img src="images/vada1.png" alt="vada1" class="img-fluid">
+    </div>
+    </div>
+  </div>
+  </div>
+
+<!-- feedback -->
+<div class="feedback">
+  <div class="container">
+    <h2 class="title-red">Babai's Team </h2>
+    <div class="row">
+      <div class="gap-1"></div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="Fe-card">
+          <img src="images/chef1.png" alt="client">
+          <h3 class="card-text">Jon Snow</h3>
+         <p class="card-text">Master Chef</p>
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- OUR STORY -->
-  <section class="our-story">
-    <div class="container">
-      <div class="story-image">
-        <img alt="Idli Dish" src="./asset/idly1.png" />
-      </div>
-      <div class="story-text">
-        <h3>Our Story _______</h3>
-        <h2>COOKING WITH LOVE, THAT YOU EAT WITH PLEASURE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id
-          est laborum.</p>
-        <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo
-          consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt.</p>
-        <a class="btn-watch" href="#"><span class="play-icon">▶</span> Watch Demo</a>
-      </div>
-    </div>
-  </section>
-  <!-- WHY CHOOSE US -->
-  <section class="why-choose">
-    <div class="container">
-      <div class="choose-text">
-        <h3>Why Choose us _______</h3>
-        <h2>COOKING WITH LOVE, THAT YOU EAT WITH PLEASURE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-        <ul>
-          <li>Sed ut perspiciatis unde omnis iste natus.</li>
-          <li>Nemo enim ipsam voluptatem quia voluptas sit.</li>
-          <li>Ut enim ad minima veniam, quis nostrum exercitationem.</li>
-          <li>Quis autem vel eum iure reprehenderit.</li>
-          <li>Ut enim ad minima veniam, quis nostrum exercitation.</li>
-        </ul>
-      </div>
-      <div class="choose-image">
-        <img alt="Vada Dish" src="./asset/vada1.png" />
-      </div>
-    </div>
-  </section>
-  <!-- TEAM -->
-  <section class="team">
-    <h5 class="team-title">Babai's Team <span></span></h5>
-    <div class="container">
-      <div class="team-grid">
-        <div class="team-member">
-          <img alt="Jon Snow" src="./asset/chef1.png" />
-          <h3>Jon Snow</h3>
-          <p>Master Chef</p>
-        </div>
-        <div class="team-member">
-          <img alt="Tyrion" src="./asset/chef2.png" />
-          <h3>Tyrion</h3>
-          <p>Master Chef</p>
-        </div>
-        <div class="team-member">
-          <img alt="Jaime" src="./asset/chef3.png" />
-          <h3>Jaime</h3>
-          <p>Master Chef</p>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="Fe-card">
+          <img src="images/chef2.png" alt="client">
+          <h3 class="card-text">Tyrion</h3>
+      <p class="card-text">Master Chef</p>
         </div>
       </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="Fe-card">
+          <img src="images/chef3.png" alt="client">
+      <h3 class="card-text">Jaime</h3>
+      <p class="card-text">Master Chef</p>
+         
+        </div>
+      </div>
+      
     </div>
-  </section>
+  </div>
+</div>
 
   <!-- Footer -->
-  <footer id="contact">
-    <div class="wrapper footerInner">
-      <div class="footerfirst-view">
-        <div class="footerTitle redviewtitle">All Inquiries:</div>
-        <p><strong>Email:</strong> babaibanbi@gmail.com</p>
-        <p><strong>Phone:</strong> +1 940-629-5571</p>
-      </div>
-      <div>
-        <div class="footerTitle">Located in:</div>
-        <p>Ministerio De Poder - Asamblea Apostolica De La Fe En Cristo Jesus</p>
-      </div>
-      <div>
-        <div class="footerTitle">Address:</div>
-        <p>1028 S Welch St, Denton, TX 76201, United States</p>
+   <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="Inquiries">
+            <h3>ALL INQURIES:</h3>
+            <h4>Email: babaibanbi@gmail.com</h4>
+            <h4>Phone: +1 940-629-5571</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h6>Located in:</h6>
+          <p>Ministerio De Poder - Asamblea Apostolica De La Fe En Cristo Jesus</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h6>Address:</h6>
+          <p>1028 S Welch St, Denton, TX 76201, United States</p>
+        </div>
       </div>
     </div>
-  </footer>
-  <script src="js/main.js"></script>
 
+  </div>
+  
+
+  <script>
+    $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+        $("#topMenu").addClass("scrolled");
+    } else {
+        $("#topMenu").removeClass("scrolled");
+    }
+})
+  </script>
 </body>
 
 </html>

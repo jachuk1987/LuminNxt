@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Babai Banbi - Indian Food Truck</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./index.css" />
+
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- jQuery CDN -->
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="topMenu">
+    <div class="wrapper nav">
+      <div class="brand">
+        <div class="brand__logo">
+          <img src="./asset/bbf-logo.png" alt="Babai Banbi Logo" />
+        </div>
+      </div>
+
+      <!-- Hamburger Button (visible only on mobile) -->
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Main Menu -->
+      <nav class="menu" aria-label="Main Navigation">
+        <a class="active" href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT US</a>
+        <a href="./menu.html">MENU</a>
+        <a href="./contact.html">CONTACT US</a>
+      </nav>
+
+      <!-- Social Icons -->
+      <nav class="social">
+        <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="blob" aria-hidden="true"></div>
+    <div class="wrapper wrap">
+      <div class="heroText">
+        <div class="chip">ENJOYING THE NOURISHING AND <strong>FLAVOURFUL <img src="./asset/indian-flag.png"
+              alt="Indian Flag" /> CUISINE</strong> </div>
+        <h1>It's time to enjoy the finer foods in <span class="accent">Life</span></h1>
+        <p class="lead">Locally Procured, Environmentally Responsible and Tasty</p>
+        <div class="ctaRow">
+
+        </div>
+      </div>
+      <div class="truck-div">
+        <!-- Replace the src below with your truck asset. If using this project locally, place Home_BB.jpg next to this HTML file. -->
+        <img class="truck" src="./asset/truck.png" alt="Red food truck illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Cards -->
+  <section id="menu" class="section">
+    <div class="wrapper sectioninnerviewss">
+      <div class="section-title redview">
+        <h2>Popular Dishes</h2>
+      </div>
+      <h2 class="h2">Browse Our Menu</h2>
+      <div class="grid menu" style="margin-top:18px">
+        <div class="menu-slider owl-carousel">
+          <!-- Card 1 -->
+          <article class="card item">
+            <div class="thumb"><img src="./asset/dosa1.png" alt="Masala dosa" /></div>
+            <div class="row" style="margin:12px 2px 6px">
+              <strong>Masala Dosa</strong>
+              <div class="price">$10.99</div>
+            </div>
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.</p>
+          </article>
+          <!-- Card 2 -->
+          <article class="card item">
+            <div class="thumb"><img src="./asset/dosa2.png" alt="Idli & Vada" style="width: auto; height: 325px;" />
+            </div>
+            <!-- border-radius: 10px; object-fit: cover; -->
+            <div class="row" style="margin:12px 2px 6px"><strong>Idli & Vada</strong>
+              <div class="price">$9.49</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.</p>
+          </article>
+          <!-- Card 3 -->
+          <article class="card item">
+            <div class="thumb"><img src="./asset/dosa3.png" alt="Chole Bhature" style="width: auto; height: 325px;"/></div>
+            <div class="row" style="margin:12px 2px 6px"><strong>Chole Bhature</strong>
+              <div class="price">$10.99</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.</p>
+          </article>
+          <!-- Card 4 -->
+          <article class="card item">
+            <div class="thumb"><img src="./asset/dosa4.png" alt="Paneer tikka" style="width: auto; height: 325px;"/></div>
+            <div class="row" style="margin:12px 2px 6px"><strong>Paneer Tikka</strong>
+              <div class="price">$11.49</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.</p>
+          </article>
+          <!-- Card 5 -->
+          <article class="card item">
+            <div class="thumb"><img src="./asset/dosa5.png" alt="Biryani" style="width: 340px; height: 325px;" /></div>
+            <div class="row" style="margin:12px 2px 6px"><strong>Biryani</strong>
+              <div class="price">$12.99</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.</p>
+          </article>
+        </div>
+  </section>
+
+  <!-- Story Split -->
+  <section class="section" id="about" style="padding-top:24px">
+    <div class="wrapper split">
+      <div>
+        <img src="./asset/dosa 2.png" alt="Crispy dosa served with chutneys" />
+      </div>
+      <div>
+        <div class="section-title">
+          <h2>Our Story</h2>
+        </div>
+        <h3 class="h2" style="margin-top:6px">Cooking with love, that you eat with pleasure</h3>
+        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est
+          laborum.</p>
+
+        <a class="btn primary" style="margin-top:16px" href="#contact">Read More<span class="arrow">›</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Row -->
+  <section class="section"
+    style="background:var(--soft); border-top:1px solid #f1e7d3; border-bottom:1px solid #f1e7d3">
+    <div class="wrapper">
+      <div class="section-title redview">
+        <h2>Our Story</h2>
+      </div>
+      <h3 class="h2">Trusted and Experienced</h3>
+      <div class="features" style="margin-top:16px">
+        <div class="feature">
+          <div class="icon"><img src="./asset/quality.png" alt="Quality Icon" /> </div><strong>100% Quality</strong>
+          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><img src="./asset/organic.png" alt="Organic Icon" /> </div><strong>Organic
+            Production</strong>
+          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><img src="./asset/ambience.png" alt="Ambience Icon" /> </div><strong>Ambience</strong>
+          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><img src="./asset/service.png" alt="Service Icon" /> </div><strong>Best in Service</strong>
+          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="wrapper">
+      <div class="section-title redview">
+        <h2>Customer Feedback</h2>
+      </div>
+      <h3 class="h2">Hear it from Happy Clients</h3>
+      <div class="testimonials" style="margin-top:26px">
+        <div class="tcard">
+          <div class="row" style="gap:12px">
+            <div class="avatar" style="background: url(./asset/client1.png) no-repeat center center;"></div>
+          </div>
+          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="tcard">
+          <div class="row" style="gap:12px">
+            <div class="avatar" style="background: url(./asset/client2.png) no-repeat center center;"></div>
+          </div>
+          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="tcard">
+          <div class="row" style="gap:12px">
+            <div class="avatar" style="background: url(./asset/client3.png) no-repeat center center;"></div>
+          </div>
+          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="tcard">
+          <div class="row" style="gap:12px">
+            <div class="avatar" style="background: url(./asset/client4.png) no-repeat center center;"></div>
+          </div>
+          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="wrapper footerInner">
+      <div class="footerfirst-view">
+        <div class="footerTitle redviewtitle">All Inquiries:</div>
+        <p><strong>Email:</strong> babaibanbi@gmail.com</p>
+        <p><strong>Phone:</strong> +1 940-629-5571</p>
+      </div>
+      <div>
+        <div class="footerTitle">Located in:</div>
+        <p>Ministerio De Poder - Asamblea Apostolica De La Fe En Cristo Jesus</p>
+      </div>
+      <div>
+        <div class="footerTitle">Address:</div>
+        <p>1028 S Welch St, Denton, TX 76201, United States</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

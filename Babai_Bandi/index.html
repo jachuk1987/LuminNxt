@@ -3,270 +3,446 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Babai Banbi - Indian Food Truck</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./index.css" />
-
-  <!-- Font Awesome CDN -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <!-- jQuery CDN -->
-
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+  <!-- jQuery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <body>
+  <!-- <div class="d-none d-md-block">
+   <div class="truck">
+    <img src="images/banner-truck.png" alt="truck" class="img-fluid"></div>
+    </div> -->
   <!-- Header -->
+
   <header class="header" id="topMenu">
-    <div class="wrapper nav">
-      <div class="brand">
-        <div class="brand__logo">
-          <img src="./asset/bbf-logo.png" alt="Babai Banbi Logo" />
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="index.html"><img src="images/bb_logo.png" alt="Babai Banbi Logo"
+            class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="main-menu">
+              <ul class="center-block">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="location.html">LOCATIONS</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="social-media">
+              <ul>
+                <li><a href="https://wa.me/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <!-- Hamburger Button (visible only on mobile) -->
-      <button class="menu-toggle" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Main Menu -->
-      <nav class="menu" aria-label="Main Navigation">
-        <a class="active" href="./index.html">HOME</a>
-        <a href="./about.html">ABOUT US</a>
-        <a href="./menu.html">MENU</a>
-        <a href="./contact.html">CONTACT US</a>
-      </nav>
-
-      <!-- Social Icons -->
-      <nav class="social">
-        <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
       </nav>
     </div>
   </header>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="blob" aria-hidden="true"></div>
-    <div class="wrapper wrap">
-      <div class="heroText">
-        <div class="chip">ENJOYING THE NOURISHING AND <strong>FLAVOURFUL <img src="./asset/indian-flag.png"
-              alt="Indian Flag" /> CUISINE</strong> </div>
-        <h1>It's time to enjoy the finer foods in <span class="accent">Life</span></h1>
-        <p class="lead">Locally Procured, Environmentally Responsible and Tasty</p>
-        <div class="ctaRow">
-
-        </div>
-      </div>
-      <div class="truck-div">
-        <!-- Replace the src below with your truck asset. If using this project locally, place Home_BB.jpg next to this HTML file. -->
-        <img class="truck" src="./asset/truck.png" alt="Red food truck illustration" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Menu Cards -->
-  <section id="menu" class="section">
-    <div class="wrapper sectioninnerviewss">
-      <div class="section-title redview">
-        <h2>Popular Dishes</h2>
-      </div>
-      <h2 class="h2">Browse Our Menu</h2>
-      <div class="grid menu" style="margin-top:18px">
-        <div class="menu-slider owl-carousel">
-          <!-- Card 1 -->
-          <article class="card item">
-            <div class="thumb"><img src="./asset/dosa1.png" alt="Masala dosa" /></div>
-            <div class="row" style="margin:12px 2px 6px">
-              <strong>Masala Dosa</strong>
-              <div class="price">$10.99</div>
+  <!--banner-->
+  <div class="container">
+    <div class="banner">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 ">
+          <div class="banner-titel">
+            <div class="yellow-title">
+              <h1>ENJOYING THE NOURISHING AND
+                FLAVOURFUL<img src="images/indian.png" alt="Indian Flag" />CUISINE</h1>
             </div>
-            <div class="stars" aria-label="5 star rating">★★★★★</div>
-            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.</p>
-          </article>
-          <!-- Card 2 -->
-          <article class="card item">
-            <div class="thumb"><img src="./asset/dosa2.png" alt="Idli & Vada" style="width: auto; height: 325px;" />
-            </div>
-            <!-- border-radius: 10px; object-fit: cover; -->
-            <div class="row" style="margin:12px 2px 6px"><strong>Idli & Vada</strong>
-              <div class="price">$9.49</div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.</p>
-          </article>
-          <!-- Card 3 -->
-          <article class="card item">
-            <div class="thumb"><img src="./asset/dosa3.png" alt="Chole Bhature" style="width: auto; height: 325px;"/></div>
-            <div class="row" style="margin:12px 2px 6px"><strong>Chole Bhature</strong>
-              <div class="price">$10.99</div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.</p>
-          </article>
-          <!-- Card 4 -->
-          <article class="card item">
-            <div class="thumb"><img src="./asset/dosa4.png" alt="Paneer tikka" style="width: auto; height: 325px;"/></div>
-            <div class="row" style="margin:12px 2px 6px"><strong>Paneer Tikka</strong>
-              <div class="price">$11.49</div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.</p>
-          </article>
-          <!-- Card 5 -->
-          <article class="card item">
-            <div class="thumb"><img src="./asset/dosa5.png" alt="Biryani" style="width: 340px; height: 325px;" /></div>
-            <div class="row" style="margin:12px 2px 6px"><strong>Biryani</strong>
-              <div class="price">$12.99</div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p class="muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.</p>
-          </article>
-        </div>
-  </section>
-
-  <!-- Story Split -->
-  <section class="section" id="about" style="padding-top:24px">
-    <div class="wrapper split">
-      <div>
-        <img src="./asset/dosa 2.png" alt="Crispy dosa served with chutneys" />
-      </div>
-      <div>
-        <div class="section-title">
-          <h2>Our Story</h2>
-        </div>
-        <h3 class="h2" style="margin-top:6px">Cooking with love, that you eat with pleasure</h3>
-        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore
-          et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est
-          laborum.</p>
-
-        <a class="btn primary" style="margin-top:16px" href="#contact">Read More<span class="arrow">›</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Feature Row -->
-  <section class="section"
-    style="background:var(--soft); border-top:1px solid #f1e7d3; border-bottom:1px solid #f1e7d3">
-    <div class="wrapper">
-      <div class="section-title redview">
-        <h2>Our Story</h2>
-      </div>
-      <h3 class="h2">Trusted and Experienced</h3>
-      <div class="features" style="margin-top:16px">
-        <div class="feature">
-          <div class="icon"><img src="./asset/quality.png" alt="Quality Icon" /> </div><strong>100% Quality</strong>
-          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit.</p>
-        </div>
-        <div class="feature">
-          <div class="icon"><img src="./asset/organic.png" alt="Organic Icon" /> </div><strong>Organic
-            Production</strong>
-          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit.</p>
-        </div>
-        <div class="feature">
-          <div class="icon"><img src="./asset/ambience.png" alt="Ambience Icon" /> </div><strong>Ambience</strong>
-          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit.</p>
-        </div>
-        <div class="feature">
-          <div class="icon"><img src="./asset/service.png" alt="Service Icon" /> </div><strong>Best in Service</strong>
-          <p class="muted">Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section">
-    <div class="wrapper">
-      <div class="section-title redview">
-        <h2>Customer Feedback</h2>
-      </div>
-      <h3 class="h2">Hear it from Happy Clients</h3>
-      <div class="testimonials" style="margin-top:26px">
-        <div class="tcard">
-          <div class="row" style="gap:12px">
-            <div class="avatar" style="background: url(./asset/client1.png) no-repeat center center;"></div>
+            <h2>It's time to enjoy the finer foods in <span style="color: #fb0000;">Life</span></h2>
+            <h5>Locally Procured, Environmentally Responsible and Tasty</h5>
           </div>
-          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <div class="stars">★★★★★</div>
         </div>
-        <div class="tcard">
-          <div class="row" style="gap:12px">
-            <div class="avatar" style="background: url(./asset/client2.png) no-repeat center center;"></div>
-          </div>
-          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <div class="stars">★★★★★</div>
-        </div>
-        <div class="tcard">
-          <div class="row" style="gap:12px">
-            <div class="avatar" style="background: url(./asset/client3.png) no-repeat center center;"></div>
-          </div>
-          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <div class="stars">★★★★★</div>
-        </div>
-        <div class="tcard">
-          <div class="row" style="gap:12px">
-            <div class="avatar" style="background: url(./asset/client4.png) no-repeat center center;"></div>
-          </div>
-          <p class="muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <div class="stars">★★★★★</div>
+        <div class="truck">
+          <img class="img-fluid" src="images/banner-truck1.png" alt="Red food truck illustration">
         </div>
       </div>
     </div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <!-- Popular  -->
+    <div class="container">
+      <div class="Popular">
+        <h2 class="title-red">Popular Dishes</h2>
+        <h1 class="main-title">Browse Our Menu</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="news-slider" class="owl-carousel">
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="images/dosa1.png" class="img-fluid" alt="dosa1">
+                <a class="over-layer"></a>
+              </div>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h3 class="prize">Chole Bhature</h3>
+                  </div>
+                  <div class="col-sm-6">
+                    <h3 class="prize-1">$10.99</h3>
+                  </div>
+                  <div class="stars">
+                    <p>★★★★★</p>
+                  </div>
+                </div>
+                <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat
+                  nulla pariatur.</p>
+              </div>
+            </div>
+
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="images/dosa3.png" class="img-fluid" alt="dosa3">
+                <a class="over-layer"></a>
+              </div>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h3 class="prize">Chole Bhature</h3>
+                  </div>
+                  <div class="col-sm-6">
+                    <h3 class="prize-1">$10.99</h3>
+                  </div>
+                  <div class="stars">
+                    <p>★★★★★</p>
+                  </div>
+                </div>
+                <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat
+                  nulla pariatur.</p>
+              </div>
+            </div>
+
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="images/dosa4.png" class="img-fluid" alt="dosa4">
+                <a class="over-layer"></a>
+              </div>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h3 class="prize">Chole Bhature</h3>
+                  </div>
+                  <div class="col-sm-6">
+                    <h3 class="prize-1">$10.99</h3>
+                  </div>
+                  <div class="stars">
+                    <p>★★★★★</p>
+                  </div>
+                </div>
+                <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat
+                  nulla pariatur.</p>
+              </div>
+            </div>
+
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="images/dosa1.png" alt="dosa">
+                <a class="over-layer"></a>
+              </div>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h3 class="prize">Chole Bhature</h3>
+                  </div>
+                  <div class="col-sm-6">
+                    <h3 class="prize-1">$10.99</h3>
+                  </div>
+                  <div class="stars">
+                    <p>★★★★★</p>
+                  </div>
+                </div>
+                <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat
+                  nulla pariatur.</p>
+              </div>
+            </div>
+            <div class="post-slide">
+              <div class="post-img">
+                <img src="images/dosa3.png" alt="dosa">
+                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+              </div>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h3 class="prize">Chole Bhature</h3>
+                  </div>
+                  <div class="col-sm-6">
+                    <h3 class="prize-1">$10.99</h3>
+                  </div>
+                  <div class="stars">
+                    <p>★★★★★</p>
+                  </div>
+                </div>
+                <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat
+                  nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+
+
+    <!-- Our Story -->
+    <div class="Our-story">
+      <div class="row">
+        <div class="col-ld-6 col-md-6 col-sm-12">
+          <img src="images/dosa-2.png" alt="dosa" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="gap"></div>
+          <h2 class="title-ye">Our Story</h2>
+          <h1 class="main-title ">Cooking with love, that you eat with pleasure</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="read"><span>Read More </span></a>
+        </div>
+      </div>
+    </div>
+  </div><!-- row-end -->
+  </div><!-- container- end -->
+  <!-- trusted -->
+
+
+  <div class="trusted">
+    <div class="container">
+      <h2 class="title-red">Our Story</h2>
+      <h1 class="main-title">Trusted and Experienced</h1>
+      <div class="row">
+        <div class="gap-1"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="quality">
+            <img src="images/quality.png" alt="quality">
+            <h4>100% Quality</h4>
+            <p>Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="quality">
+            <img src="images/organic.png" alt="organic">
+            <h4>Organic Production</h4>
+            <p>Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="quality">
+            <img src="images/ambience.png" alt="ambience">
+            <h4>Ambience</h4>
+            <p>Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="quality">
+            <img src="images/service.png" alt="service">
+            <h4>Best in Service</h4>
+            <p>Dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- feedback -->
+
+
+  <div class="feedback">
+    <div class="container">
+      <h2 class="title-red">Customer Feedback</h2>
+      <h1 class="main-title">Hear it from Happy Clients</h1>
+      <div class="gap-1"></div>
+      <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="Fe-card">
+                  <img src="images/client2.png" alt="client">
+                  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                  <div class="fe-stars">★★★★★</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
 
   <!-- Footer -->
-  <footer id="contact">
-    <div class="wrapper footerInner">
-      <div class="footerfirst-view">
-        <div class="footerTitle redviewtitle">All Inquiries:</div>
-        <p><strong>Email:</strong> babaibanbi@gmail.com</p>
-        <p><strong>Phone:</strong> +1 940-629-5571</p>
-      </div>
-      <div>
-        <div class="footerTitle">Located in:</div>
-        <p>Ministerio De Poder - Asamblea Apostolica De La Fe En Cristo Jesus</p>
-      </div>
-      <div>
-        <div class="footerTitle">Address:</div>
-        <p>1028 S Welch St, Denton, TX 76201, United States</p>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="Inquiries">
+            <h3>ALL INQURIES:</h3>
+            <h4>Email: babaibanbi@gmail.com</h4>
+            <h4>Phone: +1 940-629-5571</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h6>Located in:</h6>
+          <p>Ministerio De Poder - Asamblea Apostolica De La Fe En Cristo Jesus</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h6>Address:</h6>
+          <p>1028 S Welch St, Denton, TX 76201, United States</p>
+        </div>
       </div>
     </div>
-  </footer>
-  <script src="js/main.js"></script>
 
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $("#news-slider").owlCarousel({
+        items: 3,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["", ""],
+        pagination: true,
+        autoPlay: true
+      });
+    });
+  </script>
+  <script>
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 20) {
+        $("#topMenu").addClass("scrolled");
+      } else {
+        $("#topMenu").removeClass("scrolled");
+      }
+    })
+  </script>
 </body>
 
 </html>

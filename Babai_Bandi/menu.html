@@ -3,175 +3,334 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Babai Banbi - Indian Food Truck</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
+<link href="css/style.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>  
 
-  <!-- Font Awesome CDN -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <!-- jQuery CDN -->
+<!-- Owl Carousel CSS -->
+
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+ <!-- jQuery -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<!-- Owl Carousel JS -->
 
 </head>
 
 <body>
   <!-- Header -->
   <header class="header" id="topMenu">
-    <div class="wrapper nav">
-      <div class="brand">
-        <div class="brand__logo">
-          <img src="./asset/bbf-logo.png" alt="Babai Banbi Logo" />
+    <div class="container">
+<nav class="navbar navbar-expand-md"> 
+    <a class="navbar-brand" href="index.html"><img src="images/bb_logo.png" alt="Babai Banbi Logo" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+      <div class="main-menu">
+       <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="location.html">LOCATIONS</a></li>
+          </ul>   
         </div>
-      </div>
-
-      <!-- Hamburger Button (visible only on mobile) -->
-      <button class="menu-toggle" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Main Menu -->
-      <nav class="menu" aria-label="Main Navigation">
-        <a href="./index.html">HOME</a>
-        <a href="./about.html">ABOUT US</a>
-        <a class="active" href="./menu.html">MENU</a>
-        <a href="./contact.html">CONTACT US</a>
-      </nav>
-
-      <!-- Social Icons -->
-      <nav class="social">
-        <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="social-media">
+          <ul>
+            <li><a href="https://wa.me/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="blob1" aria-hidden="true"></div>
-    <div class="wrapper wrap">
-      <div class="heroText">
-        <div class="ctaRow">
+  <!--banner-->
+  
+   <div class="container">
+    <div class="gap"></div>
+<!-- Our Story -->
+  <div class="Our-menu">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="about-right">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        </p>
+         </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <img src="images/dosa4.png" alt="dosa4" class="img-fluid">
+    </div>
+    </div>
+  </div>
 
+  <div class="food">
+   
+<div class="container mt-3">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#idli">IDLI</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#idli1">DOSA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#idli2">INDO CHINESE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#idli3">SPECIALS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#idli4">STARTERS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#idli5">SNACKS</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#idli6">BEVERAGES</a>
+    </li>
+
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="idli" class="container tab-pane active"><br><br>
+      <div class="row">
+      <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i1.png" alt="i1">
+          <h6>Idli............ <span>$ 4.99</span></h6>
+          
+        </div>
+      </div>
+     <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i2.png" alt="i1">
+          <h6>Ghee Idli............ <span>$ 4.99</span></h6>
+          
+        </div>
+      </div>
+     
+      </div>
+    </div>
+    <div id="idli1" class="container tab-pane fade"><br><br>
+      <div class="row">
+        <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i2.png" alt="i1">
+          <h6>Ghee Idli............ <span>$ 4.99</span></h6>
+          
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i1.png" alt="i1">
+          <h6>Idli............ <span>$ 4.99</span></h6>
+          
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- Food Intro Section -->
-  <section class="food-intro-section">
-    <div class="food-intro-container">
-      <div class="food-intro-text">
-        <h2>FOOD YOU LOVE SERVED TO YOU</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
-      </div>
-      <div class="food-intro-image">
-        <img alt="Dosa Plate" src="./asset/dosa3.png" />
       </div>
     </div>
-  </section>
+    <div id="idli2" class="container tab-pane fade"><br><br>
+      <div class="row">
+        <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i2.png" alt="i1">
+          <h6>Ghee Idli............ <span>$ 4.99</span></h6>  
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i1.png" alt="i1">
+          <h6>Idli............ <span>$ 4.99</span></h6>
+        </div>
+      </div>
+      </div>
+    </div>
 
-  <!-- Menu Categories -->
-  <div class="menu-categories">
-    <button class="active">IDLI</button>
-    <button>DOSA</button>
-    <button>INDO CHINESE</button>
-    <button>SPECIALS</button>
-    <button>STARTERS</button>
-    <button>SNACKS</button>
-    <button>BEVERAGES</button>
+ <div id="idli3" class="container tab-pane fade"><br><br>
+      <div class="row">
+        <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i2.png" alt="i1">
+          <h6>Ghee Karam Idli............ <span>$ 4.99</span></h6>  
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i1.png" alt="i1">
+          <h6>Idli............ <span>$ 4.99</span></h6>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="idli4" class="container tab-pane fade"><br><br>
+      <div class="row">
+        <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i2.png" alt="i1">
+          <h6>Babai Idli............ <span>$ 4.99</span></h6>  
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i1.png" alt="i1">
+          <h6>Idli............ <span>$ 4.99</span></h6>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="idli5" class="container tab-pane fade"><br><br>
+      <div class="row">
+        <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i2.png" alt="i1">
+          <h6>Babai Idli............ <span>$ 4.99</span></h6>  
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i1.png" alt="i1">
+          <h6>Idli............ <span>$ 4.99</span></h6>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="idli6" class="container tab-pane fade"><br><br>
+      <div class="row">
+        <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i2.png" alt="i1">
+          <h6>Babai Idli............ <span>$ 4.99</span></h6>  
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="idli">
+          <img src="images/i1.png" alt="i1">
+          <h6>Idli............ <span>$ 4.99</span></h6>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+  </div>
   </div>
 
-  <!-- Menu Items -->
-
-  <section class="menu-items">
-    <div class="menu-card">
-      <img alt="Idli" src="./asset/i1.png" />
-      <span>Idli</span>
-      <span class="dots"></span>
-      <span class="price">$ 4.99</span>
+<!-- feedback -->
+<div class="feedback">
+  <div class="container">
+ <div class="my-5 text-center container">
+  
+   <div class="row d-flex align-items-center">
+      <!-- Left control -->
+      <div class="col-1 d-flex align-items-center justify-content-center">
+   <a href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <div class="carousel-nav-icon">
+         <i class="fa fa-chevron-left fa-1x"></i>
+      </div>
+   </a>
+</div>
+      <!-- Carousel -->
+      <div class="col-10">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-12 col-md d-flex align-items-center justify-content-center">
+            <img src="images/gallery1.png" class="img-fluid rounded-3 m-2" alt="Gallery 1" style="height:250px; object-fit:cover; width:100%;">
+          </div>
+          <div class="col-12 col-md d-flex align-items-center justify-content-center">
+            <img src="images/gallery2.png" class="img-fluid rounded-3 m-2" alt="Gallery 2" style="height:250px; object-fit:cover; width:100%;">
+          </div>
+          <div class="col-12 col-md d-flex align-items-center justify-content-center">
+            <img src="images/gallery3.png" class="img-fluid rounded-3 m-2" alt="Gallery 3" style="height:250px; object-fit:cover; width:100%;">
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-12 col-md d-flex align-items-center justify-content-center">
+            <img src="images/gallery4.png" class="img-fluid rounded-3 m-2" alt="Gallery 4" style="height:250px; object-fit:cover; width:100%;">
+          </div>
+          <div class="col-12 col-md d-flex align-items-center justify-content-center">
+            <img src="images/gallery1.png" class="img-fluid rounded-3 m-2" alt="Gallery 1" style="height:250px; object-fit:cover; width:100%;">
+          </div>
+          <div class="col-12 col-md d-flex align-items-center justify-content-center">
+            <img src="images/gallery2.png" class="img-fluid rounded-3 m-2" alt="Gallery 2" style="height:250px; object-fit:cover; width:100%;">
+          </div>
+        </div>
+      </div>
+      
     </div>
-    <div class="menu-card">
-      <img alt="Ghee Idli" src="./asset/i2.png" />
-      <span>Ghee Idli</span>
-      <span class="dots"></span>
-      <span class="price">$ 5.99</span>
-    </div>
-    <div class="menu-card">
-      <img alt="Ghee Karam Idli" src="./asset/i3.png" />
-      <span>Ghee Karam Idli</span>
-      <span class="dots"></span>
-      <span class="price">$ 5.99</span>
-    </div>
-    <div class="menu-card">
-      <img alt="Sambar Idli" src="./asset/i4.png" />
-      <span>Sambar Idli</span>
-      <span class="dots"></span>
-      <span class="price">$ 6.99</span>
-    </div>
-    <div class="menu-card">
-      <img alt="Babai Idli" src="./asset/i5.png" />
-      <span>Babai Idli</span>
-      <span class="dots"></span>
-      <span class="price">$ 6.99</span>
-    </div>
-    <div class="menu-card">
-      <img alt="Cheese Idli" src="./asset/i6.png" />
-      <span>Cheese Idli</span>
-      <span class="dots"></span>
-      <span class="price">$ 7.99</span>
-    </div>
-  </section>
-
-  <!-- Image Carousel -->
-  <section class="carousel">
-    <button class="prev">←</button>
-    <div class="carousel-images">
-      <img alt="Idli Set" src="./asset/gallery1.png" />
-      <img alt="Dosa" src="./asset/gallery2.png" />
-      <img alt="Dosa with Curry" src="./asset/gallery3.png" />
-      <img alt="Samosa" src="./asset/gallery4.png" />
-    </div>
-    <button class="next">→</button>
-  </section>
+  </div>
+</div>
+      <!-- Right control -->
+      <div class="col-1 d-flex align-items-center justify-content-center">
+   <a href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <div class="carousel-nav-icon">
+         <i class="fa fa-chevron-right fa-1x"></i>
+      </div>
+   </a>
+</div>
+   </div>
+</div> 
+  </div>
+</div>
 
   <!-- Footer -->
-  <footer id="contact">
-    <div class="wrapper footerInner">
-      <div class="footerfirst-view">
-        <div class="footerTitle redviewtitle">All Inquiries:</div>
-        <p><strong>Email:</strong> babaibanbi@gmail.com</p>
-        <p><strong>Phone:</strong> +1 940-629-5571</p>
-      </div>
-      <div>
-        <div class="footerTitle">Located in:</div>
-        <p>Ministerio De Poder - Asamblea Apostolica De La Fe En Cristo Jesus</p>
-      </div>
-      <div>
-        <div class="footerTitle">Address:</div>
-        <p>1028 S Welch St, Denton, TX 76201, United States</p>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="Inquiries">
+            <h3>ALL INQURIES:</h3>
+            <h4>Email: babaibanbi@gmail.com</h4>
+            <h4>Phone: +1 940-629-5571</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h3>Located in:</h3>
+          <p>Ministerio De Poder - Asamblea Apostolica De La Fe En Cristo Jesus</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h3>Address:</h3>
+          <p>1028 S Welch St, Denton, TX 76201, United States</p>
+        </div>
       </div>
     </div>
-  </footer>
-  <script src="js/main.js"></script>
 
+  </div>
+  
+  
+  <script>
+    $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+        $("#topMenu").addClass("scrolled");
+    } else {
+        $("#topMenu").removeClass("scrolled");
+    }
+})
+  </script>
 </body>
 
 </html>
